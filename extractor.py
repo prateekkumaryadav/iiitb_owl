@@ -86,7 +86,12 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": f"Extract triples from the following text:\n\n{chunk}"}
                     ],
+                    
+                    # response_format is used to ensure that the LLM returns the response in JSON format
                     response_format={"type": "json_object"},
+                    
+                    # temperature is used to control the randomness of the LLM
+                    # 0.1 is used to ensure that the LLM returns the response in a deterministic way
                     temperature=0.1
                 )
                 break
@@ -94,6 +99,8 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
             except Exception as e:
                 if "429" in str(e) or "Too Many Requests" in str(e):
                     wait_time = 15 * (attempt + 1)
+
+                    # waiting for the rate limit error to be resolved by increasing the wait time
                     print(f"    [Rate Limit Hit] Waiting {wait_time}s before retrying...")
                     time.sleep(wait_time)
                 else:
@@ -107,7 +114,10 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
             continue
             
         try:
+            # getting the JSON output from the response
             json_output = response.choices[0].message.content
+            
+            # loading the JSON output
             data = json.loads(json_output)
             
             import re

@@ -9,6 +9,9 @@ import sys
 # scraper for scraping the text data from the URL
 from scraper import scrape_text_from_url
 
+# master_schema for defining the schema of the ontology
+from master_schema import OntologyData, Triple
+
 # extractor for extracting the triples from the text data
 from extractor import extract_triples
 
@@ -68,7 +71,6 @@ def main():
         print(f"Found {len(target_urls)} links, truncating to --max-pages={args.max_pages}")
         target_urls = target_urls[:args.max_pages]
     
-    from master_schema import OntologyData, Triple
     global_triples = []
     
     # Process each URL
@@ -77,6 +79,8 @@ def main():
         # Printing the current URL being processed
         print(f"\nProcessing Page {index+1}/{len(target_urls)}: {current_url}")
         
+# = = = = = Going to the scraper.py file for scraping the text data from the URL = = = = =
+
         # Scraping text data from the current URL (step 1 of 2)
         print("Scraping text data")
         raw_text = scrape_text_from_url(current_url)
@@ -92,6 +96,8 @@ def main():
         # Sending text to Groq LLM (Focus: {args.focus.upper()}) for triple extraction (step 2 of 2)
         print(f"Sending text to Groq LLM (Focus: {args.focus.upper()}) for triple extraction...")
         
+# = = = = = Going to the extractor.py file for extracting the triples from the text data = = = = =
+
         # Since extract_triples has chunking, it's safe to just call it
         page_ontology_data = extract_triples(raw_text, focus=args.focus)
         
@@ -114,6 +120,9 @@ def main():
         for subj in unique_subjects:
             if subj not in subjects_with_member:
                 # The LLM forgot to assign them to the university! Inject it manually.
+
+# = = = = = Going to the master_schema.py file for defining the schema of the ontology = = = = =
+# Triple() is used to create a new triple
                 global_triples.append(Triple(subject=subj, predicate="isMemberOf", object="IIIT Bangalore"))
                 inferred_count += 1
         print(f" -> Inferred {inferred_count} missing 'isMemberOf -> IIIT Bangalore' relationships.")
@@ -137,7 +146,13 @@ def main():
         
     # Generating OWL representation
     print(f"\nGenerating OWL representation: {args.output}...")
+
+# = = = = = Going to the master_schema.py file for defining the schema of the ontology = = = = =
+# OntologyData() is used to create a new ontology
     output_ontology = OntologyData(triples=global_triples)
+
+# = = = = = Going to the owl_generator.py file for generating the OWL file = = = = =
+
     generate_owl(output_ontology, args.output)
     
     print("\nPipeline Complete\n")
