@@ -64,9 +64,15 @@ def extract_triples(text: str) -> OntologyData:
             json_output = response.choices[0].message.content
             data = json.loads(json_output)
             
-            # Validate against our Pydantic model
-            validated_data = OntologyData(**data)
-            all_triples.extend(validated_data.triples)
+            # Validate each triple individually to survive LLM hallucinations
+            from master_schema import Triple
+            for t_data in data.get("triples", []):
+                try:
+                    valid_triple = Triple(**t_data)
+                    all_triples.append(valid_triple)
+                except Exception as ve:
+                    # Skip the invalid triple instead of crashing the chunk
+                    pass
             
         except Exception as e:
             print(f"Error during LLM extraction on chunk {i+1}: {e}")
