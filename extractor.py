@@ -32,11 +32,11 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
     - Never invent predicates. Only use the literal predicates defined in the schema.
     - Deep Entity Mapping: If a person belongs to a specific department, map it properly (e.g., "Ahana Pradhan" -> "hasDepartment" -> "Computer Science"). DO NOT set their department as "IIIT Bangalore".
     - Ignore Boilerplate: Do NOT extract generic website navigation or footer lists. Focus on the core content of the page context.
-    - Try to extract up to 25 highly confident triples from the text.
+    - Exhaustive Extraction: You MUST extract EVERY SINGLE valid relationship you find in this text block. Do not artificially limit yourself. Leave no entity behind.
     - Output ONLY the JSON object, nothing else.
     """
 
-    def chunk_text(text, max_len=4000):
+    def chunk_text(text, max_len=1000):
         words = text.split()
         chunks = []
         current_chunk = []
@@ -54,7 +54,7 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
             chunks.append(" ".join(current_chunk))
         return chunks
 
-    chunks = chunk_text(text, max_len=4000)
+    chunks = chunk_text(text, max_len=1000)
     all_triples = []
 
     print(f"Divided text into {len(chunks)} chunks for full extraction processing:")
