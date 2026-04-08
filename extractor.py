@@ -3,7 +3,7 @@ import json
 from groq import Groq
 from master_schema import OntologyData
 
-def extract_triples(text: str) -> OntologyData:
+def extract_triples(text: str, focus: str = "all") -> OntologyData:
     """
     Takes raw text, sends it to Groq API with instructions to extract 
     triples strictly conforming to the OntologyData schema, and returns the parsed schema.
@@ -11,18 +11,27 @@ def extract_triples(text: str) -> OntologyData:
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
     schema_json = OntologyData.model_json_schema()
     
+    focus_constraint = ""
+    if focus == "faculty":
+        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving People/Faculty members (e.g., isMemberOf, hasDepartment). completely IGNORE university degree offerings like B.Tech/M.Tech."
+    elif focus == "courses":
+        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving Courses, Programs, and Degrees (e.g., offersCourse, hasDuration). completely IGNORE any text about faculty or people."
+    else:
+        focus_constraint = "Extract relationships for both Faculty and Courses."
+
     system_prompt = f"""
     You are an expert Semantic Web extraction pipeline. 
     Your job is to read raw text content from university web pages and extract semantic relationships (triples).
+    
+    {focus_constraint}
     
     You MUST output valid JSON that strictly conforms to the following JSON Schema:
     {json.dumps(schema_json, indent=2)}
     
     Important Constraints:
     - Never invent predicates. Only use the literal predicates defined in the schema.
-    - Deep Entity Mapping: Focus on linking specific People (Faculty) directly to their respective Departments, Courses, or Research Interests instead of linking everyone generically to the University.
-    - Ignore Boilerplate: Do NOT extract generic website navigation or footer lists (e.g., just listing all degrees the university offers generally). Focus on the core content of the page context.
-    - If a person's specific department or course is mentioned, map it explicitly (e.g., "Ahana Pradhan" -> "hasDepartment" -> "Computer Science").
+    - Deep Entity Mapping: If a person belongs to a specific department, map it properly (e.g., "Ahana Pradhan" -> "hasDepartment" -> "Computer Science"). DO NOT set their department as "IIIT Bangalore".
+    - Ignore Boilerplate: Do NOT extract generic website navigation or footer lists. Focus on the core content of the page context.
     - Try to extract up to 25 highly confident triples from the text.
     - Output ONLY the JSON object, nothing else.
     """

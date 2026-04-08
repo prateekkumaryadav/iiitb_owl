@@ -8,11 +8,13 @@ def main():
     parser = argparse.ArgumentParser(description="Run the automated Ontology Generation Pipeline")
     parser.add_argument("--url", type=str, default="https://www.iiitb.ac.in/faculty", help="Target URL to crawl")
     parser.add_argument("--output", type=str, default="iiitb_ontology.owl", help="Output OWL file name")
+    parser.add_argument("--focus", type=str, choices=["faculty", "courses", "all"], default="all", help="Force the LLM to focus on extracting only 'faculty' or 'courses' to prevent mixed outputs")
     
     args = parser.parse_args()
     
     print("========================================")
     print(f"Starting Pipeline for URL: {args.url}")
+    print(f"Extraction Focus: {args.focus.upper()}")
     print("========================================")
     
     # Step 1: Scrape
@@ -25,8 +27,8 @@ def main():
     print(f"-> Extracted {len(raw_text)} characters.")
     
     # Step 2: LLM Extraction
-    print("\n[2/4] Sending text to Groq LLM for triple extraction...")
-    ontology_data = extract_triples(raw_text)
+    print(f"\n[2/4] Sending text to Groq LLM (Focus: {args.focus.upper()}) for triple extraction...")
+    ontology_data = extract_triples(raw_text, focus=args.focus)
     
     if not ontology_data or len(ontology_data.triples) == 0:
         print("Model failed to extract any triples conforming to the schema.")
