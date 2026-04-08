@@ -26,33 +26,52 @@ def extract_triples(text: str) -> OntologyData:
     - Output ONLY the JSON object, nothing else.
     """
 
-    # We might need to chunk text if it's too long, but for the PoC we assume text is reasonably sized.
-    # Llama-3.3 has a large context window, so we truncate roughly to 20000 chars for safety.
-    max_chars = 20000
-    if len(text) > max_chars:
-        text = text[:max_chars]
+    def chunk_text(text, max_len=4000):
+        words = text.split()
+        chunks = []
+        current_chunk = []
+        current_length = 0
+        for word in words:
+            # +1 for the space
+            if current_length + len(word) + 1 > max_len:
+                chunks.append(" ".join(current_chunk))
+                current_chunk = [word]
+                current_length = len(word)
+            else:
+                current_chunk.append(word)
+                current_length += len(word) + 1
+        if current_chunk:
+            chunks.append(" ".join(current_chunk))
+        return chunks
 
-    try:
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": f"Extract triples from the following text:\n\n{text}"}
-            ],
-            response_format={"type": "json_object"},
-            temperature=0.1
-        )
-        
-        json_output = response.choices[0].message.content
-        data = json.loads(json_output)
-        
-        # Validate against our Pydantic model
-        validated_data = OntologyData(**data)
-        return validated_data
-        
-    except Exception as e:
-        print(f"Error during LLM extraction: {e}")
-        return OntologyData(triples=[])
+    chunks = chunk_text(text, max_len=4000)
+    all_triples = []
+
+    print(f"Divided text into {len(chunks)} chunks for full extraction processing:")
+    for i, chunk in enumerate(chunks):
+        print(f"  -> Extractor working on chunk {i+1} of {len(chunks)}...")
+        try:
+            response = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": f"Extract triples from the following text:\n\n{chunk}"}
+                ],
+                response_format={"type": "json_object"},
+                temperature=0.1
+            )
+            
+            json_output = response.choices[0].message.content
+            data = json.loads(json_output)
+            
+            # Validate against our Pydantic model
+            validated_data = OntologyData(**data)
+            all_triples.extend(validated_data.triples)
+            
+        except Exception as e:
+            print(f"Error during LLM extraction on chunk {i+1}: {e}")
+
+    return OntologyData(triples=all_triples)
 
 if __name__ == "__main__":
     sample_text = "Prof. Sadagopan teaches Data Structures at IIIT Bangalore. He is a member of the Computer Science Department."
