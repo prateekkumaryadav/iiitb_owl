@@ -95,6 +95,8 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
             json_output = response.choices[0].message.content
             data = json.loads(json_output)
             
+            import re
+            
             # Validate each triple individually to survive LLM hallucinations
             from master_schema import Triple
             for t_data in data.get("triples", []):
@@ -106,6 +108,17 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
                         lower_subj = valid_triple.subject.lower()
                         if "department" in lower_subj or "centre" in lower_subj or "iiit" in lower_subj:
                             continue
+                            
+                        # Name string cleaning: Remove "Prof.", "Dr.", etc. to normalize Protege Nodes
+                        clean_subj = re.sub(r'^(Prof\.|Dr\.|Mr\.|Mrs\.|Ms\.)\s*', '', valid_triple.subject, flags=re.IGNORECASE)
+                        # Fix encoding issues by stripping unsafe uri characters
+                        clean_subj = re.sub(r"['\.,]", '', clean_subj).strip()
+                        
+                        # Discard heavily fragmented Subject hallucination strings (like just "g" or "Rao")
+                        if len(clean_subj.split()) == 1 and len(clean_subj) < 4:
+                            continue
+                            
+                        valid_triple.subject = clean_subj
                             
                     all_triples.append(valid_triple)
                 except Exception as ve:

@@ -42,7 +42,7 @@ def main():
         print(f"Found {len(target_urls)} links, truncating to --max-pages={args.max_pages}")
         target_urls = target_urls[:args.max_pages]
     
-    from master_schema import OntologyData
+    from master_schema import OntologyData, PredicateEnum, Triple
     global_triples = []
     
     # Process each URL
@@ -66,6 +66,20 @@ def main():
             global_triples.extend(page_ontology_data.triples)
         else:
             print("  -> No triples found on this page.")
+            
+    # PROGRAMMATIC INFERENCE: Automatically inject missing isMemberOf relations
+    if args.focus == "faculty":
+        print("\n[Post-Processing] Applying Semantic Inference Rules...")
+        subjects_with_member = set(t.subject for t in global_triples if t.predicate == PredicateEnum.isMemberOf)
+        unique_subjects = set(t.subject for t in global_triples)
+        
+        inferred_count = 0
+        for subj in unique_subjects:
+            if subj not in subjects_with_member:
+                # The LLM forgot to assign them to the university! Inject it manually.
+                global_triples.append(Triple(subject=subj, predicate=PredicateEnum.isMemberOf, object="IIIT Bangalore"))
+                inferred_count += 1
+        print(f"  -> Inferred {inferred_count} missing 'isMemberOf -> IIIT Bangalore' relationships.")
             
     print("\n========================================")
     print(f"CRAWL COMPLETE. Total Triples Accumulated: {len(global_triples)}")

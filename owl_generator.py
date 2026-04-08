@@ -29,8 +29,11 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl"):
         
         DATATYPE_PROPERTIES = ["hasDuration", "hasCredits", "hasCourseCode", "hasEmail"]
         
-        if triple.predicate in DATATYPE_PROPERTIES:
-            pred_uri = URIRef(UNI[triple.predicate])
+        # Safely unwrap Enum to string
+        pred_str = triple.predicate.value if hasattr(triple.predicate, 'value') else triple.predicate
+        
+        if pred_str in DATATYPE_PROPERTIES:
+            pred_uri = URIRef(UNI[pred_str])
             g.add((pred_uri, RDF.type, OWL.DatatypeProperty))
             
             # Datatype properties point to a Literal, not a URI
@@ -39,7 +42,7 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl"):
             obj_uri_str = urllib.parse.quote(triple.object.replace(" ", "_"))
             obj_uri = URIRef(UNI[obj_uri_str])
             
-            pred_uri = URIRef(UNI[triple.predicate])
+            pred_uri = URIRef(UNI[pred_str])
             g.add((pred_uri, RDF.type, OWL.ObjectProperty))
             
             # Add the actual relationship

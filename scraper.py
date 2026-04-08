@@ -29,7 +29,7 @@ def scrape_text_from_url(url: str) -> str:
 
 from urllib.parse import urlparse, urljoin
 
-def get_internal_links(base_url: str) -> list:
+def get_internal_links(base_url: str, focus: str = "all") -> list:
     """
     Crawls the base_url. Extracts and filters all internal links
     to avoid crawling entire unrelated domains.
@@ -46,7 +46,13 @@ def get_internal_links(base_url: str) -> list:
     domain = urlparse(base_url).netloc
     
     links = set()
-    keywords = ["faculty", "course", "academic", "department", "program", "research"]
+    
+    if focus == "faculty":
+        keywords = ["faculty", "people", "professor"]
+    elif focus == "courses":
+        keywords = ["course", "academic", "department", "program", "degree"]
+    else:
+        keywords = ["faculty", "course", "academic", "department", "program", "research"]
     
     for a_tag in soup.find_all("a", href=True):
         href = a_tag["href"].strip()
