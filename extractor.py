@@ -11,14 +11,19 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
     schema_json = OntologyData.model_json_schema()
     
+    # defining the focus constraint
     focus_constraint = ""
+
+    # checking the focus
     if focus == "faculty":
+        # faculty focus constraint(current aim)
         focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving People/Faculty members (e.g., isMemberOf, hasDepartment, hasEmail). Be sure to explicitly extract their email addresses. completely IGNORE university degree offerings like B.Tech/M.Tech. DO NOT extract relationships where the Subject is a Department, Centre, or the University itself (e.g. do not map 'Department of CS' -> 'isMemberOf' -> 'IIIT Bangalore')."
     elif focus == "courses":
         focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving Courses, Programs, and Degrees (e.g., offersCourse, hasDuration). completely IGNORE any text about faculty or people."
     else:
         focus_constraint = "Extract relationships for both Faculty and Courses."
 
+    # defining the system prompt for the LLM to extract the triples
     system_prompt = f"""
     You are an expert Semantic Web extraction pipeline. 
     Your job is to read raw text content from university web pages and extract semantic relationships (triples).
@@ -57,17 +62,26 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
     chunks = chunk_text(text, max_len=1000)
     all_triples = []
 
+    # printing the number of chunks
+    # this is done to ensure that the LLM processes the entire text 
+    # and not just a part of it as it has a token limit which can 
+    # lead to incomplete extraction by skipping the latter part of the text
     print(f"Divided text into {len(chunks)} chunks for full extraction processing:")
     for i, chunk in enumerate(chunks):
-        print(f"  -> Extractor working on chunk {i+1} of {len(chunks)}...")
+        print(f" - Extractor working on chunk {i+1} of {len(chunks)} ")
         import time
         max_retries = 3
         response = None
         
         for attempt in range(max_retries):
             try:
+                # calling the Groq API to extract the triples
                 response = client.chat.completions.create(
+                    # using llama-3.3-70b-versatile model for triple extraction
+                    # this model is chosen because it is efficient and accurate for this task
                     model="llama-3.3-70b-versatile",
+                    
+                    # defining the messages for the LLM
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": f"Extract triples from the following text:\n\n{chunk}"}
@@ -75,7 +89,8 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
                     response_format={"type": "json_object"},
                     temperature=0.1
                 )
-                break # Success
+                break
+            # handling the rate limit error
             except Exception as e:
                 if "429" in str(e) or "Too Many Requests" in str(e):
                     wait_time = 15 * (attempt + 1)

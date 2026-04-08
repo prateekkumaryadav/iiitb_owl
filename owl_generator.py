@@ -27,8 +27,10 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl"):
         # (in a real scenario, you'd have the LLM dictate if it's a Class or Individual)
         g.add((subj_uri, RDF.type, OWL.NamedIndividual))
         
+        # defining the datatype properties
         DATATYPE_PROPERTIES = ["hasDuration", "hasCredits", "hasCourseCode", "hasEmail"]
         
+        # checking if the predicate is a datatype property
         if triple.predicate in DATATYPE_PROPERTIES:
             pred_uri = URIRef(UNI[triple.predicate])
             g.add((pred_uri, RDF.type, OWL.DatatypeProperty))
@@ -52,6 +54,8 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl"):
 
 if __name__ == "__main__":
     from master_schema import Triple
+
+    # sample data for testing out the owl generator code
     sample_data = OntologyData(triples=[
         Triple(subject="Prof. Sadagopan", predicate="teachesCourse", object="Data Structures")
     ])
