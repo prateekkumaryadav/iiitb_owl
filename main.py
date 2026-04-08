@@ -26,8 +26,8 @@ def main():
     target_urls = [args.url]
     if args.depth > 0:
         from scraper import get_internal_links
-        print(f"\n[0] Crawling {args.url} for academic internal links...")
-        found_links = get_internal_links(args.url)
+        print(f"\n[0] Crawling {args.url} for academic internal links matching focus={args.focus}...")
+        found_links = get_internal_links(args.url, focus=args.focus)
         target_urls.extend(found_links)
         # Deduplicate and keep original url first
         seen = set()
