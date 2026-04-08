@@ -20,9 +20,10 @@ def extract_triples(text: str) -> OntologyData:
     
     Important Constraints:
     - Never invent predicates. Only use the literal predicates defined in the schema.
-    - Keep Subject and Object concise (e.g., "Prof. John Doe", "Computer Science", "6 months").
-    - If extracting course details, ensure you capture attributes like duration, credits, and degree levels if available.
-    - Try to extract up to 25 highly confident triples from the text to cover both faculty and academic details.
+    - Deep Entity Mapping: Focus on linking specific People (Faculty) directly to their respective Departments, Courses, or Research Interests instead of linking everyone generically to the University.
+    - Ignore Boilerplate: Do NOT extract generic website navigation or footer lists (e.g., just listing all degrees the university offers generally). Focus on the core content of the page context.
+    - If a person's specific department or course is mentioned, map it explicitly (e.g., "Ahana Pradhan" -> "hasDepartment" -> "Computer Science").
+    - Try to extract up to 25 highly confident triples from the text.
     - Output ONLY the JSON object, nothing else.
     """
 
