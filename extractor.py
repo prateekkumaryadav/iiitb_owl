@@ -13,7 +13,7 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
     
     focus_constraint = ""
     if focus == "faculty":
-        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving People/Faculty members (e.g., isMemberOf, hasDepartment). completely IGNORE university degree offerings like B.Tech/M.Tech."
+        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving People/Faculty members (e.g., isMemberOf, hasDepartment, hasEmail). Be sure to explicitly extract their email addresses. completely IGNORE university degree offerings like B.Tech/M.Tech."
     elif focus == "courses":
         focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving Courses, Programs, and Degrees (e.g., offersCourse, hasDuration). completely IGNORE any text about faculty or people."
     else:
