@@ -60,17 +60,38 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
     print(f"Divided text into {len(chunks)} chunks for full extraction processing:")
     for i, chunk in enumerate(chunks):
         print(f"  -> Extractor working on chunk {i+1} of {len(chunks)}...")
-        try:
-            response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": f"Extract triples from the following text:\n\n{chunk}"}
-                ],
-                response_format={"type": "json_object"},
-                temperature=0.1
-            )
+        import time
+        max_retries = 3
+        response = None
+        
+        for attempt in range(max_retries):
+            try:
+                response = client.chat.completions.create(
+                    model="llama-3.3-70b-versatile",
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": f"Extract triples from the following text:\n\n{chunk}"}
+                    ],
+                    response_format={"type": "json_object"},
+                    temperature=0.1
+                )
+                break # Success
+            except Exception as e:
+                if "429" in str(e) or "Too Many Requests" in str(e):
+                    wait_time = 15 * (attempt + 1)
+                    print(f"    [Rate Limit Hit] Waiting {wait_time}s before retrying...")
+                    time.sleep(wait_time)
+                else:
+                    print(f"    [Error] {e}")
+                    break
+                    
+        # Add a polite 3-second delay between standard requests to avoid angering Groq limits
+        time.sleep(3)
+        
+        if not response:
+            continue
             
+        try:
             json_output = response.choices[0].message.content
             data = json.loads(json_output)
             
@@ -83,9 +104,8 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
                 except Exception as ve:
                     # Skip the invalid triple instead of crashing the chunk
                     pass
-            
         except Exception as e:
-            print(f"Error during LLM extraction on chunk {i+1}: {e}")
+            print(f"Error parsing LLM JSON output on chunk {i+1}: {e}")
 
     return OntologyData(triples=all_triples)
 
