@@ -15,12 +15,10 @@ def main():
     
     args = parser.parse_args()
     
-    print("========================================")
-    print(f"Starting Crawler Execution")
+    print(f"Starting Crawler Execution", end="\n")
     print(f"Seed URL: {args.url}")
     print(f"Extraction Focus: {args.focus.upper()}")
-    print(f"Depth: {args.depth} | Max Pages: {args.max_pages}")
-    print("========================================")
+    print(f"Depth: {args.depth} | Max Pages: {args.max_pages}", end="\n")
     
     # Evaluate Target URLs
     target_urls = [args.url]
@@ -42,7 +40,7 @@ def main():
         print(f"Found {len(target_urls)} links, truncating to --max-pages={args.max_pages}")
         target_urls = target_urls[:args.max_pages]
     
-    from master_schema import OntologyData, PredicateEnum, Triple
+    from master_schema import OntologyData, Triple
     global_triples = []
     
     # Process each URL
@@ -70,14 +68,14 @@ def main():
     # PROGRAMMATIC INFERENCE: Automatically inject missing isMemberOf relations
     if args.focus == "faculty":
         print("\n[Post-Processing] Applying Semantic Inference Rules...")
-        subjects_with_member = set(t.subject for t in global_triples if t.predicate == PredicateEnum.isMemberOf)
+        subjects_with_member = set(t.subject for t in global_triples if t.predicate == "isMemberOf")
         unique_subjects = set(t.subject for t in global_triples)
         
         inferred_count = 0
         for subj in unique_subjects:
             if subj not in subjects_with_member:
                 # The LLM forgot to assign them to the university! Inject it manually.
-                global_triples.append(Triple(subject=subj, predicate=PredicateEnum.isMemberOf, object="IIIT Bangalore"))
+                global_triples.append(Triple(subject=subj, predicate="isMemberOf", object="IIIT Bangalore"))
                 inferred_count += 1
         print(f"  -> Inferred {inferred_count} missing 'isMemberOf -> IIIT Bangalore' relationships.")
             
