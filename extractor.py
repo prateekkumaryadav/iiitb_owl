@@ -20,8 +20,9 @@ def extract_triples(text: str) -> OntologyData:
     
     Important Constraints:
     - Never invent predicates. Only use the literal predicates defined in the schema.
-    - Keep Subject and Object concise (e.g., "Prof. John Doe", "Computer Science").
-    - Try to extract up to 15 highly confident triples from the text.
+    - Keep Subject and Object concise (e.g., "Prof. John Doe", "Computer Science", "6 months").
+    - If extracting course details, ensure you capture attributes like duration, credits, and degree levels if available.
+    - Try to extract up to 25 highly confident triples from the text to cover both faculty and academic details.
     - Output ONLY the JSON object, nothing else.
     """
 

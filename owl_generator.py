@@ -21,21 +21,29 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl"):
     for triple in ontology_data.triples:
         # Create safe URIs from subjects and objects
         subj_uri_str = urllib.parse.quote(triple.subject.replace(" ", "_"))
-        obj_uri_str = urllib.parse.quote(triple.object.replace(" ", "_"))
-        
         subj_uri = URIRef(UNI[subj_uri_str])
-        obj_uri = URIRef(UNI[obj_uri_str])
         
         # To make it semantically richer, we assume subjects are NamedIndividuals 
         # (in a real scenario, you'd have the LLM dictate if it's a Class or Individual)
         g.add((subj_uri, RDF.type, OWL.NamedIndividual))
         
-        # If the predicate is "teachesCourse", it's an ObjectProperty
-        pred_uri = URIRef(UNI[triple.predicate])
-        g.add((pred_uri, RDF.type, OWL.ObjectProperty))
+        DATATYPE_PROPERTIES = ["hasDuration", "hasCredits", "hasCourseCode"]
         
-        # Add the actual relationship
-        g.add((subj_uri, pred_uri, obj_uri))
+        if triple.predicate in DATATYPE_PROPERTIES:
+            pred_uri = URIRef(UNI[triple.predicate])
+            g.add((pred_uri, RDF.type, OWL.DatatypeProperty))
+            
+            # Datatype properties point to a Literal, not a URI
+            g.add((subj_uri, pred_uri, Literal(triple.object)))
+        else:
+            obj_uri_str = urllib.parse.quote(triple.object.replace(" ", "_"))
+            obj_uri = URIRef(UNI[obj_uri_str])
+            
+            pred_uri = URIRef(UNI[triple.predicate])
+            g.add((pred_uri, RDF.type, OWL.ObjectProperty))
+            
+            # Add the actual relationship
+            g.add((subj_uri, pred_uri, obj_uri))
 
     # Serialize to OWL/XML format
     print(f"Serializing graph to {output_file}...")

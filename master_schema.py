@@ -9,7 +9,12 @@ class Triple(BaseModel):
         "hasResearchInterest", 
         "offersCourse", 
         "isPrerequisiteFor",
-        "hasAlumni"
+        "hasAlumni",
+        "hasDuration",
+        "hasCredits",
+        "hasCourseCode",
+        "hasDegree",
+        "hasSpecialization"
     ] = Field(description="The relationship between subject and object. Must strictly be one of the defined literals.")
     object: str = Field(description="The target entity, e.g., 'IIIT Bangalore', 'Machine Learning', or 'CS101'")
 
