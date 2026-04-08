@@ -13,7 +13,7 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
     
     focus_constraint = ""
     if focus == "faculty":
-        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving People/Faculty members (e.g., isMemberOf, hasDepartment, hasEmail). Be sure to explicitly extract their email addresses. completely IGNORE university degree offerings like B.Tech/M.Tech."
+        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving People/Faculty members (e.g., isMemberOf, hasDepartment, hasEmail). Be sure to explicitly extract their email addresses. completely IGNORE university degree offerings like B.Tech/M.Tech. DO NOT extract relationships where the Subject is a Department, Centre, or the University itself (e.g. do not map 'Department of CS' -> 'isMemberOf' -> 'IIIT Bangalore')."
     elif focus == "courses":
         focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving Courses, Programs, and Degrees (e.g., offersCourse, hasDuration). completely IGNORE any text about faculty or people."
     else:
@@ -100,6 +100,13 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
             for t_data in data.get("triples", []):
                 try:
                     valid_triple = Triple(**t_data)
+                    
+                    # Prevent semantic bleed of Departments being mapped as members of the university
+                    if focus == "faculty":
+                        lower_subj = valid_triple.subject.lower()
+                        if "department" in lower_subj or "centre" in lower_subj or "iiit" in lower_subj:
+                            continue
+                            
                     all_triples.append(valid_triple)
                 except Exception as ve:
                     # Skip the invalid triple instead of crashing the chunk
