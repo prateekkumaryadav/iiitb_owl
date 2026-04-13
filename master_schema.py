@@ -1,33 +1,65 @@
-# importing the required modules
+# master_schema.py
+# Defines the Pydantic schema for triple extraction.
+# Predicates are NOT hardcoded — the LLM discovers them from page content.
+# Each triple carries metadata so the OWL generator can build a rich ontology.
 
-# pydantic for data validation
 from pydantic import BaseModel, Field
+from typing import List, Optional, Literal
 
-# for type hinting
-from typing import List, Literal
 
-# defining the triple class for storing the triples
 class Triple(BaseModel):
-    # subject of the triple
-    subject: str = Field(description="The source entity, e.g., 'Prof. Sadagopan' or 'Data Structures'")
-    
-    # predicate of the triple
-    predicate: Literal[
-        "teachesCourse", 
-        "isMemberOf", 
-        "hasResearchInterest", 
-        "hasDepartment",
-        "hasEmail",
-        "hasDesignation",
-        "hasQualification",
-        "isAuthorOf",
-        "hasJoinedYear"
-    ] = Field(description="The relationship between subject and object. Must strictly be one of the defined literals.")
-    
-    # object of the triple
-    object: str = Field(description="The target entity, e.g., 'IIIT Bangalore', 'Machine Learning', or 'CS101'")
+    """
+    A semantic triple extracted from a faculty web page.
 
-# defining the ontology data class for storing the triples
+    subject       : The entity the fact is about (e.g. "Debabrata Das")
+    predicate     : A camelCase relationship name invented by the LLM
+                    (e.g. "hasDesignation", "worksAt", "authoredPublication")
+    object        : The value or target entity
+    predicate_type: Whether this predicate links to another named entity
+                    (ObjectProperty) or to a plain string/literal (DatatypeProperty)
+    subject_class : OWL class the subject belongs to (e.g. "Faculty")
+    object_class  : OWL class the object belongs to — only for ObjectProperty triples
+                    (e.g. "ResearchArea", "Award", "Course").
+                    Leave empty for DatatypeProperty triples.
+    """
+    subject: str = Field(
+        description="The source entity, typically the faculty member's full name."
+    )
+    predicate: str = Field(
+        description=(
+            "A camelCase relationship name freely invented to capture the fact. "
+            "Examples: hasDesignation, worksAt, hasResearchInterest, "
+            "authoredPublication, receivedAward, teachesCourse, holdsFellowship, "
+            "hasEmail, hasQualification, hasPatent, memberOf."
+        )
+    )
+    object: str = Field(
+        description="The target value or entity name."
+    )
+    predicate_type: Literal["ObjectProperty", "DatatypeProperty"] = Field(
+        description=(
+            "ObjectProperty  → object is a named entity (another individual). "
+            "DatatypeProperty → object is a plain literal (string, year, email, …)."
+        )
+    )
+    subject_class: str = Field(
+        description=(
+            "The OWL Class the subject belongs to. "
+            "Examples: Faculty, Institute, Department, ResearchArea."
+        )
+    )
+    object_class: Optional[str] = Field(
+        default=None,
+        description=(
+            "The OWL Class the object belongs to — only for ObjectProperty triples. "
+            "Examples: ResearchArea, Award, Course, Publication, Institute. "
+            "Leave null/empty for DatatypeProperty triples."
+        )
+    )
+
+
 class OntologyData(BaseModel):
-    # list of triples
-    triples: List[Triple] = Field(description="List of extracted semantic triples representing the ontology.")
+    """Container for all extracted triples from one faculty page."""
+    triples: List[Triple] = Field(
+        description="List of extracted semantic triples representing the ontology."
+    )

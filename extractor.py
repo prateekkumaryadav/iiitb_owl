@@ -1,172 +1,224 @@
+# extractor.py
+# Sends cleaned faculty page text to the Groq LLM and returns
+# OntologyData (a list of typed triples with predicate/class metadata).
+#
+# KEY DESIGN PRINCIPLE: Predicates are NOT hardcoded here.
+# The LLM reads the page and freely invents camelCase predicate names
+# that best describe each relationship it finds.
+
 import os
 import json
+import time
+import re
 from groq import Groq
-from master_schema import OntologyData
+from master_schema import OntologyData, Triple
 
-def extract_triples(text: str, focus: str = "all") -> OntologyData:
+
+# ---------------------------------------------------------------------------
+# Helper: split long text into chunks
+# ---------------------------------------------------------------------------
+
+def _chunk_text(text: str, max_len: int = 1500) -> list[str]:
+    """Split text on word boundaries into chunks of at most max_len chars."""
+    words = text.split()
+    chunks, current, length = [], [], 0
+    for word in words:
+        if length + len(word) + 1 > max_len:
+            chunks.append(" ".join(current))
+            current, length = [word], len(word)
+        else:
+            current.append(word)
+            length += len(word) + 1
+    if current:
+        chunks.append(" ".join(current))
+    return chunks
+
+
+# ---------------------------------------------------------------------------
+# Name normaliser (same as before)
+# ---------------------------------------------------------------------------
+
+def _clean_name(raw: str) -> str:
+    """Strip honorifics and normalise a person's name."""
+    cleaned = re.sub(
+        r'^(Prof\.|Dr\.|Mr\.|Mrs\.|Ms\.|Professor|Assistant Professor|'
+        r'Associate Professor|Doctor)\s*',
+        '', raw, flags=re.IGNORECASE
+    )
+    cleaned = re.sub(r"['.,]", '', cleaned).strip()
+    return cleaned.title()
+
+
+# ---------------------------------------------------------------------------
+# Main extraction function
+# ---------------------------------------------------------------------------
+
+def extract_triples(text: str, faculty_name: str = "") -> OntologyData:
     """
-    Takes raw text, sends it to Groq API with instructions to extract 
-    triples strictly conforming to the OntologyData schema, and returns the parsed schema.
+    Send cleaned faculty profile text to the LLM and return OntologyData.
+
+    Parameters
+    ----------
+    text         : Clean text from one faculty profile page.
+    faculty_name : Hint for the LLM so it anchors all triples to the
+                   correct subject (avoids hallucinated names).
     """
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
     schema_json = OntologyData.model_json_schema()
-    
-    # defining the focus constraint
-    focus_constraint = ""
 
-    # checking the focus
-    if focus == "faculty":
-        # faculty focus constraint(current aim)
-        focus_constraint = """CRITICAL FOREGROUND FOCUS: Extract detailed relationships for Faculty members.
-- Names: Use full names as subjects (e.g., "Sadagopan").
-- Predicates to use:
-  - isMemberOf: Map to "IIIT Bangalore" or a specific lab/centre.
-  - hasDepartment: Map to their academic department (e.g., "Computer Science").
-  - hasEmail: Extract their official email address.
-  - hasDesignation: Extract titles like "Associate Professor", "Assistant Professor", "Director".
-  - hasQualification: Extract degrees and institutes (e.g., "Ph.D., IISc Bangalore").
-  - hasResearchInterest: Extract specific research areas (e.g., "Network Security").
-  - isAuthorOf: Extract publication titles/names if mentioned in a list.
-  - hasJoinedYear: Extract the year they joined the institute if available.
-- IMPORTANT: IGNORE generic university boilerplate. DO NOT extract relationships where the Subject is the University itself."""
-    elif focus == "courses":
-        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving Courses, Programs, and Degrees (e.g., offersCourse, hasDuration). completely IGNORE any text about faculty or people."
-    else:
-        focus_constraint = "Extract relationships for both Faculty and Courses."
-
-    # defining the system prompt for the LLM to extract the triples
+    # Build the system prompt — no predicate list supplied on purpose
     system_prompt = f"""
-    You are an expert Semantic Web extraction pipeline. 
-    Your job is to read raw text content from university web pages and extract semantic relationships (triples).
-    
-    {focus_constraint}
-    
-    You MUST output valid JSON that strictly conforms to the following JSON Schema:
-    {json.dumps(schema_json, indent=2)}
-    
-    Important Constraints:
-    - Never invent predicates. Only use the literal predicates defined in the schema.
-    - Deep Entity Mapping: If a person belongs to a specific department, map it properly (e.g., "Ahana Pradhan" -> "hasDepartment" -> "Computer Science"). DO NOT set their department as "IIIT Bangalore".
-    - Ignore Boilerplate: Do NOT extract generic website navigation or footer lists. Focus on the core content of the page context.
-    - Exhaustive Extraction: You MUST extract EVERY SINGLE valid relationship you find in this text block. Do not artificially limit yourself. Leave no entity behind.
-    - Output ONLY the JSON object, nothing else.
-    """
+You are an expert Knowledge Graph extraction engine for university faculty profiles.
 
-    def chunk_text(text, max_len=1000):
-        words = text.split()
-        chunks = []
-        current_chunk = []
-        current_length = 0
-        for word in words:
-            # +1 for the space
-            if current_length + len(word) + 1 > max_len:
-                chunks.append(" ".join(current_chunk))
-                current_chunk = [word]
-                current_length = len(word)
-            else:
-                current_chunk.append(word)
-                current_length += len(word) + 1
-        if current_chunk:
-            chunks.append(" ".join(current_chunk))
-        return chunks
+Your task:
+Read the raw text of a faculty profile page and extract semantic triples that
+capture the most important facts about the faculty member.
 
-    chunks = chunk_text(text, max_len=1000)
-    all_triples = []
+=== OUTPUT FORMAT ===
+You MUST return valid JSON that strictly conforms to this JSON Schema:
+{json.dumps(schema_json, indent=2)}
 
-    # printing the number of chunks
-    # this is done to ensure that the LLM processes the entire text 
-    # and not just a part of it as it has a token limit which can 
-    # lead to incomplete extraction by skipping the latter part of the text
-    print(f"Divided text into {len(chunks)} chunks for full extraction processing:")
+=== PREDICATE RULES (CRITICAL) ===
+- DO NOT use a fixed list of predicates.  Invent the best camelCase predicate
+  that precisely describes each relationship you find.
+- Good examples: hasDesignation, worksAt, hasEmail, hasQualification,
+  hasResearchInterest, authoredPublication, receivedAward, holdsFellowship,
+  teachesCourse, holdsPatent, memberOf, chairOf, projectPIOf, projectCoPIOf,
+  receivedFellowship, hasBestPaperAward, sponsoredBy.
+- Keep predicates concise and reusable across faculty members.
+
+=== SUBJECT RULES ===
+- The subject of EVERY triple must be the faculty member's full name
+  (e.g. "Debabrata Das") OR a named entity that appears as the object of a
+  previously defined triple (e.g. a publication title, award name, course name).
+- Always use the faculty member's clean full name — no honorifics like "Dr." or "Prof.".
+{f'- The primary faculty member on this page is: "{faculty_name}"' if faculty_name else ''}
+
+=== CLASS RULES ===
+- subject_class: pick the most specific OWL class for the subject.
+  Common classes: Faculty, Institute, Department, ResearchArea, Publication,
+  Award, Course, Project, Fellowship, Patent.
+- object_class: required for ObjectProperty triples; use the same class vocabulary.
+  Leave null for DatatypeProperty triples.
+
+=== PREDICATE TYPE RULES ===
+- DatatypeProperty → object is a plain text/string literal (email, year, title string).
+- ObjectProperty   → object is a named real-world entity (institute, area, award, …).
+
+=== EXTRACTION SCOPE ===
+Extract facts in this priority order (stop at ~35 triples to stay focused):
+1. Basic identity: name, designation, email, affiliation, education/qualifications.
+2. Research interests (one triple per interest area).
+3. Key courses taught (up to 5).
+4. Sponsored projects (up to 5) — PI/CoPI role, title, sponsor.
+5. Selected publications (up to 5 journal papers).
+6. Honours and awards (up to 5).
+7. Fellowships, patents if mentioned.
+
+=== WHAT TO IGNORE ===
+- Website navigation links, menus, footers, breadcrumbs.
+- Boilerplate legal text, contact addresses.
+- Conference paper lists beyond the 5 selected.
+- Duplicate triples.
+
+Output ONLY the JSON object. Nothing else.
+"""
+
+    chunks = _chunk_text(text, max_len=3000)
+    all_triples: list[Triple] = []
+
+    print(f"[Extractor] Text split into {len(chunks)} chunk(s) for processing.")
+
     for i, chunk in enumerate(chunks):
-        print(f" - Extractor working on chunk {i+1} of {len(chunks)} ")
-        import time
-        max_retries = 3
+        print(f"  → Processing chunk {i+1}/{len(chunks)} …")
+
         response = None
-        
-        for attempt in range(max_retries):
+        for attempt in range(3):
             try:
-                # calling the Groq API to extract the triples
                 response = client.chat.completions.create(
-                    # using llama-3.3-70b-versatile model for triple extraction
-                    # this model is chosen because it is efficient and accurate for this task
                     model="llama-3.3-70b-versatile",
-                    
-                    # defining the messages for the LLM
                     messages=[
                         {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": f"Extract triples from the following text:\n\n{chunk}"}
+                        {"role": "user",   "content":
+                         f"Extract triples from this faculty profile text:\n\n{chunk}"}
                     ],
-                    
-                    # response_format is used to ensure that the LLM returns the response in JSON format
                     response_format={"type": "json_object"},
-                    
-                    # temperature is used to control the randomness of the LLM
-                    # 0.1 is used to ensure that the LLM returns the response in a deterministic way
-                    temperature=0.1
+                    temperature=0.1,
                 )
                 break
-            # handling the rate limit error
             except Exception as e:
                 if "429" in str(e) or "Too Many Requests" in str(e):
-                    wait_time = 15 * (attempt + 1)
-
-                    # waiting for the rate limit error to be resolved by increasing the wait time
-                    print(f"    [Rate Limit Hit] Waiting {wait_time}s before retrying...")
-                    time.sleep(wait_time)
+                    wait = 15 * (attempt + 1)
+                    print(f"    [Rate Limit] Waiting {wait}s …")
+                    time.sleep(wait)
                 else:
                     print(f"    [Error] {e}")
                     break
-                    
-        # Add a polite 3-second delay between standard requests to avoid angering Groq limits
+
+        # Polite delay between requests
         time.sleep(3)
-        
+
         if not response:
             continue
-            
+
         try:
-            # getting the JSON output from the response
-            json_output = response.choices[0].message.content
-            
-            # loading the JSON output
-            data = json.loads(json_output)
-            
-            import re
-            
-            # Validate each triple individually to survive LLM hallucinations
-            from master_schema import Triple
+            data = json.loads(response.choices[0].message.content)
             for t_data in data.get("triples", []):
                 try:
-                    valid_triple = Triple(**t_data)
-                    
-                    # Prevent semantic bleed of Departments being mapped as members of the university
-                    if focus == "faculty":
-                        lower_subj = valid_triple.subject.lower()
-                        if "department" in lower_subj or "centre" in lower_subj or "iiit" in lower_subj:
-                            continue
-                            
-                        # Name string cleaning: Remove "Prof.", "Dr.", "Professor", etc. to normalize Protege Nodes
-                        clean_subj = re.sub(r'^(Prof\.|Dr\.|Mr\.|Mrs\.|Ms\.|Professor|Assistant Professor|Associate Professor|Doctor)\s*', '', valid_triple.subject, flags=re.IGNORECASE)
-                        # Fix encoding issues by stripping unsafe uri characters but keep spaces
-                        clean_subj = re.sub(r"['\.,]", '', clean_subj).strip()
-                        
-                        # Discard heavily fragmented Subject hallucination strings
-                        if len(clean_subj.split()) == 1 and len(clean_subj) < 3:
-                            continue
-                            
-                        valid_triple.subject = clean_subj.title() # Capitalize names for consistency
-                            
-                    all_triples.append(valid_triple)
-                except Exception as ve:
-                    # Skip the invalid triple instead of crashing the chunk
-                    pass
-        except Exception as e:
-            print(f"Error parsing LLM JSON output on chunk {i+1}: {e}")
+                    triple = Triple(**t_data)
 
-    return OntologyData(triples=all_triples)
+                    # Normalise faculty subject names
+                    if triple.subject_class == "Faculty":
+                        triple.subject = _clean_name(triple.subject)
+
+                    # Drop clearly bad triples
+                    if len(triple.subject.strip()) < 2:
+                        continue
+                    if len(triple.predicate.strip()) < 2:
+                        continue
+                    if len(triple.object.strip()) < 2:
+                        continue
+
+                    all_triples.append(triple)
+
+                    # Stop after 35 triples to keep OWL manageable
+                    if len(all_triples) >= 35:
+                        break
+
+                except Exception:
+                    pass  # Skip malformed triples
+
+        except Exception as parse_err:
+            print(f"  [Parse error on chunk {i+1}]: {parse_err}")
+
+        if len(all_triples) >= 35:
+            print("  [Extractor] Reached 35-triple limit — stopping early.")
+            break
+
+    # Deduplicate by (subject, predicate, object)
+    seen = set()
+    unique_triples = []
+    for t in all_triples:
+        key = (t.subject.lower(), t.predicate.lower(), t.object.lower())
+        if key not in seen:
+            seen.add(key)
+            unique_triples.append(t)
+
+    print(f"[Extractor] Extracted {len(unique_triples)} unique triples.")
+    return OntologyData(triples=unique_triples)
+
+
+# ---------------------------------------------------------------------------
+# Quick self-test
+# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    sample_text = "Prof. Sadagopan teaches Data Structures at IIIT Bangalore. He is a member of the Computer Science Department."
-    print("Testing extraction on sample text...")
-    result = extract_triples(sample_text)
+    sample = (
+        "Dr. Debabrata Das is Director of IIIT-Bangalore. "
+        "He received his Ph.D. from IIT Kharagpur. "
+        "His research interests include Wireless Access Networks and IoT. "
+        "Email: ddas@iiitb.ac.in"
+    )
+    print("=== Self-test ===")
+    result = extract_triples(sample, faculty_name="Debabrata Das")
     print(result.model_dump_json(indent=2))

@@ -1,111 +1,180 @@
-# importing the required modules
+# scraper.py
+# Fetches and cleans text from a faculty profile page.
+# Strips site-wide navigation, headers, footers, and sidebars so the
+# extractor only sees the actual profile content.
 
-# requests for fetching the content of the URL
 import requests
-
-# BeautifulSoup for parsing the HTML content
-from bs4 import BeautifulSoup
-
-# urlparse and urljoin for parsing and joining the URLs
+from bs4 import BeautifulSoup, Tag as BS4Tag
 from urllib.parse import urlparse, urljoin
 
-# function for scraping the text data from the URL
-def scrape_text_from_url(url: str) -> str:
-    """
-    Fetches the content of the URL, removes scripts and styles,
-    and returns a clean string of text.
-    """
-    # try block for handling the errors
-    try:
-        # fetching the content of the URL
-        response = requests.get(url, timeout=15)
 
-        # checking if the content is fetched successfully
+# ---------------------------------------------------------------------------
+# Primary scraper — faculty profile page
+# ---------------------------------------------------------------------------
+
+def scrape_faculty_page(url: str) -> str:
+    """
+    Fetch a faculty profile URL and return only the biography / profile content
+    as clean plain text, with all navigation boilerplate removed.
+    """
+    try:
+        response = requests.get(url, timeout=15)
         response.raise_for_status()
     except Exception as e:
-        print(f"Error fetching {url}: {e}")
+        print(f"[Scraper] Error fetching {url}: {e}")
         return ""
 
-    # parsing the HTML content
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # Remove script and style elements for cleaning the text data
-    for script_or_style in soup(["script", "style", "header", "footer", "nav"]):
-        script_or_style.decompose()
+    # ---- Step 1: Nuke elements that are definitely boilerplate ----
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    for tag in soup.find_all(["header", "footer", "nav", "aside"]):
+        tag.decompose()
 
-    # Getting text and collapsing whitespace for cleaning the text data
-    text = soup.get_text(separator=' ')
-    lines = (line.strip() for line in text.splitlines())
-    chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-    clean_text = ' '.join(chunk for chunk in chunks if chunk)
-    
-    # returning the clean text data for the LLM to process it further
-    return clean_text
+    # Remove elements by common CSS class / id patterns for nav menus.
+    # IMPORTANT: collect tags into a list first, THEN decompose — never mutate
+    # the live iterator because it can produce NoneType nodes mid-loop.
+    nav_hints = [
+        "navbar", "nav-", "menu", "sidebar", "breadcrumb",
+        "header", "footer", "topbar", "dropdown", "mobile-menu",
+    ]
+    tags_to_remove = []
+    for tag in soup.find_all(True):
+        # Guard: skip NavigableString and other non-Tag objects
+        if not isinstance(tag, BS4Tag):
+            continue
+        cls = " ".join(tag.get("class", []))
+        tag_id = tag.get("id", "")
+        combined = (cls + " " + tag_id).lower()
+        if any(hint in combined for hint in nav_hints):
+            tags_to_remove.append(tag)
+    for tag in tags_to_remove:
+        tag.decompose()
 
-# function for getting the internal links from the base URL
+    # ---- Step 2: Try to isolate the main content container ----
+    main_content = None
+
+    # Heuristic 1: <main> tag
+    main_content = soup.find("main")
+
+    # Heuristic 2: common content div IDs / classes
+    if not main_content:
+        for selector in ["#content", "#main-content", ".faculty-profile",
+                          ".profile-content", ".page-content", ".container-content",
+                          ".faculty-details", "article"]:
+            main_content = soup.select_one(selector)
+            if main_content:
+                break
+
+    # Heuristic 3: find the largest block of paragraph text
+    if not main_content:
+        candidates = sorted(
+            soup.find_all(["div", "section"]),
+            key=lambda t: len(t.get_text()),
+            reverse=True
+        )
+        main_content = candidates[0] if candidates else None
+
+    target = main_content if main_content else soup
+
+    # ---- Step 3: Extract and clean text ----
+    text = target.get_text(separator="\n")
+    lines = [line.strip() for line in text.splitlines()]
+
+    # First pass: filter out obvious noise lines
+    seen_lines: set[str] = set()
+    cleaned_lines = []
+    prev_blank = False
+
+    for line in lines:
+        if not line:
+            if not prev_blank:
+                cleaned_lines.append("")
+            prev_blank = True
+            continue
+
+        prev_blank = False
+
+        # Skip very short lines
+        if len(line) < 4:
+            continue
+
+        # Skip bare URLs and javascript: fragments
+        if line.startswith("http") or line.startswith("javascript:"):
+            continue
+
+        # Skip lines that are pure navigation duplicates.
+        # The IIITB site repeats the nav menu 5-6 times; keep only the first
+        # occurrence of each unique line to collapse repetition.
+        lower = line.lower()
+        if lower in seen_lines:
+            continue
+        seen_lines.add(lower)
+
+        cleaned_lines.append(line)
+
+    return "\n".join(cleaned_lines).strip()
+
+
+# ---------------------------------------------------------------------------
+# Generic scraper (kept for compatibility with depth crawling)
+# ---------------------------------------------------------------------------
+
+def scrape_text_from_url(url: str) -> str:
+    """
+    Generic page scraper — delegates to the faculty page scraper.
+    """
+    return scrape_faculty_page(url)
+
+
+# ---------------------------------------------------------------------------
+# Internal-links crawler (used by depth mode in main.py)
+# ---------------------------------------------------------------------------
+
 def get_internal_links(base_url: str, focus: str = "all") -> list:
     """
-    Crawls the base_url. Extracts and filters all internal links
-    to avoid crawling entire unrelated domains.
-    Returns a unique list of valid academic URLs.
+    Crawls base_url for internal links that match the given focus keyword set.
+    Returns a deduplicated list of relevant URLs on the same domain.
     """
-    # try block for handling the errors
     try:
-        # fetching the content of the URL
         response = requests.get(base_url, timeout=15)
-
-        # checking if the content is fetched successfully
         response.raise_for_status()
     except Exception as e:
-        print(f"Error checking links on {base_url}: {e}")
+        print(f"[Scraper] Error checking links on {base_url}: {e}")
         return []
-    
-    # parsing the HTML content
-    soup = BeautifulSoup(response.text, "html.parser")
 
-    # getting the domain of the URL
+    soup = BeautifulSoup(response.text, "html.parser")
     domain = urlparse(base_url).netloc
-    
-    # creating a set for storing the links, set is used to store unique links got from the URL
-    links = set()
-    
-    # checking the focus of the LLM
+
     if focus == "faculty":
-        # keywords for faculty for crawling passed to the LLM
         keywords = ["faculty", "people", "professor"]
     elif focus == "courses":
-        # keywords for courses for crawling passed to the LLM
         keywords = ["course", "academic", "department", "program", "degree"]
     else:
-        # else for all(future scope)
-        # keywords for all
         keywords = ["faculty", "course", "academic", "department", "program", "research"]
-    
-    # iterating over all the anchor tags
-    for a_tag in soup.find_all("a", href=True):
-        # getting the href attribute
-        href = a_tag["href"].strip()
 
-        # joining the base URL with the href
+    links = set()
+    for a_tag in soup.find_all("a", href=True):
+        href = a_tag["href"].strip()
         full_url = urljoin(base_url, href)
-        
-        # parsing the URL
-        parsed_url = urlparse(full_url)
-        
-        # Only keep links within the same domain
-        if parsed_url.netloc == domain:
-            # Drop anchors
-            clean_url = full_url.split('#')[0]
-            # Ensure it's relevant
+        parsed = urlparse(full_url)
+        if parsed.netloc == domain:
+            clean_url = full_url.split("#")[0]
             if any(kw in clean_url.lower() for kw in keywords):
                 links.add(clean_url)
-                
-    # returning the list of links
+
     return list(links)
 
+
+# ---------------------------------------------------------------------------
+# Manual test
+# ---------------------------------------------------------------------------
+
 if __name__ == "__main__":
-    test_url = "https://www.iiitb.ac.in/faculty"
-    print(f"Scraping: {test_url}")
-    text = scrape_text_from_url(test_url)
-    print(f"Extracted {len(text)} characters.")
-    print("Preview:", text[:500])
+    url = "https://www.iiitb.ac.in/faculty/debabrata-das"
+    print(f"[Test] Scraping: {url}")
+    text = scrape_faculty_page(url)
+    print(f"[Test] Extracted {len(text)} characters.")
+    print("\n--- First 2000 chars ---\n")
+    print(text[:2000])
