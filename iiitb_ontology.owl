@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:uni="http://www.example.org/university#"
+>
+  <rdf:Description rdf:about="http://www.example.org/university#Meenakshi_Dsouza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Anomaly_Detection_Methodology_for_Power_Saving_in_Massive_IoT_Architecture"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Chaithanya_Sai_G">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_PLMN_Selection_in_Regenerative_Non-Terrestrial_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Seshadri_Elluru">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Throughput_and_Service_Enhancing_Network_Selection_Algorithm_for_Dual_Registration_in_5G_Standalone_Architecture"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sharvari_Ravindran">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Multi-User_Service_Throughput_Estimation_for_Adaptive_Resource_Management_in_5G-Advanced_and_Beyond_Sliced_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Service_Allocation_Scheduling_Algorithms_for_5G_User_Equipments_in_Slice-in-Slice_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#EESO%3A_Energy_Efficient_System-resource_Optimization_of_Multi-Sub-Slice-Connected_User_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Average_Delay-based_System_Resource_Optimization_of_Sub-Slices_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Das">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIITB_COMET_Foundation"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IEEE"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IETE"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#National_Academy_of_Science_India_%28NASI%29"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Wireless_Access_Network%27s_MAC"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#QoS"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Power_saving"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#IoT"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Medium_Access_Control_Protocol_for_Energy_Saving_and_QoS_for_Wireless_Access_Networks"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#IP_Multimedia_Subsystems"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Mobile_Computing"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#peer_reviewed_papers"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Medium_Access_Control_Protocol_for_Energy_Saving_and_QoS_for_Wireless_Access_Networks"/>
+    <uni:hasDesignation>Project Officer</uni:hasDesignation>
+    <uni:hasQualification>Ph.D.</uni:hasQualification>
+    <uni:hasQualification>IIT - Kharagpur</uni:hasQualification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Jyotsna_Bapat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coordinated_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_Spectral_Efficiency_in_Sub-Connected_Hybrid_Beamforming_Systems_via_Beam_Pattern_Design"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_E2E_Path_Selection_Algorithm_for_Superior_QoS_and_QoE_for_6G_Services"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Perfect_UE_Grouping_for_Frequency_Sharing_in_Full_Duplex_Cellular_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Static_Puncturing_Scheme_for_Facilitating_Ultra-Reliable_Low-Latency_IoT_Communications"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Adaptive_Multi-User_Multi-Services_Scheduling_to_Enhance_Throughput_in_5G-Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Two-Stage_Fast_Beam_Search_for_Multi-user_Millimeter-wave_Massive_MIMO_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Connectivity_and_Collision_Constrained_Opportunistic_Routing_for_Emergency_Communication_using_UAV"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#UE_Grouping_Algorithms_to_Maximize_Frequency_Sharing_in_Hybrid_IBFD_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Air_Quality_and_Thermal_Comfort_Management_for_Energy-Efficient_Large_Public_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Resource_Allocation_Algorithm_for_Hybrid_IBFD_Cellular_Networks_for_5G_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Detection_for_Emergency_Management_of_Smart_Building_Based_on_Indoor_Localization"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unsupervised_learning_based_Capacity_Augmentation_in_SDN_assisted_Wireless_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Frequency_Allocation_Scheme_for_In_Band_Full_Duplex_Systems_in_5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SDN_assisted_self_organizing_network_architecture_for_multi-RAT_networks_and_mobility_prediction"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Survey_on_QoE_and_Energy_Cost_Optimization_Strategies_for_Smart_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Location-Aware_Multi-Objective_Optimization_for_Energy_Cost_Management_in_Semi-Public_Buildings_using_Thermal_Discomfort_Information"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Dynamic_QoS_Negotiation_Mechanism_Between_Wired_and_Wireless_SDN_Domains"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Constellation_Constraining-Based_Coverage_Enhancement_Technique_for_MTC_Devices_in_LTE-A"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coverage_Enhancement_for_MTC_Devices_using_Reduced_Search_Viterbi_Decoder_Across_RATs"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wireless_Sensor_Network_Based_Smart_Parking_System"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Random_Access_Protocol_for_Resource_Efficient_mMTC_Access_in_Cell-Free_Massive_MIMO_System"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Assisted_Proactive_Management_in_Zero_Touch_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Minimizing_Power_Consumption_in_Age_of_Information_Constrained_Cell-Free_Massive_MIMO_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Latency_and_Throughput_Aware_Multi-Access_Scheduler_for_5G_Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimizing_Synchronization_Signal_Block_Transmissions_for_Sum-Rate_Maximization_in_Sub-Connected_Hybrid_Beamforming_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_PYNQ-Z2_Based_IoT_Edge%3A_NTT_Performance_Analysis"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ascon-128_With_PicoRV32"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Authenticated_Encryption_at_IoT_Edge_on_FPGA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Based_What-If_Simulation_of_Security_Attacks_in_Smart_Irrigation_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Protocol_for_Efficient_MTC_Transmission_Over_Massive_MIMO_Enabled_2_Step_RACH"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ethical_Design_of_Edge-Based_Smart_Irrigation_System_by_Use_Case_Analysis"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ML-Augmented_Network_Packet_Broker_based_Anomaly_Detection_at_IIoT-Edge_Egress_Port"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_User_Detection_via_SS_Burst_Repetition_in_5G_Millimeter_Wave_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_RAN_Overload_Control_Mechanism_for_NR_based_mMTC_by_Dynamic_SCMA_for_RACH"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#New_Attacks_on_Cloud_Container-Based_IoT_Systems_in_5G-Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Multi-User_Service_Throughput_Estimation_for_Adaptive_Resource_Management_in_5G-Advanced_and_Beyond_Sliced_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Synthesis_of_IoT_Sensor_Telemetry_Data_for_Smart_Home_Edge-IDS_Evaluation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Aerial-Assisted_Protocol_for_Efficiency_Enhancement_in_Beyond_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Proactive_Connection_Setup_Mechanism_for_Large_Quantum_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Fast_Beam_Search_with_Two-Level_Phased_Array_in_Millimeter-Wave_Massive_MIMO%3A_A_Hierarchical_Approach"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Service_Allocation_Scheduling_Algorithms_for_5G_User_Equipments_in_Slice-in-Slice_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Localizing_Worst-Parent_Rank_Attack_using_Intelligent_Edges_of_Smart_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Priority_based_Discrete_time_Dynamic_Routing_Algorithm_for_Emergency_Evacuation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#An_Efficient_Beam_Search_Algorithm_for_mmWave_Massive_MIMO"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_Energy_Prediction_in_Smart_Building_Using_Federated_Learning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Data_Augmented_Bayesian_Network_for_Node_Failure_Prediction_in_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Non-Intrusive_Failure_Prediction_Mechanism_for_Deployed_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Prediction_of_Wi-Fi_Comfort_in_Buildings_using_Support_Vector_Machines"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mode_Protocol_to_Recover_Active_Calls_from_Transient_Network_Outage"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Near_Real-time_Occupancy_Detection_for_Smart_Building_Emergency_Management%3A_A_Prototype"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Comfort_Management_System_for_Smart_Buildings%3A_An_Open_Source_Scalable_Prototype"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#EESO%3A_Energy_Efficient_System-resource_Optimization_of_Multi-Sub-Slice-Connected_User_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Doubling_Spectral_Efficiency_Independent_of_Cell_Sizes_in_5G_using_Hybrid_IBFD_Cellular_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Average_Delay-based_System_Resource_Optimization_of_Sub-Slices_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SINR_based_Uplink_Sub-band_Clustering_Mechanism_for_Differentiated_Services_in_NOMA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IoT_Testbed_for_Thermal_Profiling_of_a_Smart_Building"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Robotic_Extension_to_IoT_Testbed_for_Indoor_Environment_Supervision"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Power_Saving_with_Capacity_Augmentation_for_Sustained_QoS_in_5G_Cloud_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Comprehensive_Risk_Mapping_for_Strategic_Evacuation_in_Semi-Outdoor_and_Outdoor_Setups_in_Smart"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Challenges_in_the_Design_of_an_IoT_Testbed"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Estimation_in_Semi-Public_Spaces_using_Sensor_Fusion_and_Context_Awareness"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Impact_of_Variable_Voice_Packet_Size_To_Reduce_Packet_Loss_in_Bandwidth_Constraint_Military_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Connectivity_Using_Differential_Priority_Assignments_in_Military_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Emerging_Access_Technologies_and_Open_Challenges_in_5G_IoT%3A_From_Physical_Layer_Perspective"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Energy_Budget_Constrained_Comfort_Optimization_for_Smart_Building"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimal_Scheduling_of_Spectrum_Sensing_in_LTE-A_TDD_Frame"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feasibility_Study_for_Wi-Fi_in_the_TV_Whitespaces_of_Bangalore"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coverage_Enhancement_of_PBCH_using_Reduced_Search_Viterbi_for_MTC_in_LTE-Advanced_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Distributed_Health_Monitoring_System_for_Control_in_Smart_Grid_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Vulnerability_Analysis_of_Power_Grid_Network_Against_Failure_by_State_Classification"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Two_Tier_Communication_Architecture_for_Smart_Meter"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Smart_Parking_System_using_Wireless_Sensor_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#M_Jaiswal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Seamless_Network_Management_In_Presence_of_Heterogeneous_Management_Protocols_for_Next_Gene"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Syam_Sidhardhan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Indoor_Carbon_dioxide_%28CO2%29_level_control_using_wearable_smart_watches_over_a_wireless_channel"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Human_Presence_Detection_and_Identification"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Debabrata_Das">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT-Bangalore"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+    <uni:hasDesignation>Director</uni:hasDesignation>
+    <uni:hasEmail>ddas@iiitb.ac.in</uni:hasEmail>
+    <uni:hasQualification>Ph.D., IIT Kharagpur</uni:hasQualification>
+    <uni:hasJoinedYear>2002</uni:hasJoinedYear>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coordinated_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_Spectral_Efficiency_in_Sub-Connected_Hybrid_Beamforming_Systems_via_Beam_Pattern_Design"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_E2E_Path_Selection_Algorithm_for_Superior_QoS_and_QoE_for_6G_Services"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Perfect_UE_Grouping_for_Frequency_Sharing_in_Full_Duplex_Cellular_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#AeroLOBE%3A_A_Deep_Learning-based_Novel_Load_Balancer_for_Aerial_Communication_to_Enhance_the_Performance_of_6G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Aerial_Cell_Replacement_Mechanism_for_Efficient_Operation_in_6G_Wireless_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Static_Puncturing_Scheme_for_Facilitating_Ultra-Reliable_Low-Latency_IoT_Communications"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Node_and_Edge_Centrality_based_Failures_in"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Adaptive_Multi-User_Multi-Services_Scheduling_to_Enhance_Throughput_in_5G-Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Two-Stage_Fast_Beam_Search_for_Multi-user_Millimeter-wave_Massive_MIMO_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feedback-Based_Algorithm_for_Aerial_Cell%E2%80%99s_Trajectory_Using_Deep_Learning_for_Efficient_Performance_in_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Connectivity_and_Collision_Constrained_Opportunistic_Routing_for_Emergency_Communication_using_UAV"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#UE_Grouping_Algorithms_to_Maximize_Frequency_Sharing_in_Hybrid_IBFD_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Air_Quality_and_Thermal_Comfort_Management_for_Energy-Efficient_Large_Public_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Resource_Allocation_Algorithm_for_Hybrid_IBFD_Cellular_Networks_for_5G_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Detection_for_Emergency_Management_of_Smart_Building_Based_on_Indoor_Localization"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ACC%3A_Aerial_Cell_Cloning_Protocol_for_Efficient_Session_Continuity_in_LAP_replacement_for_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Data_sequence_signal_manipulation_in_multipath_TCP%3A_The_vulnerability%2C_attacks_and_detection"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unsupervised_learning_based_Capacity_Augmentation_in_SDN_assisted_Wireless_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Review_on_3GPP_5G_Security_Aspects"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Frequency_Allocation_Scheme_for_In_Band_Full_Duplex_Systems_in_5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimization_of_Barring_Factor_Enabled_Extended_Access_Barring_for_Energy_Efficiency_in_LTE-Advanced_Base_Station"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SDN_assisted_self_organizing_network_architecture_for_multi-RAT_networks_and_mobility_prediction"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Survey_on_QoE_and_Energy_Cost_Optimization_Strategies_for_Smart_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_QoS_aware_Medium_Access_Control_Scheduler_for_LTE-Advanced_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Location-Aware_Multi-Objective_Optimization_for_Energy_Cost_Management_in_Semi-Public_Buildings_using_Thermal_Discomfort_Information"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Dynamic_QoS_Negotiation_Mechanism_Between_Wired_and_Wireless_SDN_Domains"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimal_Time-Spatial_Randomization_Techniques_for_Energy_Efficient_IoT_Access_in_LTE-Advanced"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_UE_Mobility_in_Multi-RAT_Cellular_Networks_using_SDN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Radio_Access_Technology_Selection_in_SDN_controlled_Reconfigurable_Base_Station"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Constellation_Constraining-Based_Coverage_Enhancement_Technique_for_MTC_Devices_in_LTE-A"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coverage_Enhancement_for_MTC_Devices_using_Reduced_Search_Viterbi_Decoder_Across_RATs"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Review_on_Evolution_of_3GPP_Systems_Interworking_with_WLAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Data_Enriched_SACK%3A_A_Novel_Acknowledgement_Generation_Scheme_for_Secure_SCTP"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Evaluation_and_Optimization_of_Short_TCP_Completion_Time_over_Wireless_Broadband_Access_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Energy_and_Delay_Constrained_Scheduling_of_Real_Time_Traffic_over_OFDM_Communication_System_with_Non-causal_Channel_Information"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Scaling_Number_of_Active_Links_in_Linux_Kernel_Bond_Driver_Having_Heterogeneous_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wireless_Sensor_Network_Based_Smart_Parking_System"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#An_Analytical_Evaluation_Approach_for_Control_Plane_Operations_of_a_Multi-RAT_Mobility_Procedures_in_a_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Relevance_Based_Power_Saving_Mechanism_in_Multi-RAT_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Joint_Paging_Area_and_Location_Update_Optimization_for_IEEE_802.16m_Idle_Mode"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Traffic_Sensitive_and_Traffic_Load_Aware_Path_Selection_Algorithm_for_MMR_WiMAX_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_VoIP_in_Mobile_WiMAX%3B_Simulation_and_Emulation_studies"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mobile_web_for_under-privileged_in_developing_countries"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Artificial_Hygiene%3A_Non-proliferation_of_Virus_in_Cellular_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Packet-Error_Rate_Based_Power_Budget_for_Multiple_Access_WDM_Networks_with_Subcarrier_Multiplexed_Control_Packets"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_analysis_of_computer_networks_employing_linked-cluster_topology_with_single-wavelength_and_WDM_optical_backbone"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Random_Access_Protocol_for_Resource_Efficient_mMTC_Access_in_Cell-Free_Massive_MIMO_System"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Assisted_Proactive_Management_in_Zero_Touch_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Minimizing_Power_Consumption_in_Age_of_Information_Constrained_Cell-Free_Massive_MIMO_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Closed_Loop_Control_Mechanism_for_Zero_Touch_Networks_Using_BiLSTM_and_Q-Learning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Latency_and_Throughput_Aware_Multi-Access_Scheduler_for_5G_Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Quantum_Secure_User_Plane_Traffic_in_Beyond_5G_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimizing_Synchronization_Signal_Block_Transmissions_for_Sum-Rate_Maximization_in_Sub-Connected_Hybrid_Beamforming_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_PYNQ-Z2_Based_IoT_Edge%3A_NTT_Performance_Analysis"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ascon-128_With_PicoRV32"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Authenticated_Encryption_at_IoT_Edge_on_FPGA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Based_What-If_Simulation_of_Security_Attacks_in_Smart_Irrigation_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Protocol_for_Efficient_MTC_Transmission_Over_Massive_MIMO_Enabled_2_Step_RACH"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ethical_Design_of_Edge-Based_Smart_Irrigation_System_by_Use_Case_Analysis"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ML-Augmented_Network_Packet_Broker_based_Anomaly_Detection_at_IIoT-Edge_Egress_Port"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_User_Detection_via_SS_Burst_Repetition_in_5G_Millimeter_Wave_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Differentiated_Integrity_Protection_for_Enhancing_Performance_of_Beyond_5G_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_RAN_Overload_Control_Mechanism_for_NR_based_mMTC_by_Dynamic_SCMA_for_RACH"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#New_Attacks_on_Cloud_Container-Based_IoT_Systems_in_5G-Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Multi-User_Service_Throughput_Estimation_for_Adaptive_Resource_Management_in_5G-Advanced_and_Beyond_Sliced_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Synthesis_of_IoT_Sensor_Telemetry_Data_for_Smart_Home_Edge-IDS_Evaluation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Federated_Learning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Aerial-Assisted_Protocol_for_Efficiency_Enhancement_in_Beyond_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Proactive_Connection_Setup_Mechanism_for_Large_Quantum_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dual_Mobile_Data_for_Single_Transmission_Dual_VoLTE_Standby_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_PLMN_Selection_in_Regenerative_Non-Terrestrial_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Fast_Beam_Search_with_Two-Level_Phased_Array_in_Millimeter-Wave_Massive_MIMO%3A_A_Hierarchical_Approach"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Service_Allocation_Scheduling_Algorithms_for_5G_User_Equipments_in_Slice-in-Slice_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Localizing_Worst-Parent_Rank_Attack_using_Intelligent_Edges_of_Smart_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhanced_VoLTE_Meidum_Access_Control_Scheduling_Algorithm_for_eMTC_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Algorithm_to_Recover_the_Lost_CDR_Information_by_Control_and_User_Planes_Separation_in_4G_and_5G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_way_of_Non-GBR%2C_High_Latency_GTP-U_Packet_Transmission_in_4G_and_5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_method_to_boost_throughput_in_5G_and_4G_mobiles_using_MultiSIM_subscription_on_the_same_network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_5G_and_B5G_Network_Architecture_and_Protocol_for_Multi_SIM"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Priority_based_Discrete_time_Dynamic_Routing_Algorithm_for_Emergency_Evacuation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning_Based_Efficient_Trajectory_Planning_and_Sharing_for_Aerial_Cells_in_mMTC_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#An_Efficient_Beam_Search_Algorithm_for_mmWave_Massive_MIMO"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_Energy_Prediction_in_Smart_Building_Using_Federated_Learning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Data_Augmented_Bayesian_Network_for_Node_Failure_Prediction_in_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Indoor_Carbon_dioxide_%28CO2%29_level_control_using_wearable_smart_watches_over_a_wireless_channel"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Elevator"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Non-Intrusive_Failure_Prediction_Mechanism_for_Deployed_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Prediction_of_Wi-Fi_Comfort_in_Buildings_using_Support_Vector_Machines"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Random_Access_Protocol_for_Multi_SIM_Multi_Standby_Devices_in_5G_and_B5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mode_Protocol_to_Recover_Active_Calls_from_Transient_Network_Outage"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Near_Real-time_Occupancy_Detection_for_Smart_Building_Emergency_Management%3A_A_Prototype"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_C-DRX_Mechanism_for_Multi_SIM_Multi_Standby_UEs_in_5G_and_B5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Data_Accounting_Procedure_in_4G_and_5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Algorithm_to_Reduce_Handover_Failure_Rate_in_5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_to_Reduce_Power_Consumption_for_EUTRA-New_Radio_Dual_Connectivity_RAN_Parameter"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_EUTRA_New_Radio_Dual_Connectivity_Handling_based_on_Location"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NRPos%3A_A_Multi-RACH_Framework_for_5G_NR_Positioning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Comfort_Management_System_for_Smart_Buildings%3A_An_Open_Source_Scalable_Prototype"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Data_Sequence_Map_Flooding_in_MPTCP_Framework%3A_Potential_Challenges_and_Efficient_Countermeasures"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning-based_LAP_Deployment_and_Aerial_Infrastructure_Sharing_in_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Reordering-Reassembly_PDCP_and_RLC_Window_Management_Algorithm_in_5G_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Reliable_Mobile_Origination_Connection_in_URLLC_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Technique_to_Reduce_the_Retransmission_Latency_of_Packets_from_RLC_Layers_in_Carrier_Aggregated_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#EESO%3A_Energy_Efficient_System-resource_Optimization_of_Multi-Sub-Slice-Connected_User_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Algorithm_for_Drastic_Reduction_of_N2_Signalling_in_5G_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Doubling_Spectral_Efficiency_Independent_of_Cell_Sizes_in_5G_using_Hybrid_IBFD_Cellular_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Human_Presence_Detection_and_Identification"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_and_Adaptive_Machine_Learning-based_Algorithm_for_Power_Saving_in_Mobile_Hotspot"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_System_Design_for_Reducing_Cost_and_Power_Consumption_in_a_Multi-SIM_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Average_Delay-based_System_Resource_Optimization_of_Sub-Slices_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SINR_based_Uplink_Sub-band_Clustering_Mechanism_for_Differentiated_Services_in_NOMA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Throughput_and_Service_Enhancing_Network_Selection_Algorithm_for_Dual_Registration_in_5G_Standalone_Architecture"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IoT_Testbed_for_Thermal_Profiling_of_a_Smart_Building"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Robotic_Extension_to_IoT_Testbed_for_Indoor_Environment_Supervision"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Isolation-based_Sub-Slices_for_Throughput_Optimization_in_5G_Radio_Access_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Concept_for_Optimal_Wi-Fi_Mesh_Router_Placement_with_Enhanced_QoS"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Power_Saving_with_Capacity_Augmentation_for_Sustained_QoS_in_5G_Cloud_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Reliable_Control_Message_Exchange_in_Wireless_Real-World_Multi-Path_Deployments"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Power_Saving_and_Zero_Network_Flooding_Protocol_for_VoWiFi_Registration"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Network_Resource_Wastage_Reduction_and_Throughput_Improvement_in_5G_Dual_Registration_with_Single_Radio"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Quick_Connection_Resumption_for_URLLC_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Challenges_in_the_Design_of_an_IoT_Testbed"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Estimation_in_Semi-Public_Spaces_using_Sensor_Fusion_and_Context_Awareness"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NextGen-MHS%3A_A_Novel_Architecture_for_Tethering_of_Aggregated_Licensed_and_Unlicensed_Spectrums"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Impact_of_Variable_Voice_Packet_Size_To_Reduce_Packet_Loss_in_Bandwidth_Constraint_Military_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Performance_Enhancement_of_B4G_and_5G_Networks_for_MultiSIM_Deployment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Unified_Signaling_Beacon_for_Traditional_and_Mesh_WiFi_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dynamic_load_balancing_using_multiaccess_in_5G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Connectivity_Using_Differential_Priority_Assignments_in_Military_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Emerging_Access_Technologies_and_Open_Challenges_in_5G_IoT%3A_From_Physical_Layer_Perspective"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Cache_Enabled_CUPS_Architecture_for_Evolved_MBMS_of_LTE-Advanced_for_Latency_and_Bandwidth_Saving_Improvements"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Demand_Aware_Edge_Caching_Architecture_for_evolved"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Process_to_Avoid_Redundant_Encryption_and_Decryption_in_Wi-Fi_Mesh_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mitigating_Initial_Access_Congestion_for_Dense_Smart_Meters_Deployment_in_LTE_network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Protection_and_Mitigation_of_Unauthorized_Tracking_in_3GPP-WiFi_Interworking_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Session_Cloning_Protocol_between_Smart_Devices_for_connected_and_un-connected_states_in_B4G_and_5G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Protocol_for_Reduction_in_Network_Resource_Wastage_for_4G_Dual_SIM_Dual_Standby_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dynamic_Power_Saving_Techniques_for_Mobile_Hotspot"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Anomaly_Detection_Methodology_for_Power_Saving_in_Massive_IoT_Architecture"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_UE_Centric_Multi-RAT_Deployment_Model"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Energy_Budget_Constrained_Comfort_Optimization_for_Smart_Building"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Maximizing_the_Throughput_of_Duty-Cycle_Based_Licensed-Assisted_Access_in_the_Unlicensed_Band"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Duty-Cycled_Based_Licensed-Assisted_Access%3A_Does_Proportional_Fairness_Affect_WiFi_More_Than_It_Should%3F"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_for_Less_Power_Consumption_in_Extended-Coverage-GSM_for_Low_Data-Rate_IoT_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Dynamic_Scheme_for_User_Load_Balancing_in_a_Multi-Carrier_LTE-Advanced_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#QoS_aware_Downlink_Scheduler_for_a_Carrier_Aggregation_LTE-Advance_Network_with_Efficient_Carrier_Power_Control"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Downlink_Interference_Control_through_Adaptive_DRX_in_a_Carrier_Aggregation_Enabled_LTE-Advanced_Heterogeneous_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimal_Scheduling_of_Spectrum_Sensing_in_LTE-A_TDD_Frame"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancement_of_Mobility_through_Reconfiguration_of_Base-stations_in_Multi-RAT_Cellular_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feasibility_Study_for_Wi-Fi_in_the_TV_Whitespaces_of_Bangalore"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#PS-SPS%3A_Power_Saving_-_Semi_Persistent_Scheduler_for_VoLTE_in_LTE-Advanced"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Utility_based_QoS_aware_Uplink_Scheduler_Scheme_for_LTE_Small_Cell_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Software_Defined_Network_Controller_Embedded_in_Mobile_Device_for_User%E2%80%99s_Policy_Implementation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coverage_Enhancement_of_PBCH_using_Reduced_Search_Viterbi_for_MTC_in_LTE-Advanced_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#QoS_Enhancement_using_Embedded_Agent_in_OpenFlow_based_SDN_Node"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Access_Scheme_for_IoT_Communications_in_LTE-Advance_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Maximizing_Spectral_Efficiency_for_Cell_Edge_Users_in_LTE_Small_Cell_network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SDN_based_Architecture_for_QoS_Enabled_Services_Across_Networks_with_Dynamic_Service_Level_Agreement"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Distributed_Health_Monitoring_System_for_Control_in_Smart_Grid_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Vulnerability_Analysis_of_Power_Grid_Network_Against_Failure_by_State_Classification"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Scaling_Number_of_Active_Links_in_a_Linux_Kernel_Bond_Driver_having_Heterogeneous_Network_Interfaces"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Two_Tier_Communication_Architecture_for_Smart_Meter"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feedback_Manipulation_Flooding_Attack%3A_Feasibility_Evaluation_and_Impact_Quantification_on_Stream_Control_Transmission_Protocol"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Smart_Parking_System_using_Wireless_Sensor_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Online_Differential_Charging_for_Blended_Services_Using_Service_Capability_Interaction_Manager_in_IMS_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#La_VoLTE%3A_novel_cross_Layer_optimized_mechanism_of_Video_transmission_over_LTE_for_DRX"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_of_Advanced-Oportunistic_Proportionate_Fairness_Scheduler_for_LTE_Medium_Access_Control"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_of_Latency_in_Enhanced-PGLU_%28EPGLU%29_Timer_Based_Paging_in_IEEE_802.16m_based_WiMAX_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enabling_Online_Differential_Charging_for_Blended_Services_in_IMS_networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Back-off_Algorithm_Based_Power_Saving_Mechanism_in_a_Multi-RAT_UE"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#EPGLU%3A_Enhanced_PGLU_Timer_for_Paging_and_Location_Update_Optimization_in_IEEE_802.16m_based_WiMAX_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_of_Combined_Effects_of_Zero_Copy_and_Pre-processing_on_Input/Output_Performance_of_Multimedia_on_Demand_Streaming_Server"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Offline_Charging_for_Multimedia_Blended_Services_Using_Service_Capability_Interaction_Manager_in_IMS_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IMS_Service_Broker_SCIM_Enriching_REST_Based_Web_2.0_Mashup"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Advanced_Mechanisms_for_Sleep_Mode_Optimization_of_VoIP_Traffic_over_IEEE_802.16m"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Mobile_Multi-hop_Relay_WiMAX_Network_In_Urban_Environment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Prioritization_of_Delay_Intolerant_Secure_Web_Traffic_in_WiMAX"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Selective_Multicast_Protocol_for_Wireless_Body_Area_Networks_%28W-BAN%29_for_Power_Conservation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mitigating_Man_in_the_Middle_Attack_over_Secure_Sockets_Layer"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Workflow_based_Design_for_Blending_Services_over_IP_Multimedia_Subsystems_%28IMS%29_with_Service_Capability_Interaction_Manager"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#WEBS_%3A_WiMAX_Emulation_Testbed_to_Benchmark_Streaming_Multimedia_QoS"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Architecture_for_IEEE_802.16m_Subscriber_Station_for_Joint_Power_Saving_Class_Management"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Evaluation_of_Mobile_Handset_Recovery_from_Radio_Link_Failure_in_a_Multi-RATs_Environment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Centralized_Service_Capability_Interaction_Manager_%28SCIM%29_Architecture_to_Support_Dynamic_Blending_of_Services_for_IMS_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#PhishGuard%3A_A_Browser_Plug-in_for_Protection_from_Phishing"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Modified_EDF_Algorithm_and_WiMAX_Architecture_to_Ensure_End-to-End_Delay_in_Multihop_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wi-MuMe%3A_WiMAX_MuLTIHOP_MeSH_%E2%80%93_A_Relay_Based_Approach_to_Deliver_Broadband_to_Rural_Community"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SWiFT%3A_A_Novel_Architecture_for_Seamless_Wireless_Internet_for_Fast_Train"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Study_of_an_Optical_Backbone_MAC_Interconnecting_WiMAX_Base_Stations_over_City/County_Area"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Judicious_Use_of_Algorithm_for_Poll-Me_Bit_with_Active_UGS_connection_in_IEEE_802.16e_to_Increase_the_Performance"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Service_Class_Downlink_Scheduling_in_WiMAX"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Waiting_Time_Threshold_Estimation_Algorithm_for_Power_Saving_in_Sleep_Mode_of_IEEE_802.16e"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Interface_Gateway_Architecture_for_Seamless"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Interoperability_between_802.11e_and_802.16e"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Study_of_IMS_Signaling_Plane"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Design_of_WiMAX_Node_Architecture_for_End-to-End_Quality_of_Service"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_of_Triple_Play_over_802.16e_Based_Networks_for_Rural_Environment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Providing_Voice_Connectivity_to_Rural_India_Using_WiMax%3A_Issues_and_Solution"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Power_Saving_Algorithm_for_Mobile_Subscriber_Station_in_802.16e"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_of_Sniff_%26_Embark_protocol_for_Real_Time_Traffic_in_Wireless-LAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Open_Platform_for_Smart_Campus/Cities"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Energy_efficient_radio_access_technologies_and_networking_for_4G_LTE_broadband_wireless_access_network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_on_TV_Spectrum_Available_%28TVWS%29_for_wireless_broadband_penetration_in_Rural_India_to_reduce_Digital_divide"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Next_Generation_Scalable_Wireless_Infrastructure_and_Services_for_Successful_Broadband_Penetration_in_India"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Energy_efficient_radio_access_technologies"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#4G_LTE_broadband_wireless_access_network"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#TV_Spectrum_Available_%28TVWS%29_for_wireless_broadband_penetration"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Next_Generation_Scalable_Wireless_Infrastructure_and_Services"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Wireless_Medium_Access_Control_%28MAC%29_protocols"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Telecommunication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Pankaj_Bhimrao_Thorat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NextGen-MHS%3A_A_Novel_Architecture_for_Tethering_of_Aggregated_Licensed_and_Unlicensed_Spectrums"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Madan_Pande">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enabling_Online_Differential_Charging_for_Blended_Services_in_IMS_networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Offline_Charging_for_Multimedia_Blended_Services_Using_Service_Capability_Interaction_Manager_in_IMS_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IMS_Service_Broker_SCIM_Enriching_REST_Based_Web_2.0_Mashup"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Workflow_based_Design_for_Blending_Services_over_IP_Multimedia_Subsystems_%28IMS%29_with_Service_Capability_Interaction_Manager"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Raghavendra_Sunku">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Online_Differential_Charging_for_Blended_Services_Using_Service_Capability_Interaction_Manager_in_IMS_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enabling_Online_Differential_Charging_for_Blended_Services_in_IMS_networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Offline_Charging_for_Multimedia_Blended_Services_Using_Service_Capability_Interaction_Manager_in_IMS_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IMS_Service_Broker_SCIM_Enriching_REST_Based_Web_2.0_Mashup"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Workflow_based_Design_for_Blending_Services_over_IP_Multimedia_Subsystems_%28IMS%29_with_Service_Capability_Interaction_Manager"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Centralized_Service_Capability_Interaction_Manager_%28SCIM%29_Architecture_to_Support_Dynamic_Blending_of_Services_for_IMS_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mokshananda_Reddy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ethical_Design_of_Edge-Based_Smart_Irrigation_System_by_Use_Case_Analysis"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Annapoorna_Gh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ethical_Design_of_Edge-Based_Smart_Irrigation_System_by_Use_Case_Analysis"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ramakrishnan_Ramalingam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SWiFT%3A_A_Novel_Architecture_for_Seamless_Wireless_Internet_for_Fast_Train"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kumar_Murugesan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Unified_Signaling_Beacon_for_Traditional_and_Mesh_WiFi_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Process_to_Avoid_Redundant_Encryption_and_Decryption_in_Wi-Fi_Mesh_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ritesh_Kumar_Kalle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Saptarshi_Chaudhuri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_QoS_aware_Medium_Access_Control_Scheduler_for_LTE-Advanced_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimizing_Synchronization_Signal_Block_Transmissions_for_Sum-Rate_Maximization_in_Sub-Connected_Hybrid_Beamforming_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ML-Augmented_Network_Packet_Broker_based_Anomaly_Detection_at_IIoT-Edge_Egress_Port"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_User_Detection_via_SS_Burst_Repetition_in_5G_Millimeter_Wave_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Service_Allocation_Scheduling_Algorithms_for_5G_User_Equipments_in_Slice-in-Slice_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#An_Efficient_Beam_Search_Algorithm_for_mmWave_Massive_MIMO"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#EESO%3A_Energy_Efficient_System-resource_Optimization_of_Multi-Sub-Slice-Connected_User_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Average_Delay-based_System_Resource_Optimization_of_Sub-Slices_in_5G_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Dynamic_Scheme_for_User_Load_Balancing_in_a_Multi-Carrier_LTE-Advanced_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#QoS_aware_Downlink_Scheduler_for_a_Carrier_Aggregation_LTE-Advance_Network_with_Efficient_Carrier_Power_Control"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Downlink_Interference_Control_through_Adaptive_DRX_in_a_Carrier_Aggregation_Enabled_LTE-Advanced_Heterogeneous_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Utility_based_QoS_aware_Uplink_Scheduler_Scheme_for_LTE_Small_Cell_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Maximizing_Spectral_Efficiency_for_Cell_Edge_Users_in_LTE_Small_Cell_network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_of_Advanced-Oportunistic_Proportionate_Fairness_Scheduler_for_LTE_Medium_Access_Control"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Nishant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_to_Optimize_New_Radio_Frequency_Scanning_in_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#User_Equipment_Based_Efficient_Protocol_to_Maximize_Throughput_in_Multi-RAT"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_to_Reduce_Power_Consumption_for_EUTRA-New_Radio_Dual_Connectivity_RAN_Parameter"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_EUTRA_New_Radio_Dual_Connectivity_Handling_based_on_Location"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Reliable_Mobile_Origination_Connection_in_URLLC_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Network_Resource_Wastage_Reduction_and_Throughput_Improvement_in_5G_Dual_Registration_with_Single_Radio"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Devaraju_Jt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Traffic_Sensitive_and_Traffic_Load_Aware_Path_Selection_Algorithm_for_MMR_WiMAX_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_VoIP_in_Mobile_WiMAX%3B_Simulation_and_Emulation_studies"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Mobile_Multi-hop_Relay_WiMAX_Network_In_Urban_Environment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Raju_Udava_Siddappa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dual_Mobile_Data_for_Single_Transmission_Dual_VoLTE_Standby_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Elevator"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Jyotsna_B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Closed_Loop_Control_Mechanism_for_Zero_Touch_Networks_Using_BiLSTM_and_Q-Learning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Suvarna_Kharidehal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Selective_Multicast_Protocol_for_Wireless_Body_Area_Networks_%28W-BAN%29_for_Power_Conservation"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Gupta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Advanced_Mechanisms_for_Sleep_Mode_Optimization_of_VoIP_Traffic_over_IEEE_802.16m"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sharvari_Np">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Priority_based_Discrete_time_Dynamic_Routing_Algorithm_for_Emergency_Evacuation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Comprehensive_Risk_Mapping_for_Strategic_Evacuation_in_Semi-Outdoor_and_Outdoor_Setups_in_Smart"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Tushar_Vrind">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#AeroLOBE%3A_A_Deep_Learning-based_Novel_Load_Balancer_for_Aerial_Communication_to_Enhance_the_Performance_of_6G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Aerial_Cell_Replacement_Mechanism_for_Efficient_Operation_in_6G_Wireless_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feedback-Based_Algorithm_for_Aerial_Cell%E2%80%99s_Trajectory_Using_Deep_Learning_for_Efficient_Performance_in_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ACC%3A_Aerial_Cell_Cloning_Protocol_for_Efficient_Session_Continuity_in_LAP_replacement_for_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Federated_Learning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning_Based_Efficient_Trajectory_Planning_and_Sharing_for_Aerial_Cells_in_mMTC_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning-based_LAP_Deployment_and_Aerial_Infrastructure_Sharing_in_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_System_Design_for_Reducing_Cost_and_Power_Consumption_in_a_Multi-SIM_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Throughput_and_Service_Enhancing_Network_Selection_Algorithm_for_Dual_Registration_in_5G_Standalone_Architecture"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Performance_Enhancement_of_B4G_and_5G_Networks_for_MultiSIM_Deployment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Session_Cloning_Protocol_between_Smart_Devices_for_connected_and_un-connected_states_in_B4G_and_5G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Protocol_for_Reduction_in_Network_Resource_Wastage_for_4G_Dual_SIM_Dual_Standby_User_Equipment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Dibakar_Das">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coordinated_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Node_and_Edge_Centrality_based_Failures_in"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Connectivity_and_Collision_Constrained_Opportunistic_Routing_for_Emergency_Communication_using_UAV"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unsupervised_learning_based_Capacity_Augmentation_in_SDN_assisted_Wireless_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SDN_assisted_self_organizing_network_architecture_for_multi-RAT_networks_and_mobility_prediction"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Dynamic_QoS_Negotiation_Mechanism_Between_Wired_and_Wireless_SDN_Domains"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_UE_Mobility_in_Multi-RAT_Cellular_Networks_using_SDN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Self_Organizing_Method_for_Handover_Performance_Optimization_in_LTE-Advanced_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Radio_Access_Technology_Selection_in_SDN_controlled_Reconfigurable_Base_Station"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#An_Analytical_Evaluation_Approach_for_Control_Plane_Operations_of_a_Multi-RAT_Mobility_Procedures_in_a_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Relevance_Based_Power_Saving_Mechanism_in_Multi-RAT_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Assisted_Proactive_Management_in_Zero_Touch_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Proactive_Connection_Setup_Mechanism_for_Large_Quantum_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Data_Augmented_Bayesian_Network_for_Node_Failure_Prediction_in_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Non-Intrusive_Failure_Prediction_Mechanism_for_Deployed_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mode_Protocol_to_Recover_Active_Calls_from_Transient_Network_Outage"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SINR_based_Uplink_Sub-band_Clustering_Mechanism_for_Differentiated_Services_in_NOMA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Power_Saving_with_Capacity_Augmentation_for_Sustained_QoS_in_5G_Cloud_RAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_UE_Centric_Multi-RAT_Deployment_Model"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancement_of_Mobility_through_Reconfiguration_of_Base-stations_in_Multi-RAT_Cellular_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Back-off_Algorithm_Based_Power_Saving_Mechanism_in_a_Multi-RAT_UE"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Evaluation_of_Mobile_Handset_Recovery_from_Radio_Link_Failure_in_a_Multi-RATs_Environment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Aswin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Differentiated_Integrity_Protection_for_Enhancing_Performance_of_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Goutam_Dutta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Study_of_an_Optical_Backbone_MAC_Interconnecting_WiMAX_Base_Stations_over_City/County_Area"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Lalit_Pathak">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Aerial_Cell_Replacement_Mechanism_for_Efficient_Operation_in_6G_Wireless_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feedback-Based_Algorithm_for_Aerial_Cell%E2%80%99s_Trajectory_Using_Deep_Learning_for_Efficient_Performance_in_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ACC%3A_Aerial_Cell_Cloning_Protocol_for_Efficient_Session_Continuity_in_LAP_replacement_for_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Federated_Learning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning_Based_Efficient_Trajectory_Planning_and_Sharing_for_Aerial_Cells_in_mMTC_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NRPos%3A_A_Multi-RACH_Framework_for_5G_NR_Positioning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning-based_LAP_Deployment_and_Aerial_Infrastructure_Sharing_in_6G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_System_Design_for_Reducing_Cost_and_Power_Consumption_in_a_Multi-SIM_User_Equipment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Performance_Enhancement_of_B4G_and_5G_Networks_for_MultiSIM_Deployment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Session_Cloning_Protocol_between_Smart_Devices_for_connected_and_un-connected_states_in_B4G_and_5G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Protocol_for_Reduction_in_Network_Resource_Wastage_for_4G_Dual_SIM_Dual_Standby_User_Equipment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Prashant_K_Wali">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimization_of_Barring_Factor_Enabled_Extended_Access_Barring_for_Energy_Efficiency_in_LTE-Advanced_Base_Station"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimal_Time-Spatial_Randomization_Techniques_for_Energy_Efficient_IoT_Access_in_LTE-Advanced"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Throughput_and_Service_Enhancing_Network_Selection_Algorithm_for_Dual_Registration_in_5G_Standalone_Architecture"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Maximizing_the_Throughput_of_Duty-Cycle_Based_Licensed-Assisted_Access_in_the_Unlicensed_Band"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Duty-Cycled_Based_Licensed-Assisted_Access%3A_Does_Proportional_Fairness_Affect_WiFi_More_Than_It_Should%3F"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Access_Scheme_for_IoT_Communications_in_LTE-Advance_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Uma_M_N">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Seshakumar_Kavuluri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Algorithm_for_Drastic_Reduction_of_N2_Signalling_in_5G_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amitkeerti_M_Lagare">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Prioritization_of_Delay_Intolerant_Secure_Web_Traffic_in_WiMAX"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vijay_Mishra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Reliable_Control_Message_Exchange_in_Wireless_Real-World_Multi-Path_Deployments"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NextGen-MHS%3A_A_Novel_Architecture_for_Tethering_of_Aggregated_Licensed_and_Unlicensed_Spectrums"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Satya_Ganesh_N_D_C">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_method_to_boost_throughput_in_5G_and_4G_mobiles_using_MultiSIM_subscription_on_the_same_network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kavin_Kumar_Thangadorai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Unified_Signaling_Beacon_for_Traditional_and_Mesh_WiFi_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Process_to_Avoid_Redundant_Encryption_and_Decryption_in_Wi-Fi_Mesh_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sai_Venketesh_D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Robotic_Extension_to_IoT_Testbed_for_Indoor_Environment_Supervision"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sasirekha_Gvk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_PYNQ-Z2_Based_IoT_Edge%3A_NTT_Performance_Analysis"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Authenticated_Encryption_at_IoT_Edge_on_FPGA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Based_What-If_Simulation_of_Security_Attacks_in_Smart_Irrigation_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ethical_Design_of_Edge-Based_Smart_Irrigation_System_by_Use_Case_Analysis"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Synthesis_of_IoT_Sensor_Telemetry_Data_for_Smart_Home_Edge-IDS_Evaluation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Aerial-Assisted_Protocol_for_Efficiency_Enhancement_in_Beyond_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Localizing_Worst-Parent_Rank_Attack_using_Intelligent_Edges_of_Smart_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_Energy_Prediction_in_Smart_Building_Using_Federated_Learning"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Prediction_of_Wi-Fi_Comfort_in_Buildings_using_Support_Vector_Machines"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Near_Real-time_Occupancy_Detection_for_Smart_Building_Emergency_Management%3A_A_Prototype"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Comfort_Management_System_for_Smart_Buildings%3A_An_Open_Source_Scalable_Prototype"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IoT_Testbed_for_Thermal_Profiling_of_a_Smart_Building"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Robotic_Extension_to_IoT_Testbed_for_Indoor_Environment_Supervision"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Challenges_in_the_Design_of_an_IoT_Testbed"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimal_Scheduling_of_Spectrum_Sensing_in_LTE-A_TDD_Frame"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feasibility_Study_for_Wi-Fi_in_the_TV_Whitespaces_of_Bangalore"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Yogita_P">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Multi-User_Service_Throughput_Estimation_for_Adaptive_Resource_Management_in_5G-Advanced_and_Beyond_Sliced_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Elad_Levy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Advanced_Mechanisms_for_Sleep_Mode_Optimization_of_VoIP_Traffic_over_IEEE_802.16m"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Abhijit_Lele">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Waiting_Time_Threshold_Estimation_Algorithm_for_Power_Saving_in_Sleep_Mode_of_IEEE_802.16e"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Interface_Gateway_Architecture_for_Seamless"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Providing_Voice_Connectivity_to_Rural_India_Using_WiMax%3A_Issues_and_Solution"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sharvari_R">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_E2E_Path_Selection_Algorithm_for_Superior_QoS_and_QoE_for_6G_Services"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Adaptive_Multi-User_Multi-Services_Scheduling_to_Enhance_Throughput_in_5G-Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Random_Access_Protocol_for_Resource_Efficient_mMTC_Access_in_Cell-Free_Massive_MIMO_System"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Latency_and_Throughput_Aware_Multi-Access_Scheduler_for_5G_Advanced_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#New_Attacks_on_Cloud_Container-Based_IoT_Systems_in_5G-Advanced_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mohit_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Scaling_Number_of_Active_Links_in_Linux_Kernel_Bond_Driver_Having_Heterogeneous_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Scaling_Number_of_Active_Links_in_a_Linux_Kernel_Bond_Driver_having_Heterogeneous_Network_Interfaces"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Duckey_Lee">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Differentiated_Integrity_Protection_for_Enhancing_Performance_of_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Raja_Moses_Manoj_Kumar_Eda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Technique_to_Reduce_the_Retransmission_Latency_of_Packets_from_RLC_Layers_in_Carrier_Aggregated_5G_RAN"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Shiva_K_Malapaka">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Proactive_Connection_Setup_Mechanism_for_Large_Quantum_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Aswini_P">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Robotic_Extension_to_IoT_Testbed_for_Indoor_Environment_Supervision"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Challenges_in_the_Design_of_an_IoT_Testbed"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kailash_Kumar_Jha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_to_Optimize_New_Radio_Frequency_Scanning_in_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#User_Equipment_Based_Efficient_Protocol_to_Maximize_Throughput_in_Multi-RAT"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Reliable_Mobile_Origination_Connection_in_URLLC_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Network_Resource_Wastage_Reduction_and_Throughput_Improvement_in_5G_Dual_Registration_with_Single_Radio"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Quick_Connection_Resumption_for_URLLC_Devices"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Shobha_V">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Seamless_Network_Management_In_Presence_of_Heterogeneous_Management_Protocols_for_Next_Gene"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kailash_K_Jha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_to_Reduce_Power_Consumption_for_EUTRA-New_Radio_Dual_Connectivity_RAN_Parameter"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_EUTRA_New_Radio_Dual_Connectivity_Handling_based_on_Location"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Diwakar_Sharma">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Performance_Enhancement_of_B4G_and_5G_Networks_for_MultiSIM_Deployment"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Session_Cloning_Protocol_between_Smart_Devices_for_connected_and_un-connected_states_in_B4G_and_5G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Protocol_for_Reduction_in_Network_Resource_Wastage_for_4G_Dual_SIM_Dual_Standby_User_Equipment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Rohini_R">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Quantum_Secure_User_Plane_Traffic_in_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#D_Das">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Seamless_Network_Management_In_Presence_of_Heterogeneous_Management_Protocols_for_Next_Gene"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sai_Venketesh_Dasari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_Energy_Prediction_in_Smart_Building_Using_Federated_Learning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ritesh_K_Kalle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Energy_and_Delay_Constrained_Scheduling_of_Real_Time_Traffic_over_OFDM_Communication_System_with_Non-causal_Channel_Information"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Joint_Paging_Area_and_Location_Update_Optimization_for_IEEE_802.16m_Idle_Mode"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#La_VoLTE%3A_novel_cross_Layer_optimized_mechanism_of_Video_transmission_over_LTE_for_DRX"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#EPGLU%3A_Enhanced_PGLU_Timer_for_Paging_and_Location_Update_Optimization_in_IEEE_802.16m_based_WiMAX_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#WEBS_%3A_WiMAX_Emulation_Testbed_to_Benchmark_Streaming_Multimedia_QoS"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Architecture_for_IEEE_802.16m_Subscriber_Station_for_Joint_Power_Saving_Class_Management"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wi-MuMe%3A_WiMAX_MuLTIHOP_MeSH_%E2%80%93_A_Relay_Based_Approach_to_Deliver_Broadband_to_Rural_Community"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_of_Triple_Play_over_802.16e_Based_Networks_for_Rural_Environment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mayank_Raj">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#WEBS_%3A_WiMAX_Emulation_Testbed_to_Benchmark_Streaming_Multimedia_QoS"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Architecture_for_IEEE_802.16m_Subscriber_Station_for_Joint_Power_Saving_Class_Management"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Providing_Voice_Connectivity_to_Rural_India_Using_WiMax%3A_Issues_and_Solution"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Power_Saving_Algorithm_for_Mobile_Subscriber_Station_in_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Srinivasan_Selvaganapathy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Random_Access_Protocol_for_Resource_Efficient_mMTC_Access_in_Cell-Free_Massive_MIMO_System"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_RAN_Overload_Control_Mechanism_for_NR_based_mMTC_by_Dynamic_SCMA_for_RACH"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Pradeep_K_R">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Maximizing_Spectral_Efficiency_for_Cell_Edge_Users_in_LTE_Small_Cell_network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#K_Vinay_Chandrasekhar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Detection_for_Emergency_Management_of_Smart_Building_Based_on_Indoor_Localization"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vidhya_K">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Seamless_Network_Management_In_Presence_of_Heterogeneous_Management_Protocols_for_Next_Gene"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#G_V_K_Sasirekha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Detection_for_Emergency_Management_of_Smart_Building_Based_on_Indoor_Localization"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sajal_Kumar_Das">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coverage_Enhancement_of_PBCH_using_Reduced_Search_Viterbi_for_MTC_in_LTE-Advanced_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Neelam_Gupta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sathia_Chandrane_S">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Random_Access_Protocol_for_Multi_SIM_Multi_Standby_Devices_in_5G_and_B5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_C-DRX_Mechanism_for_Multi_SIM_Multi_Standby_UEs_in_5G_and_B5G_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Bhagwan_Dass_Swami">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Reliable_Control_Message_Exchange_in_Wireless_Real-World_Multi-Path_Deployments"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NextGen-MHS%3A_A_Novel_Architecture_for_Tethering_of_Aggregated_Licensed_and_Unlicensed_Spectrums"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Saptarshi_C">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Adaptive_Multi-User_Multi-Services_Scheduling_to_Enhance_Throughput_in_5G-Advanced_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Madhav_Rao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Authenticated_Encryption_at_IoT_Edge_on_FPGA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Based_What-If_Simulation_of_Security_Attacks_in_Smart_Irrigation_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ethical_Design_of_Edge-Based_Smart_Irrigation_System_by_Use_Case_Analysis"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Synthesis_of_IoT_Sensor_Telemetry_Data_for_Smart_Home_Edge-IDS_Evaluation"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Aerial-Assisted_Protocol_for_Efficiency_Enhancement_in_Beyond_5G_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Parthiban_A">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Frequency_Allocation_Scheme_for_In_Band_Full_Duplex_Systems_in_5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Constellation_Constraining-Based_Coverage_Enhancement_Technique_for_MTC_Devices_in_LTE-A"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coverage_Enhancement_for_MTC_Devices_using_Reduced_Search_Viterbi_Decoder_Across_RATs"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Doubling_Spectral_Efficiency_Independent_of_Cell_Sizes_in_5G_using_Hybrid_IBFD_Cellular_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Pradnya_Goankar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Prediction_of_Wi-Fi_Comfort_in_Buildings_using_Support_Vector_Machines"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Dinakar_Reddy_Yammanuru">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Algorithm_for_Drastic_Reduction_of_N2_Signalling_in_5G_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mayank_K_Sahu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Concept_for_Optimal_Wi-Fi_Mesh_Router_Placement_with_Enhanced_QoS"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Venkata_Sunil_Kumar_B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NextGen-MHS%3A_A_Novel_Architecture_for_Tethering_of_Aggregated_Licensed_and_Unlicensed_Spectrums"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vivek_Kumar_Singh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Siddharth_Pande">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Interoperability_between_802.11e_and_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Bivas_Bhattacharya">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#QoS_Enhancement_using_Embedded_Agent_in_OpenFlow_based_SDN_Node"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SDN_based_Architecture_for_QoS_Enabled_Services_Across_Networks_with_Dynamic_Service_Level_Agreement"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Manjunath_Vemanna">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Latency_and_Throughput_Aware_Multi-Access_Scheduler_for_5G_Advanced_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ritesh_Kumar_K">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Power_Saving_Algorithm_for_Mobile_Subscriber_Station_in_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Bapat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT-Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Rajavelsamy_R">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Review_on_3GPP_5G_Security_Aspects"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Review_on_Evolution_of_3GPP_Systems_Interworking_with_WLAN"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Quantum_Secure_User_Plane_Traffic_in_Beyond_5G_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Protection_and_Mitigation_of_Unauthorized_Tracking_in_3GPP-WiFi_Interworking_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Roshan_Gajanan_Patil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wireless_Sensor_Network_Based_Smart_Parking_System"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Aman_Agarwal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Namo_Narayan_Singh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Algorithm_to_Reduce_Handover_Failure_Rate_in_5G_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amar_Kumar_Nandan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#La_VoLTE%3A_novel_cross_Layer_optimized_mechanism_of_Video_transmission_over_LTE_for_DRX"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Karan_Ramesh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Authenticated_Encryption_at_IoT_Edge_on_FPGA"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Based_What-If_Simulation_of_Security_Attacks_in_Smart_Irrigation_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Narasimman_Subburayalu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dynamic_load_balancing_using_multiaccess_in_5G"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Rohan_Goveas_Pascal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enabling_Online_Differential_Charging_for_Blended_Services_in_IMS_networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Offline_Charging_for_Multimedia_Blended_Services_Using_Service_Capability_Interaction_Manager_in_IMS_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Dinakar_Y_Reddy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Data_Accounting_Procedure_in_4G_and_5G_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Shanda_Kumar_K_N">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Smart_Parking_System_using_Wireless_Sensor_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Raj_K_Saranappa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ganesha_S">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Quantum_Secure_User_Plane_Traffic_in_Beyond_5G_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Differentiated_Integrity_Protection_for_Enhancing_Performance_of_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Tamizhelakkiya_K">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Assisted_Proactive_Management_in_Zero_Touch_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Closed_Loop_Control_Mechanism_for_Zero_Touch_Networks_Using_BiLSTM_and_Q-Learning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Saahithyan_Radhakrishnan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mitigating_Initial_Access_Congestion_for_Dense_Smart_Meters_Deployment_in_LTE_network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_for_Less_Power_Consumption_in_Extended-Coverage-GSM_for_Low_Data-Rate_IoT_Devices"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sandhya_Kulkarni">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Traffic_Sensitive_and_Traffic_Load_Aware_Path_Selection_Algorithm_for_MMR_WiMAX_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_VoIP_in_Mobile_WiMAX%3B_Simulation_and_Emulation_studies"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Mobile_Multi-hop_Relay_WiMAX_Network_In_Urban_Environment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amudheesan_Aadhithan_N">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimal_Time-Spatial_Randomization_Techniques_for_Energy_Efficient_IoT_Access_in_LTE-Advanced"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Maximizing_the_Throughput_of_Duty-Cycle_Based_Licensed-Assisted_Access_in_the_Unlicensed_Band"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Duty-Cycled_Based_Licensed-Assisted_Access%3A_Does_Proportional_Fairness_Affect_WiFi_More_Than_It_Should%3F"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Akansha_Singh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Distributed_Health_Monitoring_System_for_Control_in_Smart_Grid_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Vulnerability_Analysis_of_Power_Grid_Network_Against_Failure_by_State_Classification"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Two_Tier_Communication_Architecture_for_Smart_Meter"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#N_P_Sharvari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coordinated_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Q-learning_based_Multi-hop_Routing_for_UAV-Assisted_Communication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Connectivity_and_Collision_Constrained_Opportunistic_Routing_for_Emergency_Communication_using_UAV"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#V_Menon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Seamless_Network_Management_In_Presence_of_Heterogeneous_Management_Protocols_for_Next_Gene"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kavin_Kumar_T">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Isolation-based_Sub-Slices_for_Throughput_Optimization_in_5G_Radio_Access_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Concept_for_Optimal_Wi-Fi_Mesh_Router_Placement_with_Enhanced_QoS"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Jaygopi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT-Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Dibakar_D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Closed_Loop_Control_Mechanism_for_Zero_Touch_Networks_Using_BiLSTM_and_Q-Learning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Prashant_Wali">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Static_Puncturing_Scheme_for_Facilitating_Ultra-Reliable_Low-Latency_IoT_Communications"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_RAN_Overload_Control_Mechanism_for_NR_based_mMTC_by_Dynamic_SCMA_for_RACH"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#B_A_Shah">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Design_of_WiMAX_Node_Architecture_for_End-to-End_Quality_of_Service"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Susheel_Kumar_Br">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Concept_for_Optimal_Wi-Fi_Mesh_Router_Placement_with_Enhanced_QoS"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Omanand_Jha_Vatsa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Power_Saving_Algorithm_for_Mobile_Subscriber_Station_in_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Srinivasan_Selvaganapathy_S">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Protocol_for_Efficient_MTC_Transmission_Over_Massive_MIMO_Enabled_2_Step_RACH"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vishal_Karira">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Selective_Multicast_Protocol_for_Wireless_Body_Area_Networks_%28W-BAN%29_for_Power_Conservation"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#K_Murugesan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Concept_for_Optimal_Wi-Fi_Mesh_Router_Placement_with_Enhanced_QoS"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Haribabu_Pasupuleti">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ascon-128_With_PicoRV32"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Yogish_D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Smart_Parking_System_using_Wireless_Sensor_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Manoj_Chaudhury">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Protection_and_Mitigation_of_Unauthorized_Tracking_in_3GPP-WiFi_Interworking_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#R_Bharath">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Differentiated_Integrity_Protection_for_Enhancing_Performance_of_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sumit_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Interface_Gateway_Architecture_for_Seamless"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ajaykumar_Kabadi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dual_Mobile_Data_for_Single_Transmission_Dual_VoLTE_Standby_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Elevator"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sridharan_Natarajan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dynamic_load_balancing_using_multiaccess_in_5G"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Cache_Enabled_CUPS_Architecture_for_Evolved_MBMS_of_LTE-Advanced_for_Latency_and_Bandwidth_Saving_Improvements"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Demand_Aware_Edge_Caching_Architecture_for_evolved"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#R_Shrinath">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Aerial_Cell_Replacement_Mechanism_for_Efficient_Operation_in_6G_Wireless_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Pradnya_T_Gaonkar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Location-Aware_Multi-Objective_Optimization_for_Energy_Cost_Management_in_Semi-Public_Buildings_using_Thermal_Discomfort_Information"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Irfan_Baig">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_QoS_aware_Medium_Access_Control_Scheduler_for_LTE-Advanced_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Dynamic_Scheme_for_User_Load_Balancing_in_a_Multi-Carrier_LTE-Advanced_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#QoS_aware_Downlink_Scheduler_for_a_Carrier_Aggregation_LTE-Advance_Network_with_Efficient_Carrier_Power_Control"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Downlink_Interference_Control_through_Adaptive_DRX_in_a_Carrier_Aggregation_Enabled_LTE-Advanced_Heterogeneous_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Utility_based_QoS_aware_Uplink_Scheduler_Scheme_for_LTE_Small_Cell_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Pranay_Airan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IMS_Service_Broker_SCIM_Enriching_REST_Based_Web_2.0_Mashup"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Radhika_Mundra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Aakansha_Goswami">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Impact_of_Variable_Voice_Packet_Size_To_Reduce_Packet_Loss_in_Bandwidth_Constraint_Military_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Connectivity_Using_Differential_Priority_Assignments_in_Military_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mohammad_Fahad_I">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Data_Augmented_Bayesian_Network_for_Node_Failure_Prediction_in_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Non-Intrusive_Failure_Prediction_Mechanism_for_Deployed_Optical_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mode_Protocol_to_Recover_Active_Calls_from_Transient_Network_Outage"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Manjunath_Neelappa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Pradnya_Gaonkar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Air_Quality_and_Thermal_Comfort_Management_for_Energy-Efficient_Large_Public_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Survey_on_QoE_and_Energy_Cost_Optimization_Strategies_for_Smart_Buildings"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Comfort_Management_System_for_Smart_Buildings%3A_An_Open_Source_Scalable_Prototype"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Estimation_in_Semi-Public_Spaces_using_Sensor_Fusion_and_Context_Awareness"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Energy_Budget_Constrained_Comfort_Optimization_for_Smart_Building"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#R_Moses_Manoj_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Reordering-Reassembly_PDCP_and_RLC_Window_Management_Algorithm_in_5G_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#A_Lele">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_of_Triple_Play_over_802.16e_Based_Networks_for_Rural_Environment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vidya_Sagar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Modified_EDF_Algorithm_and_WiMAX_Architecture_to_Ensure_End-to-End_Delay_in_Multihop_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wi-MuMe%3A_WiMAX_MuLTIHOP_MeSH_%E2%80%93_A_Relay_Based_Approach_to_Deliver_Broadband_to_Rural_Community"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Interface_Gateway_Architecture_for_Seamless"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sasirekah_Gvk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Ascon-128_With_PicoRV32"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Rohan_Pascal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Workflow_based_Design_for_Blending_Services_over_IP_Multimedia_Subsystems_%28IMS%29_with_Service_Capability_Interaction_Manager"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Centralized_Service_Capability_Interaction_Manager_%28SCIM%29_Architecture_to_Support_Dynamic_Blending_of_Services_for_IMS_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Varun_Singh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Alok_K_J">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_to_Reduce_Power_Consumption_for_EUTRA-New_Radio_Dual_Connectivity_RAN_Parameter"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Prashant_Mishra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Impact_of_Variable_Voice_Packet_Size_To_Reduce_Packet_Loss_in_Bandwidth_Constraint_Military_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Connectivity_Using_Differential_Priority_Assignments_in_Military_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vivek_K_Singh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#EPGLU%3A_Enhanced_PGLU_Timer_for_Paging_and_Location_Update_Optimization_in_IEEE_802.16m_based_WiMAX_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_of_Combined_Effects_of_Zero_Copy_and_Pre-processing_on_Input/Output_Performance_of_Multimedia_on_Demand_Streaming_Server"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Aran_Bergman">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Advanced_Mechanisms_for_Sleep_Mode_Optimization_of_VoIP_Traffic_over_IEEE_802.16m"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vikram_Jain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Interoperability_between_802.11e_and_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Divyanshi_Rajput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Perfect_UE_Grouping_for_Frequency_Sharing_in_Full_Duplex_Cellular_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Roshan_G_Patil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Smart_Parking_System_using_Wireless_Sensor_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Shantidev_Mohanty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Advanced_Mechanisms_for_Sleep_Mode_Optimization_of_VoIP_Traffic_over_IEEE_802.16m"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ramkumar_T_S">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_5G_and_B5G_Network_Architecture_and_Protocol_for_Multi_SIM"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Imran_Mohammed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Power_Saving_and_Zero_Network_Flooding_Protocol_for_VoWiFi_Registration"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Yogita_Pimpalkar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_E2E_Path_Selection_Algorithm_for_Superior_QoS_and_QoE_for_6G_Services"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#New_Attacks_on_Cloud_Container-Based_IoT_Systems_in_5G-Advanced_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Jagan_P">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Aerial-Assisted_Protocol_for_Efficiency_Enhancement_in_Beyond_5G_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vikash_Mishra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Algorithm_to_Reduce_Handover_Failure_Rate_in_5G_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Aswin_S">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Quantum_Secure_User_Plane_Traffic_in_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Nisha_Nishant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sarthak_Koche">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Near_Real-time_Occupancy_Detection_for_Smart_Building_Emergency_Management%3A_A_Prototype"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#isAuthorOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Komal_Sharma">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Integrated_Architecture_for_Intent_Based_Approach_and_Zero"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Digital_Twin_Assisted_Proactive_Management_in_Zero_Touch_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Closed_Loop_Control_Mechanism_for_Zero_Touch_Networks_Using_BiLSTM_and_Q-Learning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sataraddi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Chandan_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feedback-Based_Algorithm_for_Aerial_Cell%E2%80%99s_Trajectory_Using_Deep_Learning_for_Efficient_Performance_in_6G"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Anil_Kumar_V">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Data_sequence_signal_manipulation_in_multipath_TCP%3A_The_vulnerability%2C_attacks_and_detection"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Data_Sequence_Map_Flooding_in_MPTCP_Framework%3A_Potential_Challenges_and_Efficient_Countermeasures"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feedback_Manipulation_Flooding_Attack%3A_Feasibility_Evaluation_and_Impact_Quantification_on_Stream_Control_Transmission_Protocol"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Joseph_Thaliath">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Service_Class_Downlink_Scheduling_in_WiMAX"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#A_V_Dhananjay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_of_Sniff_%26_Embark_protocol_for_Real_Time_Traffic_in_Wireless-LAN"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Samir_Saklikar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#PhishGuard%3A_A_Browser_Plug-in_for_Protection_from_Phishing"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Advait_Lonkar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Comfort_Management_System_for_Smart_Buildings%3A_An_Open_Source_Scalable_Prototype"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Shashi_Kumar_B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#S_Karthik">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Seamless_Network_Management_In_Presence_of_Heterogeneous_Management_Protocols_for_Next_Gene"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amudheesan_N">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Minimizing_Power_Consumption_in_Age_of_Information_Constrained_Cell-Free_Massive_MIMO_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_RAN_Overload_Control_Mechanism_for_NR_based_mMTC_by_Dynamic_SCMA_for_RACH"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sathiya_B_Naraayanan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_PYNQ-Z2_Based_IoT_Edge%3A_NTT_Performance_Analysis"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kyungmin_Park">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Human_Presence_Detection_and_Identification"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Akhilesh_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhanced_VoLTE_Meidum_Access_Control_Scheduling_Algorithm_for_eMTC_Devices"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Khyati_Sangvi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Waiting_Time_Threshold_Estimation_Algorithm_for_Power_Saving_in_Sleep_Mode_of_IEEE_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Subrahmanya_Vrk_Rao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Estimation_in_Semi-Public_Spaces_using_Sensor_Fusion_and_Context_Awareness"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kumud_K_Sinha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_and_Adaptive_Machine_Learning-based_Algorithm_for_Power_Saving_in_Mobile_Hotspot"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_System_Design_for_Reducing_Cost_and_Power_Consumption_in_a_Multi-SIM_User_Equipment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vincent_Planat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Interoperability_between_802.11e_and_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vimal_Bastin_Joseph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Unified_Signaling_Beacon_for_Traditional_and_Mesh_WiFi_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Process_to_Avoid_Redundant_Encryption_and_Decryption_in_Wi-Fi_Mesh_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Alok_K_Jangid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_to_Optimize_New_Radio_Frequency_Scanning_in_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#User_Equipment_Based_Efficient_Protocol_to_Maximize_Throughput_in_Multi-RAT"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_EUTRA_New_Radio_Dual_Connectivity_Handling_based_on_Location"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Satya_Ganesh_Ndc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NRPos%3A_A_Multi-RACH_Framework_for_5G_NR_Positioning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Palani_Kumar_S_P">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Anomaly_Detection_Methodology_for_Power_Saving_in_Massive_IoT_Architecture"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#A_Talukder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Seamless_Network_Management_In_Presence_of_Heterogeneous_Management_Protocols_for_Next_Gene"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amudheesan_Adhithan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Energy_Budget_Constrained_Comfort_Optimization_for_Smart_Building"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sunita_Katre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Impact_of_Variable_Voice_Packet_Size_To_Reduce_Packet_Loss_in_Bandwidth_Constraint_Military_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Improved_Connectivity_Using_Differential_Priority_Assignments_in_Military_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Manoj_Choudhary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Review_on_Evolution_of_3GPP_Systems_Interworking_with_WLAN"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Neeta_Jha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_Spectral_Efficiency_in_Sub-Connected_Hybrid_Beamforming_Systems_via_Beam_Pattern_Design"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Two-Stage_Fast_Beam_Search_for_Multi-user_Millimeter-wave_Massive_MIMO_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimizing_Synchronization_Signal_Block_Transmissions_for_Sum-Rate_Maximization_in_Sub-Connected_Hybrid_Beamforming_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ML-Augmented_Network_Packet_Broker_based_Anomaly_Detection_at_IIoT-Edge_Egress_Port"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_User_Detection_via_SS_Burst_Repetition_in_5G_Millimeter_Wave_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Fast_Beam_Search_with_Two-Level_Phased_Array_in_Millimeter-Wave_Massive_MIMO%3A_A_Hierarchical_Approach"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#An_Efficient_Beam_Search_Algorithm_for_mmWave_Massive_MIMO"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Samir_Kumar_Mishra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_for_Less_Power_Consumption_in_Extended-Coverage-GSM_for_Low_Data-Rate_IoT_Devices"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Bivas_Bhattattacharya">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Software_Defined_Network_Controller_Embedded_in_Mobile_Device_for_User%E2%80%99s_Policy_Implementation"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Abdus_S_Ahmed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#V_Anil_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Data_Enriched_SACK%3A_A_Novel_Acknowledgement_Generation_Scheme_for_Secure_SCTP"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Joseph_Jeffery">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Smart_Parking_System_using_Wireless_Sensor_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vishnupriya_K_P">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimal_Scheduling_of_Spectrum_Sensing_in_LTE-A_TDD_Frame"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Nitesh_P_Shah">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_to_Reduce_Power_Consumption_for_EUTRA-New_Radio_Dual_Connectivity_RAN_Parameter"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#M_Vimaladevi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Design_of_WiMAX_Node_Architecture_for_End-to-End_Quality_of_Service"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Alok_Kumar_Jangid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Reliable_Mobile_Origination_Connection_in_URLLC_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Network_Resource_Wastage_Reduction_and_Throughput_Improvement_in_5G_Dual_Registration_with_Single_Radio"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_for_Quick_Connection_Resumption_for_URLLC_Devices"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amrita_Mishra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_Spectral_Efficiency_in_Sub-Connected_Hybrid_Beamforming_Systems_via_Beam_Pattern_Design"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Two-Stage_Fast_Beam_Search_for_Multi-user_Millimeter-wave_Massive_MIMO_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Optimizing_Synchronization_Signal_Block_Transmissions_for_Sum-Rate_Maximization_in_Sub-Connected_Hybrid_Beamforming_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#ML-Augmented_Network_Packet_Broker_based_Anomaly_Detection_at_IIoT-Edge_Egress_Port"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Enhancing_User_Detection_via_SS_Burst_Repetition_in_5G_Millimeter_Wave_Systems"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Fast_Beam_Search_with_Two-Level_Phased_Array_in_Millimeter-Wave_Massive_MIMO%3A_A_Hierarchical_Approach"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Nishtha_Bansal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_PLMN_Selection_in_Regenerative_Non-Terrestrial_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amitkeerti_M_Lagre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Judicious_Use_of_Algorithm_for_Poll-Me_Bit_with_Active_UGS_connection_in_IEEE_802.16e_to_Increase_the_Performance"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Muthaiah_Venkatachalam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Advanced_Mechanisms_for_Sleep_Mode_Optimization_of_VoIP_Traffic_over_IEEE_802.16m"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Jeffery_Joseph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wireless_Sensor_Network_Based_Smart_Parking_System"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ritesh_Kalle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SWiFT%3A_A_Novel_Architecture_for_Seamless_Wireless_Internet_for_Fast_Train"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_Novel_Interface_Gateway_Architecture_for_Seamless"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Raj_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dynamic_Power_Saving_Techniques_for_Mobile_Hotspot"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Rohan_Pascal_Goveas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IMS_Service_Broker_SCIM_Enriching_REST_Based_Web_2.0_Mashup"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Srihari_Sriram">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#hasEmail">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sadagopan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:hasResearchInterest rdf:resource="http://www.example.org/university#Network_Security"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+    <uni:hasQualification>Ph.D.</uni:hasQualification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Manbir_Singh_Soni">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mayuresh_Madhukar_Patil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sai_Venkatesh_Dasari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#IoT_Testbed_for_Thermal_Profiling_of_a_Smart_Building"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sarthak_Khoche">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Occupancy_Detection_for_Emergency_Management_of_Smart_Building_Based_on_Indoor_Localization"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Avneesh_Tiwari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kaushal_Mittal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_Energy_Prediction_in_Smart_Building_Using_Federated_Learning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mohanraja_B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_5G_and_B5G_Network_Architecture_and_Protocol_for_Multi_SIM"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Random_Access_Protocol_for_Multi_SIM_Multi_Standby_Devices_in_5G_and_B5G_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_C-DRX_Mechanism_for_Multi_SIM_Multi_Standby_UEs_in_5G_and_B5G_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mabel_Mary_Joy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Service_Class_Downlink_Scheduling_in_WiMAX"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#H_J_Thontadharya">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_VoIP_in_Mobile_WiMAX%3B_Simulation_and_Emulation_studies"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Parthiban_Annamalai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#UE_Grouping_Algorithms_to_Maximize_Frequency_Sharing_in_Hybrid_IBFD_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Resource_Allocation_Algorithm_for_Hybrid_IBFD_Cellular_Networks_for_5G_and_Beyond"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Emerging_Access_Technologies_and_Open_Challenges_in_5G_IoT%3A_From_Physical_Layer_Perspective"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Coverage_Enhancement_of_PBCH_using_Reduced_Search_Viterbi_for_MTC_in_LTE-Advanced_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Jyotsta_Bapat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Node_and_Edge_Centrality_based_Failures_in"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ravi_Kumar_B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Isolation-based_Sub-Slices_for_Throughput_Optimization_in_5G_Radio_Access_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Intelligent_Concept_for_Optimal_Wi-Fi_Mesh_Router_Placement_with_Enhanced_QoS"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Saptarshi_Choudhury">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Prasad_Dandra_Prasad_Basavaraj">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Elevator"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Srinivas_Chinthalapudi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dual_Mobile_Data_for_Single_Transmission_Dual_VoLTE_Standby_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Elevator"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Raghupati_Periannan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Interoperability_between_802.11e_and_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Skanda_Kumar_Kaipu_Narahari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wireless_Sensor_Network_Based_Smart_Parking_System"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Piyush_Kumar_Jain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Waiting_Time_Threshold_Estimation_Algorithm_for_Power_Saving_in_Sleep_Mode_of_IEEE_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Balakrishnan_K">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Evaluation_and_Optimization_of_Short_TCP_Completion_Time_over_Wireless_Broadband_Access_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#WEBS_%3A_WiMAX_Emulation_Testbed_to_Benchmark_Streaming_Multimedia_QoS"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Elizabeth_Priya_John">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Service_Class_Downlink_Scheduling_in_WiMAX"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#isMemberOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Bhanu_Prakash_V">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Localizing_Worst-Parent_Rank_Attack_using_Intelligent_Edges_of_Smart_Buildings"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Madhan_Raj_Kanagarathinam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NextGen-MHS%3A_A_Novel_Architecture_for_Tethering_of_Aggregated_Licensed_and_Unlicensed_Spectrums"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amulya_Bangari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Synthesis_of_IoT_Sensor_Telemetry_Data_for_Smart_Home_Edge-IDS_Evaluation"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Bharath_Kumar_R">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Quantum_Secure_User_Plane_Traffic_in_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Suhas_Hegde_Ankadi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_of_Combined_Effects_of_Zero_Copy_and_Pre-processing_on_Input/Output_Performance_of_Multimedia_on_Demand_Streaming_Server"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Adhisaya_T">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Robotic_Extension_to_IoT_Testbed_for_Indoor_Environment_Supervision"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Challenges_in_the_Design_of_an_IoT_Testbed"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mohanraja_Balasubramaniam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mitigating_Initial_Access_Congestion_for_Dense_Smart_Meters_Deployment_in_LTE_network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sudharshan_Rao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning_Based_Efficient_Trajectory_Planning_and_Sharing_for_Aerial_Cells_in_mMTC_Networks"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Deep_Learning-based_LAP_Deployment_and_Aerial_Infrastructure_Sharing_in_6G"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Subir_Saha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mitigating_Man_in_the_Middle_Attack_over_Secure_Sockets_Layer"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#PhishGuard%3A_A_Browser_Plug-in_for_Protection_from_Phishing"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ravi_Pk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Algorithm_to_Reduce_Power_Consumption_for_EUTRA-New_Radio_Dual_Connectivity_RAN_Parameter"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Goutham_P">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#A_method_to_boost_throughput_in_5G_and_4G_mobiles_using_MultiSIM_subscription_on_the_same_network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ronny_Yongho_Kim">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Joint_Paging_Area_and_Location_Update_Optimization_for_IEEE_802.16m_Idle_Mode"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Mohgan_P_D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_way_of_Non-GBR%2C_High_Latency_GTP-U_Packet_Transmission_in_4G_and_5G_Networks"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#hasResearchInterest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Ranjish_Bhaskaran">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Study_of_Advanced-Oportunistic_Proportionate_Fairness_Scheduler_for_LTE_Medium_Access_Control"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sarada_Subramanian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feasibility_Study_for_Wi-Fi_in_the_TV_Whitespaces_of_Bangalore"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Yogesh_Joshi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#PhishGuard%3A_A_Browser_Plug-in_for_Protection_from_Phishing"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Dandra_Prasad_Basavaraj">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Dual_Mobile_Data_for_Single_Transmission_Dual_VoLTE_Standby_Devices"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_PLMN_Selection_in_Regenerative_Non-Terrestrial_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Throughput_and_Service_Enhancing_Network_Selection_Algorithm_for_Dual_Registration_in_5G_Standalone_Architecture"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#A_K_Talukder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Mobile_web_for_under-privileged_in_developing_countries"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Artificial_Hygiene%3A_Non-proliferation_of_Virus_in_Cellular_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Rajavelswamy_R">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Differentiated_Integrity_Protection_for_Enhancing_Performance_of_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Haribabu_Pasupulati">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Privacy_Enhanced_PYNQ-Z2_Based_IoT_Edge%3A_NTT_Performance_Analysis"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Yogish_Didagi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Wireless_Sensor_Network_Based_Smart_Parking_System"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Kavin_K_Thangadorai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Unspecified_publication_title"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Vijay_Ganesh_Surisetty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Throughput_and_Service_Enhancing_Network_Selection_Algorithm_for_Dual_Registration_in_5G_Standalone_Architecture"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Gangadhara_Reddy_Mallangi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Feasibility_Study_for_Wi-Fi_in_the_TV_Whitespaces_of_Bangalore"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Pravin_Angolkar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#SWiFT%3A_A_Novel_Architecture_for_Seamless_Wireless_Internet_for_Fast_Train"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Deepak_Panigrahy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Adaptive_Power_Saving_Algorithm_for_Mobile_Subscriber_Station_in_802.16e"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Amudheesan_Nakkeeran">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Static_Puncturing_Scheme_for_Facilitating_Ultra-Reliable_Low-Latency_IoT_Communications"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Air_Quality_and_Thermal_Comfort_Management_for_Energy-Efficient_Large_Public_Buildings"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Sidhant_Jain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_to_Optimize_New_Radio_Frequency_Scanning_in_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#User_Equipment_Based_Efficient_Protocol_to_Maximize_Throughput_in_Multi-RAT"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Swetha_G">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_PLMN_Selection_in_Regenerative_Non-Terrestrial_Network"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Shwetha_D">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Traffic_Sensitive_and_Traffic_Load_Aware_Path_Selection_Algorithm_for_MMR_WiMAX_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Mobile_Multi-hop_Relay_WiMAX_Network_In_Urban_Environment"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Gaurav_Sinha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Novel_Multipipe_QUIC_Protocols_to_Enhance_the_Wireless_Network_Performance"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Surendra_Pandey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Reordering-Reassembly_PDCP_and_RLC_Window_Management_Algorithm_in_5G_and_Beyond"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#hasDesignation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#hasQualification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#UniversityOntology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Abhishek_Kaswan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Efficient_Protocol_to_Optimize_New_Radio_Frequency_Scanning_in_5G_Network"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#User_Equipment_Based_Efficient_Protocol_to_Maximize_Throughput_in_Multi-RAT"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Nivedya_P_Sasi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#Performance_Evaluation_of_Quantum_Secure_User_Plane_Traffic_in_Beyond_5G_Systems"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Srinath_Srinivasa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT-Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#Goutham_Ponnamareddy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <uni:isAuthorOf rdf:resource="http://www.example.org/university#NRPos%3A_A_Multi-RACH_Framework_for_5G_NR_Positioning"/>
+    <uni:isMemberOf rdf:resource="http://www.example.org/university#IIIT_Bangalore"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/university#hasJoinedYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

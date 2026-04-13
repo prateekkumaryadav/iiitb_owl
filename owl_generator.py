@@ -28,7 +28,7 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl"):
         g.add((subj_uri, RDF.type, OWL.NamedIndividual))
         
         # defining the datatype properties
-        DATATYPE_PROPERTIES = ["hasDuration", "hasCredits", "hasCourseCode", "hasEmail"]
+        DATATYPE_PROPERTIES = ["hasDuration", "hasCredits", "hasCourseCode", "hasEmail", "hasDesignation", "hasQualification", "hasJoinedYear"]
         
         # checking if the predicate is a datatype property
         if triple.predicate in DATATYPE_PROPERTIES:

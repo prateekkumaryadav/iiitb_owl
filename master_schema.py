@@ -18,15 +18,10 @@ class Triple(BaseModel):
         "hasResearchInterest", 
         "hasDepartment",
         "hasEmail",
-
-        # "offersCourse", 
-        # "isPrerequisiteFor",
-        # "hasAlumni",
-        # "hasDuration",
-        # "hasCredits",
-        # "hasCourseCode",
-        # "hasDegree",
-        # "hasSpecialization",
+        "hasDesignation",
+        "hasQualification",
+        "isAuthorOf",
+        "hasJoinedYear"
     ] = Field(description="The relationship between subject and object. Must strictly be one of the defined literals.")
     
     # object of the triple

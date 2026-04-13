@@ -113,6 +113,10 @@ def main():
     # This is done to ensure that all faculty members are mapped to the university
     if args.focus == "faculty":
         print("\n[Post-Processing] Applying Semantic Inference Rules...")
+        # Normalize subjects to Title Case
+        for t in global_triples:
+            t.subject = t.subject.title()
+
         subjects_with_member = set(t.subject for t in global_triples if t.predicate == "isMemberOf")
         unique_subjects = set(t.subject for t in global_triples)
         

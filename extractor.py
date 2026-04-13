@@ -17,7 +17,18 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
     # checking the focus
     if focus == "faculty":
         # faculty focus constraint(current aim)
-        focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving People/Faculty members (e.g., isMemberOf, hasDepartment, hasEmail). Be sure to explicitly extract their email addresses. completely IGNORE university degree offerings like B.Tech/M.Tech. DO NOT extract relationships where the Subject is a Department, Centre, or the University itself (e.g. do not map 'Department of CS' -> 'isMemberOf' -> 'IIIT Bangalore')."
+        focus_constraint = """CRITICAL FOREGROUND FOCUS: Extract detailed relationships for Faculty members.
+- Names: Use full names as subjects (e.g., "Sadagopan").
+- Predicates to use:
+  - isMemberOf: Map to "IIIT Bangalore" or a specific lab/centre.
+  - hasDepartment: Map to their academic department (e.g., "Computer Science").
+  - hasEmail: Extract their official email address.
+  - hasDesignation: Extract titles like "Associate Professor", "Assistant Professor", "Director".
+  - hasQualification: Extract degrees and institutes (e.g., "Ph.D., IISc Bangalore").
+  - hasResearchInterest: Extract specific research areas (e.g., "Network Security").
+  - isAuthorOf: Extract publication titles/names if mentioned in a list.
+  - hasJoinedYear: Extract the year they joined the institute if available.
+- IMPORTANT: IGNORE generic university boilerplate. DO NOT extract relationships where the Subject is the University itself."""
     elif focus == "courses":
         focus_constraint = "CRITICAL FOREGROUND FOCUS: ONLY extract relationships involving Courses, Programs, and Degrees (e.g., offersCourse, hasDuration). completely IGNORE any text about faculty or people."
     else:
@@ -134,16 +145,16 @@ def extract_triples(text: str, focus: str = "all") -> OntologyData:
                         if "department" in lower_subj or "centre" in lower_subj or "iiit" in lower_subj:
                             continue
                             
-                        # Name string cleaning: Remove "Prof.", "Dr.", etc. to normalize Protege Nodes
-                        clean_subj = re.sub(r'^(Prof\.|Dr\.|Mr\.|Mrs\.|Ms\.)\s*', '', valid_triple.subject, flags=re.IGNORECASE)
-                        # Fix encoding issues by stripping unsafe uri characters
+                        # Name string cleaning: Remove "Prof.", "Dr.", "Professor", etc. to normalize Protege Nodes
+                        clean_subj = re.sub(r'^(Prof\.|Dr\.|Mr\.|Mrs\.|Ms\.|Professor|Assistant Professor|Associate Professor|Doctor)\s*', '', valid_triple.subject, flags=re.IGNORECASE)
+                        # Fix encoding issues by stripping unsafe uri characters but keep spaces
                         clean_subj = re.sub(r"['\.,]", '', clean_subj).strip()
                         
-                        # Discard heavily fragmented Subject hallucination strings (like just "g" or "Rao")
-                        if len(clean_subj.split()) == 1 and len(clean_subj) < 4:
+                        # Discard heavily fragmented Subject hallucination strings
+                        if len(clean_subj.split()) == 1 and len(clean_subj) < 3:
                             continue
                             
-                        valid_triple.subject = clean_subj
+                        valid_triple.subject = clean_subj.title() # Capitalize names for consistency
                             
                     all_triples.append(valid_triple)
                 except Exception as ve:
