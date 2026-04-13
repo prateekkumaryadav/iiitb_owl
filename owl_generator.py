@@ -187,22 +187,22 @@ def _rdf_list(g: Graph, items: list) -> BNode | URIRef:
 # Manual test
 # ---------------------------------------------------------------------------
 
-if __name__ == "__main__":
-    from master_schema import Triple
+# if __name__ == "__main__":
+#     from master_schema import Triple
 
-    sample_data = OntologyData(triples=[
-        Triple(subject="Debabrata Das", predicate="hasDesignation",
-               object="Director", predicate_type="DatatypeProperty",
-               subject_class="Faculty"),
-        Triple(subject="Debabrata Das", predicate="worksAt",
-               object="IIIT Bangalore", predicate_type="ObjectProperty",
-               subject_class="Faculty", object_class="Institute"),
-        Triple(subject="Debabrata Das", predicate="hasResearchInterest",
-               object="Wireless Access Networks", predicate_type="ObjectProperty",
-               subject_class="Faculty", object_class="ResearchArea"),
-        Triple(subject="Debabrata Das", predicate="hasEmail",
-               object="ddas@iiitb.ac.in", predicate_type="DatatypeProperty",
-               subject_class="Faculty"),
-    ])
-    generate_owl(sample_data, "test_output.owl")
-    print("Written: test_output.owl")
+#     sample_data = OntologyData(triples=[
+#         Triple(subject="Debabrata Das", predicate="hasDesignation",
+#                object="Director", predicate_type="DatatypeProperty",
+#                subject_class="Faculty"),
+#         Triple(subject="Debabrata Das", predicate="worksAt",
+#                object="IIIT Bangalore", predicate_type="ObjectProperty",
+#                subject_class="Faculty", object_class="Institute"),
+#         Triple(subject="Debabrata Das", predicate="hasResearchInterest",
+#                object="Wireless Access Networks", predicate_type="ObjectProperty",
+#                subject_class="Faculty", object_class="ResearchArea"),
+#         Triple(subject="Debabrata Das", predicate="hasEmail",
+#                object="ddas@iiitb.ac.in", predicate_type="DatatypeProperty",
+#                subject_class="Faculty"),
+#     ])
+#     generate_owl(sample_data, "test_output.owl")
+#     print("Written: test_output.owl")
