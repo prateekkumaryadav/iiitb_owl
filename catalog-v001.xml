@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://www.iiitb.ac.in/ontology/university" uri="faculty_ontology.owl"/>
-    <uri id="Imports Wizard Entry" name="http://www.iiitb.ac.in/ontology/university" uri="faculty_ontology_Prof_Das.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1776077894991" name="http://www.iiitb.ac.in/ontology/university" uri="faculty_ontology_Prof_Das.owl"/>
-    </group>
-</catalog>
