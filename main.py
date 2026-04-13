@@ -122,7 +122,8 @@ def main():
                 # The LLM forgot to assign them to the university! Inject it manually.
 
 # = = = = = Going to the master_schema.py file for defining the schema of the ontology = = = = =
-# Triple() is used to create a new triple
+                
+                # Triple() is used to create a new triple
                 global_triples.append(Triple(subject=subj, predicate="isMemberOf", object="IIIT Bangalore"))
                 inferred_count += 1
         print(f" -> Inferred {inferred_count} missing 'isMemberOf -> IIIT Bangalore' relationships.")
@@ -148,7 +149,8 @@ def main():
     print(f"\nGenerating OWL representation: {args.output}...")
 
 # = = = = = Going to the master_schema.py file for defining the schema of the ontology = = = = =
-# OntologyData() is used to create a new ontology
+
+    # OntologyData() is used to create a new ontology
     output_ontology = OntologyData(triples=global_triples)
 
 # = = = = = Going to the owl_generator.py file for generating the OWL file = = = = =
