@@ -85,7 +85,7 @@ Return ONLY a valid JSON object conforming EXACTLY to this JSON Schema — nothi
 
 2. SUBJECT — must be the name of a real entity present in the text
    (a person, an organisation, a publication, an award, …).
-{f'   The main person on this page is "{faculty_name}" — use that exact spelling.' if faculty_name else ''}
+{f'   If the text refers to "{faculty_name}", use that exact spelling for consistency, but you MUST extract relationships between ALL entities found in the text, not just this primary person.' if faculty_name else ''}
    Never use honorifics (Dr., Prof., Mr.) in the subject field.
 
 3. PREDICATE TYPE

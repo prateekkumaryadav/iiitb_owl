@@ -28,9 +28,9 @@ class Triple(BaseModel):
     predicate: str = Field(
         description=(
             "A camelCase relationship name freely invented to capture the fact. "
-            "Examples: hasDesignation, worksAt, hasResearchInterest, "
-            "authoredPublication, receivedAward, teachesCourse, holdsFellowship, "
-            "hasEmail, hasQualification, hasPatent, memberOf."
+            "Examples: worksAt, authoredDocument, hasEmail, locatedIn, partOf, "
+            "relatedTo. Do NOT restrict yourself to these examples—invent exact "
+            "names that best fit the text."
         )
     )
     object: str = Field(
@@ -45,14 +45,14 @@ class Triple(BaseModel):
     subject_class: str = Field(
         description=(
             "The OWL Class the subject belongs to. "
-            "Examples: Faculty, Institute, Department, ResearchArea."
+            "Examples: Person, Organization, Location, Event, Concept."
         )
     )
     object_class: Optional[str] = Field(
         default=None,
         description=(
             "The OWL Class the object belongs to — only for ObjectProperty triples. "
-            "Examples: ResearchArea, Award, Course, Publication, Institute. "
+            "Examples: Project, Publication, Institution, Skill. "
             "Leave null/empty for DatatypeProperty triples."
         )
     )

@@ -148,11 +148,12 @@ def get_internal_links(base_url: str, focus: str = "all") -> list:
     domain = urlparse(base_url).netloc
 
     if focus == "faculty":
-        keywords = ["faculty", "people", "professor"]
+        keywords = ["faculty", "people", "professor", "staff", "researcher"]
     elif focus == "courses":
-        keywords = ["course", "academic", "department", "program", "degree"]
+        keywords = ["course", "academic", "department", "program", "degree", "module"]
     else:
-        keywords = ["faculty", "course", "academic", "department", "program", "research"]
+        # Broader set of keywords to discover a wider variety of institutional knowledge
+        keywords = ["faculty", "course", "academic", "department", "program", "research", "publications", "projects", "events", "news", "about"]
 
     links = set()
     for a_tag in soup.find_all("a", href=True):
