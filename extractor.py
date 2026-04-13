@@ -66,62 +66,41 @@ def extract_triples(text: str, faculty_name: str = "") -> OntologyData:
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
     schema_json = OntologyData.model_json_schema()
 
-    # Build the system prompt — no predicate list supplied on purpose
+    # System prompt: structural rules only — zero topic hints, zero predicate examples.
+    # The LLM reads the text and decides what facts exist and how to name the relationships.
     system_prompt = f"""
-You are an expert Knowledge Graph extraction engine for university faculty profiles.
+You are a Knowledge Graph extraction engine.
 
-Your task:
-Read the raw text of a faculty profile page and extract semantic triples that
-capture the most important facts about the faculty member.
+Read the text below (from a university faculty web page) and extract every
+meaningful fact as a semantic triple.
 
 === OUTPUT FORMAT ===
-You MUST return valid JSON that strictly conforms to this JSON Schema:
+Return ONLY a valid JSON object conforming EXACTLY to this JSON Schema — nothing else:
 {json.dumps(schema_json, indent=2)}
 
-=== PREDICATE RULES (CRITICAL) ===
-- DO NOT use a fixed list of predicates.  Invent the best camelCase predicate
-  that precisely describes each relationship you find.
-- Good examples: hasDesignation, worksAt, hasEmail, hasQualification,
-  hasResearchInterest, authoredPublication, receivedAward, holdsFellowship,
-  teachesCourse, holdsPatent, memberOf, chairOf, projectPIOf, projectCoPIOf,
-  receivedFellowship, hasBestPaperAward, sponsoredBy.
-- Keep predicates concise and reusable across faculty members.
+=== STRUCTURAL RULES ===
 
-=== SUBJECT RULES ===
-- The subject of EVERY triple must be the faculty member's full name
-  (e.g. "Debabrata Das") OR a named entity that appears as the object of a
-  previously defined triple (e.g. a publication title, award name, course name).
-- Always use the faculty member's clean full name — no honorifics like "Dr." or "Prof.".
-{f'- The primary faculty member on this page is: "{faculty_name}"' if faculty_name else ''}
+1. PREDICATE — invent a concise camelCase name that best describes the relationship
+   between subject and object.  Use your own judgement; there is no approved list.
 
-=== CLASS RULES ===
-- subject_class: pick the most specific OWL class for the subject.
-  Common classes: Faculty, Institute, Department, ResearchArea, Publication,
-  Award, Course, Project, Fellowship, Patent.
-- object_class: required for ObjectProperty triples; use the same class vocabulary.
-  Leave null for DatatypeProperty triples.
+2. SUBJECT — must be the name of a real entity present in the text
+   (a person, an organisation, a publication, an award, …).
+{f'   The main person on this page is "{faculty_name}" — use that exact spelling.' if faculty_name else ''}
+   Never use honorifics (Dr., Prof., Mr.) in the subject field.
 
-=== PREDICATE TYPE RULES ===
-- DatatypeProperty → object is a plain text/string literal (email, year, title string).
-- ObjectProperty   → object is a named real-world entity (institute, area, award, …).
+3. PREDICATE TYPE
+   - ObjectProperty   → the object is a named real-world entity (another individual).
+   - DatatypeProperty → the object is a plain literal value (a string, number, email, …).
 
-=== EXTRACTION SCOPE ===
-Extract facts in this priority order (stop at ~35 triples to stay focused):
-1. Basic identity: name, designation, email, affiliation, education/qualifications.
-2. Research interests (one triple per interest area).
-3. Key courses taught (up to 5).
-4. Sponsored projects (up to 5) — PI/CoPI role, title, sponsor.
-5. Selected publications (up to 5 journal papers).
-6. Honours and awards (up to 5).
-7. Fellowships, patents if mentioned.
+4. CLASSES — assign the most specific descriptive class name you can find for both
+   subject_class and object_class.  Use your own judgement; there is no approved list.
+   object_class must be null for DatatypeProperty triples.
 
-=== WHAT TO IGNORE ===
-- Website navigation links, menus, footers, breadcrumbs.
-- Boilerplate legal text, contact addresses.
-- Conference paper lists beyond the 5 selected.
-- Duplicate triples.
+5. IGNORE navigation menus, breadcrumbs, footer boilerplate, and duplicate lines.
 
-Output ONLY the JSON object. Nothing else.
+6. Aim for up to 35 high-quality, non-redundant triples per text block.
+
+Output ONLY the JSON object. No explanation, no markdown fences.
 """
 
     chunks = _chunk_text(text, max_len=3000)
