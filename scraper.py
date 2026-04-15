@@ -1,17 +1,21 @@
 # scraper.py
+
 # Fetches and cleans text from a faculty profile page.
 # Strips site-wide navigation, headers, footers, and sidebars so the
 # extractor only sees the actual profile content.
 
+# Imports
+# requests is used to fetch the web page
 import requests
+
+# BeautifulSoup is used to parse the HTML content
 from bs4 import BeautifulSoup, Tag as BS4Tag
+
+# urlparse and urljoin are used to parse and join URLs
 from urllib.parse import urlparse, urljoin
 
-
-# ---------------------------------------------------------------------------
 # Primary scraper — faculty profile page
-# ---------------------------------------------------------------------------
-
+# Function to fetch and clean text from a faculty profile page
 def scrape_faculty_page(url: str) -> str:
     """
     Fetch a faculty profile URL and return only the biography / profile content
@@ -26,9 +30,13 @@ def scrape_faculty_page(url: str) -> str:
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # ---- Step 1: Nuke elements that are definitely boilerplate ----
+    # Step 1: Nuke elements that are definitely boilerplate
+    
+    # Remove script, style, and noscript tags
     for tag in soup(["script", "style", "noscript"]):
         tag.decompose()
+    
+    # Remove header, footer, nav, and aside tags
     for tag in soup.find_all(["header", "footer", "nav", "aside"]):
         tag.decompose()
 
@@ -52,10 +60,11 @@ def scrape_faculty_page(url: str) -> str:
     for tag in tags_to_remove:
         tag.decompose()
 
-    # ---- Step 2: Try to isolate the main content container ----
+    # Step 2: Try to isolate the main content container
     main_content = None
 
     # Heuristic 1: <main> tag
+    # this heuristic is used to find the main content of the page
     main_content = soup.find("main")
 
     # Heuristic 2: common content div IDs / classes
@@ -68,6 +77,7 @@ def scrape_faculty_page(url: str) -> str:
                 break
 
     # Heuristic 3: find the largest block of paragraph text
+    # finding the largest block of text helps to remove the noise from the page
     if not main_content:
         candidates = sorted(
             soup.find_all(["div", "section"]),
@@ -78,7 +88,7 @@ def scrape_faculty_page(url: str) -> str:
 
     target = main_content if main_content else soup
 
-    # ---- Step 3: Extract and clean text ----
+    # Step 3: Extract and clean text
     text = target.get_text(separator="\n")
     lines = [line.strip() for line in text.splitlines()]
 
@@ -101,6 +111,7 @@ def scrape_faculty_page(url: str) -> str:
             continue
 
         # Skip bare URLs and javascript: fragments
+        # this is used to skip the lines that are bare URLs or javascript: fragments
         if line.startswith("http") or line.startswith("javascript:"):
             continue
 
@@ -117,10 +128,8 @@ def scrape_faculty_page(url: str) -> str:
     return "\n".join(cleaned_lines).strip()
 
 
-# ---------------------------------------------------------------------------
 # Generic scraper (kept for compatibility with depth crawling)
-# ---------------------------------------------------------------------------
-
+# this is used to scrape the text from the web page
 def scrape_text_from_url(url: str) -> str:
     """
     Generic page scraper — delegates to the faculty page scraper.
@@ -128,10 +137,8 @@ def scrape_text_from_url(url: str) -> str:
     return scrape_faculty_page(url)
 
 
-# ---------------------------------------------------------------------------
 # Internal-links crawler (used by depth mode in main.py)
-# ---------------------------------------------------------------------------
-
+# this is used to crawl the internal links of the web page
 def get_internal_links(base_url: str, focus: str = "all") -> list:
     """
     Crawls base_url for internal links that match the given focus keyword set.
@@ -168,14 +175,11 @@ def get_internal_links(base_url: str, focus: str = "all") -> list:
     return list(links)
 
 
-# ---------------------------------------------------------------------------
 # Manual test
-# ---------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    url = "https://www.iiitb.ac.in/faculty/debabrata-das"
-    print(f"[Test] Scraping: {url}")
-    text = scrape_faculty_page(url)
-    print(f"[Test] Extracted {len(text)} characters.")
-    print("\n--- First 2000 chars ---\n")
-    print(text[:2000])
+# if __name__ == "__main__":
+#     url = "https://www.iiitb.ac.in/faculty/debabrata-das"
+#     print(f"[Test] Scraping: {url}")
+#     text = scrape_faculty_page(url)
+#     print(f"[Test] Extracted {len(text)} characters.")
+#     print("\n--- First 2000 chars ---\n")
+#     print(text[:2000])

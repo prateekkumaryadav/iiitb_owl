@@ -1,4 +1,5 @@
 # extractor.py
+
 # Sends cleaned faculty page text to the Groq LLM and returns
 # OntologyData (a list of typed triples with predicate/class metadata).
 #
@@ -6,17 +7,30 @@
 # The LLM reads the page and freely invents camelCase predicate names
 # that best describe each relationship it finds.
 
+# imports
+# os is used to get the API key from the environment variables
 import os
+
+# json is used to parse the JSON response from the LLM
 import json
+
+# time is used to wait for the API rate limit
 import time
+
+# re is used to clean the text
 import re
+
+# groq is used to interact with the LLM
 from groq import Groq
+
+# OntologyData and Triple are used to store the extracted triples
 from master_schema import OntologyData, Triple
 
-
-# ---------------------------------------------------------------------------
 # Helper: split long text into chunks
-# ---------------------------------------------------------------------------
+# this is used to split the text into chunks of at most max_len chars
+
+# currently limited to 1500 chars per chunk
+# this is done to avoid the LLM from hallucinating
 
 def _chunk_text(text: str, max_len: int = 1500) -> list[str]:
     """Split text on word boundaries into chunks of at most max_len chars."""
@@ -33,11 +47,8 @@ def _chunk_text(text: str, max_len: int = 1500) -> list[str]:
         chunks.append(" ".join(current))
     return chunks
 
-
-# ---------------------------------------------------------------------------
 # Name normaliser (same as before)
-# ---------------------------------------------------------------------------
-
+# this is used to clean the name of the faculty
 def _clean_name(raw: str) -> str:
     """Strip honorifics and normalise a person's name."""
     cleaned = re.sub(
@@ -48,11 +59,8 @@ def _clean_name(raw: str) -> str:
     cleaned = re.sub(r"['.,]", '', cleaned).strip()
     return cleaned.title()
 
-
-# ---------------------------------------------------------------------------
 # Main extraction function
-# ---------------------------------------------------------------------------
-
+# this is used to extract the triples from the text
 def extract_triples(text: str, faculty_name: str = "") -> OntologyData:
     """
     Send cleaned faculty profile text to the LLM and return OntologyData.
@@ -98,18 +106,18 @@ Return ONLY a valid JSON object conforming EXACTLY to this JSON Schema — nothi
 
 5. IGNORE navigation menus, breadcrumbs, footer boilerplate, and duplicate lines.
 
-6. Aim for up to 35 high-quality, non-redundant triples per text block.
+6. Aim for up to 100 high-quality, non-redundant triples per text block.
 
 Output ONLY the JSON object. No explanation, no markdown fences.
 """
-
+    # split the text into chunks of at most 3000 chars
     chunks = _chunk_text(text, max_len=3000)
     all_triples: list[Triple] = []
 
     print(f"[Extractor] Text split into {len(chunks)} chunk(s) for processing.")
 
     for i, chunk in enumerate(chunks):
-        print(f"  → Processing chunk {i+1}/{len(chunks)} …")
+        print(f"Processing chunk {i+1}/{len(chunks)} …")
 
         response = None
         for attempt in range(3):
@@ -126,12 +134,13 @@ Output ONLY the JSON object. No explanation, no markdown fences.
                 )
                 break
             except Exception as e:
+                # if rate limit is exceeded, wait for 15 seconds and try again
                 if "429" in str(e) or "Too Many Requests" in str(e):
                     wait = 15 * (attempt + 1)
-                    print(f"    [Rate Limit] Waiting {wait}s …")
+                    print(f"[Rate Limit] Waiting {wait}s …")
                     time.sleep(wait)
                 else:
-                    print(f"    [Error] {e}")
+                    print(f"[Error] {e}")
                     break
 
         # Polite delay between requests
@@ -141,6 +150,7 @@ Output ONLY the JSON object. No explanation, no markdown fences.
             continue
 
         try:
+            # load the JSON response
             data = json.loads(response.choices[0].message.content)
             for t_data in data.get("triples", []):
                 try:
@@ -161,17 +171,25 @@ Output ONLY the JSON object. No explanation, no markdown fences.
                     all_triples.append(triple)
 
                     # Stop after 35 triples to keep OWL manageable
-                    if len(all_triples) >= 35:
+                    # if len(all_triples) >= 35:
+                        # break
+
+                    # Stop after 100 triples to keep OWL manageable
+                    if len(all_triples) >= 100:
                         break
 
                 except Exception:
                     pass  # Skip malformed triples
 
         except Exception as parse_err:
-            print(f"  [Parse error on chunk {i+1}]: {parse_err}")
+            print(f"[Parse error on chunk {i+1}]: {parse_err}")
 
-        if len(all_triples) >= 35:
-            print("  [Extractor] Reached 35-triple limit — stopping early.")
+        # if len(all_triples) >= 35:
+        #     print("  [Extractor] Reached 35-triple limit — stopping early.")
+        #     break
+
+        if len(all_triples) >= 100:
+            print("[Extractor] Reached 100-triple limit — stopping early.")
             break
 
     # Deduplicate by (subject, predicate, object)
@@ -187,17 +205,14 @@ Output ONLY the JSON object. No explanation, no markdown fences.
     return OntologyData(triples=unique_triples)
 
 
-# ---------------------------------------------------------------------------
-# Quick self-test
-# ---------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    sample = (
-        "Dr. Debabrata Das is Director of IIIT-Bangalore. "
-        "He received his Ph.D. from IIT Kharagpur. "
-        "His research interests include Wireless Access Networks and IoT. "
-        "Email: ddas@iiitb.ac.in"
-    )
-    print("=== Self-test ===")
-    result = extract_triples(sample, faculty_name="Debabrata Das")
-    print(result.model_dump_json(indent=2))
+# # Quick self-test
+# if __name__ == "__main__":
+#     sample = (
+#         "Dr. Debabrata Das is Director of IIIT-Bangalore. "
+#         "He received his Ph.D. from IIT Kharagpur. "
+#         "His research interests include Wireless Access Networks and IoT. "
+#         "Email: ddas@iiitb.ac.in"
+#     )
+#     print("=== Self-test ===")
+#     result = extract_triples(sample, faculty_name="Debabrata Das")
+#     print(result.model_dump_json(indent=2))
