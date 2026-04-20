@@ -144,9 +144,9 @@ def main():
         print("[Step 1/3] Scraping page")
         raw_text = scrape_faculty_page(current_url)
         if not raw_text:
-            print("  ✗ Could not extract text. Skipping.")
+            print("Could not extract text. Skipping.")
             continue
-        print(f"  ✓ {len(raw_text)} characters extracted.")
+        print(f"{len(raw_text)} characters extracted.")
 
         # Step 2: Extract triples
         entity_name = _entity_name_from_url(current_url)

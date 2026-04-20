@@ -11,6 +11,9 @@ def clean_name(uri):
         name = uri.split("/")[-1]
     name = urllib.parse.unquote(name)
     name = name.replace("_", " ")
+    name = name.replace("-", " ")
+    # Collapse multiple spaces
+    name = " ".join(name.split())
     return name.lower().strip()
 
 def get_specific_types(g, uri):
@@ -50,36 +53,49 @@ def entity_resolution(g):
         return g
         
     prompt = f"""
-You are a semantic web ontology aligner. 
-Identify pairs of concepts that refer to the EXACT same real-world entity or equivalent relationships, despite slight lexical differences in their names.
+You are a semantic web ontology aligner specializing in university knowledge graphs.
+Your task: identify pairs of names that refer to the EXACT same real-world entity or relationship,
+despite surface-level lexical differences.
 
-I provide two JSON lists of names.
-Output a valid JSON object strictly adhering to this schema:
+also match the symbols with the words like "&" with "and"
+
+All names below have already been lowercased and normalized. Treat them as case-insensitive.
+
+Match pairs in these situations:
+1. Abbreviations vs full forms — "dept of cs" = "department of computer science"
+2. Abbreviations embedded in longer names — "cs & e" = "computer science and engineering"
+3. Partial names vs full names — "meenakshi" = "meenakshi dsouza" (if clearly the same person)
+4. Acronyms — "iiit-b" = "iiit bangalore"
+5. Minor spelling / punctuation variants — "dept. of cse" = "department of cse"
+6. Ampersand variants — "computer science & engineering" = "computer science and engineering"
+
+DO NOT match:
+- Strings that are already identical (no need to report ["meenakshi", "meenakshi"])
+- Similar but distinct entities (e.g. "department of cs" ≠ "department of mathematics")
+- Properties that sound related but are semantically different (e.g. "hasDuration" ≠ "hasEducation")
+- Overly broad matches — when in doubt, leave it out
+
+Output a valid JSON object with this exact schema and nothing else:
 {{
   "same_individuals": [
-    ["Name 1", "Name 2"], ...
+    ["name 1", "name 2"]
   ],
   "equivalent_properties": [
-    ["Name 1", "Name 2"], ...
+    ["prop 1", "prop 2"]
   ]
 }}
 
-Guidelines:
-- Match items that are conceptually identical (e.g. "Meenakshi" & "Meenakshi Dsouza", or "Dept of CS" & "Department of Computer Science").
-- DO NOT match identical strings. There is no need to output ["Meenakshi", "Meenakshi"].
-- DO NOT false link "hasDuration" and "hasEducation".
-- Keep the output as concise as possible. ONLY include genuine synonymous pairings.
-- If there are zero matching pairs, output empty arrays [].
-- Output ONLY the JSON object.
-
-Example Output:
+Example:
 {{
   "same_individuals": [
-    ["Meenakshi", "Meenakshi Dsouza"],
-    ["IIIT Bangalore", "IIIT-Bangalore"]
+    ["meenakshi", "meenakshi dsouza"],
+    ["dept of cs", "department of computer science"],
+    ["department of computer science", "department of computer science and engineering"],
+    ["iiit bangalore", "iiit b"]
+    ["Department of Computer Science & Engineering", "Department of Computer Science and Engineering"]
   ],
   "equivalent_properties": [
-    ["teaches", "teachesCourse"]
+    ["teaches", "teachescourse"]
   ]
 }}
 
@@ -94,7 +110,8 @@ Inputs:
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"},
             temperature=0.0,
-            max_completion_tokens=1500
+            # max_completion_tokens=1500
+            max_completion_tokens=4096
         )
         
         data = json.loads(response.choices[0].message.content)
@@ -113,7 +130,7 @@ Inputs:
         
         for pair in data.get("same_individuals", []):
             if isinstance(pair, list) and len(pair) == 2:
-                n1, n2 = pair[0], pair[1]
+                n1, n2 = pair[0].lower().strip(), pair[1].lower().strip()
                 if not isinstance(n1, str) or not isinstance(n2, str):
                     continue
                 uris1 = name_to_indiv_uris.get(n1, [])
@@ -126,7 +143,7 @@ Inputs:
                 
         for pair in data.get("equivalent_properties", []):
             if isinstance(pair, list) and len(pair) == 2:
-                n1, n2 = pair[0], pair[1]
+                n1, n2 = pair[0].lower().strip(), pair[1].lower().strip()
                 if not isinstance(n1, str) or not isinstance(n2, str):
                     continue
                 uris1 = name_to_prop_uris.get(n1, [])
