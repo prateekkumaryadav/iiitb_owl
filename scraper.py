@@ -48,10 +48,18 @@ def scrape_faculty_page(url: str) -> str:
         "header", "footer", "topbar", "dropdown", "mobile-menu",
     ]
     tags_to_remove = []
+    # Calculate total text length to avoid decomposing main wrappers
+    total_text_len = max(len(soup.get_text()), 1)
+    
     for tag in soup.find_all(True):
         # Guard: skip NavigableString and other non-Tag objects
         if not isinstance(tag, BS4Tag):
             continue
+            
+        # Protect large structural containers: don't delete elements containing > 30% of page text
+        if tag.name in ["body", "html", "main", "article"] or len(tag.get_text()) > (total_text_len * 0.3):
+            continue
+            
         cls = " ".join(tag.get("class", []))
         tag_id = tag.get("id", "")
         combined = (cls + " " + tag_id).lower()
@@ -158,6 +166,8 @@ def get_internal_links(base_url: str, focus: str = "all") -> list:
         keywords = ["faculty", "people", "professor", "staff", "researcher"]
     elif focus == "courses":
         keywords = ["course", "academic", "department", "program", "degree", "module"]
+    elif focus == "department":
+        keywords = ["department", "faculty", "research", "laboratories", "projects", "courses", "about"]
     else:
         # Broader set of keywords to discover a wider variety of institutional knowledge
         keywords = ["faculty", "course", "academic", "department", "program", "research", "publications", "projects", "events", "news", "about"]

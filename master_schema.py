@@ -33,7 +33,7 @@ class Triple(BaseModel):
 
     # Subject
     subject: str = Field(
-        description="The source entity, typically the faculty member's full name."
+        description="The source entity, such as a person, department name, organization, or course."
     )
     # Predicate
     predicate: str = Field(

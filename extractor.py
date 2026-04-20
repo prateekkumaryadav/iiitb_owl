@@ -61,55 +61,116 @@ def _clean_name(raw: str) -> str:
 
 # Main extraction function
 # this is used to extract the triples from the text
-def extract_triples(text: str, faculty_name: str = "") -> OntologyData:
+def extract_triples(text: str, entity_name: str = "", entity_type: str = "faculty") -> OntologyData:
     """
-    Send cleaned faculty profile text to the LLM and return OntologyData.
+    Send cleaned text to the LLM and return OntologyData.
 
     Parameters
     ----------
-    text         : Clean text from one faculty profile page.
-    faculty_name : Hint for the LLM so it anchors all triples to the
+    text         : Clean text from one page.
+    entity_name  : Hint for the LLM so it anchors all triples to the
                    correct subject (avoids hallucinated names).
+    entity_type  : Provide context of what kind of page is being scraped.
     """
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
     schema_json = OntologyData.model_json_schema()
 
     # System prompt: structural rules only — zero topic hints, zero predicate examples.
     # The LLM reads the text and decides what facts exist and how to name the relationships.
+    
     system_prompt = f"""
-You are a Knowledge Graph extraction engine.
+You are a precision Knowledge Graph extraction engine for academic institutional data.
 
-Read the text below (from a university faculty web page) and extract every
-meaningful fact as a semantic triple.
+Your task: Extract semantic triples from university {entity_type} web pages to build a comprehensive OWL/RDF knowledge graph of faculty, departments, research, and institutional relationships.
 
 === OUTPUT FORMAT ===
 Return ONLY a valid JSON object conforming EXACTLY to this JSON Schema — nothing else:
 {json.dumps(schema_json, indent=2)}
 
-=== STRUCTURAL RULES ===
+=== EXTRACTION GUIDELINES ===
 
-1. PREDICATE — invent a concise camelCase name that best describes the relationship
-   between subject and object.  Use your own judgement; there is no approved list.
+1. SUBJECT
+   - Extract ALL entities: faculty members, departments, research groups, publications, courses, projects, awards, degrees, institutions
+{f'   - When referring to "{entity_name}", use that EXACT spelling for consistency' if entity_name else ''}
+   - NEVER include titles/honorifics (Dr., Prof., Mr., Ms.) in subject names
+   - Use full legal names when available (e.g., "John Michael Smith" not "J.M. Smith")
+   - For departments/organizations, use official full names
 
-2. SUBJECT — must be the name of a real entity present in the text
-   (a person, an organisation, a publication, an award, …).
-{f'   If the text refers to "{faculty_name}", use that exact spelling for consistency, but you MUST extract relationships between ALL entities found in the text, not just this primary person.' if faculty_name else ''}
-   Never use honorifics (Dr., Prof., Mr.) in the subject field.
+2. PREDICATE (relationship naming)
+   - Use precise, semantically rich camelCase predicates
+   - Academic domain examples:
+     * headOf, memberOf, affiliatedWith, chairOf
+     * teaches, supervises, collaboratesWith, advisedBy
+     * authored, coauthored, presented, published
+     * receivedDegree, awardedGrant, wonAward
+     * specializesIn, researchesIn, conducts
+     * locatedIn, partOf, establishedIn
+   - Be consistent: use the same predicate for similar relationships across extractions
 
 3. PREDICATE TYPE
-   - ObjectProperty   → the object is a named real-world entity (another individual).
-   - DatatypeProperty → the object is a plain literal value (a string, number, email, …).
+   - ObjectProperty: object is a named entity (Person, Department, Publication, Award, Institution)
+     Examples: "John Smith" memberOf "Computer Science Department"
+              "Jane Doe" authored "Machine Learning Paper"
+   
+   - DatatypeProperty: object is a literal value (string, number, date, email, URL, phone)
+     Examples: "John Smith" hasEmail "john@university.edu"
+              "Computer Science" foundedIn "1985"
+              "Jane Doe" hasPhone "+1-555-0123"
 
-4. CLASSES — assign the most specific descriptive class name you can find for both
-   subject_class and object_class.  Use your own judgement; there is no approved list.
-   object_class must be null for DatatypeProperty triples.
+4. SUBJECT_CLASS and OBJECT_CLASS
+   - Use specific, hierarchical academic classes:
+     * Person types: Faculty, Professor, AssociateProfessor, AssistantProfessor, Lecturer, Researcher, PostDoc, PhDStudent
+     * Organization types: Department, ResearchGroup, Institute, Laboratory, Center, University, College
+     * Academic outputs: Publication, Journal, Conference, Book, Patent, Thesis
+     * Academic entities: Course, Program, Degree, Grant, Award, Project
+   - object_class MUST be null for all DatatypeProperty triples
+   - Choose the most specific class available (e.g., "AssociateProfessor" over "Faculty")
 
-5. IGNORE navigation menus, breadcrumbs, footer boilerplate, and duplicate lines.
+5. CONTENT TO EXTRACT
+   Include:
+   ✓ Personal information: names, titles, positions, contact details, office locations
+   ✓ Organizational structure: department membership, committee roles, administrative positions
+   ✓ Academic credentials: degrees, institutions attended, graduation years
+   ✓ Research interests and specializations
+   ✓ Publications, patents, and academic outputs
+   ✓ Teaching assignments and course information
+   ✓ Awards, honors, grants, and recognitions
+   ✓ Collaborations and professional networks
+   ✓ Projects, labs, and research group affiliations
+   
+   Exclude:
+   ✗ Navigation menus, headers, footers
+   ✗ Breadcrumb trails and site structure elements
+   ✗ Generic UI text ("Click here", "Learn more", "Back to top")
+   ✗ Duplicate information repeated across the page
+   ✗ Cookie notices, privacy policies, accessibility statements
 
-6. Aim for up to 100 high-quality, non-redundant triples per text block.
+6. QUALITY STANDARDS
+   - Extract 50-100 high-quality, non-redundant triples per text chunk
+   - Prioritize factual, verifiable information over vague statements
+   - Maintain consistency in entity naming across all triples
+   - Ensure each triple adds unique information to the knowledge graph
+   - Preserve temporal information (dates, years) when available
+   - Include both direct facts and implicit relationships that are clearly stated
 
-Output ONLY the JSON object. No explanation, no markdown fences.
+7. SPECIAL CASES
+   - Email addresses: use predicate "hasEmail" with DatatypeProperty
+   - Phone numbers: use predicate "hasPhone" with DatatypeProperty
+   - URLs/websites: use predicate "hasWebsite" or "hasProfileURL" with DatatypeProperty
+   - Dates: preserve format from source (use predicates like "establishedIn", "graduatedIn", "publishedIn")
+   - Multi-word entities: keep as complete phrases (e.g., "Machine Learning Lab" not separate words)
+   - Abbreviations: expand when full form is available in text
+
+=== CRITICAL REQUIREMENTS ===
+- Output ONLY the JSON object
+- NO markdown code fences (no ```json)
+- NO explanatory text before or after
+- NO comments in the JSON
+- Ensure valid JSON syntax (proper escaping, no trailing commas)
+
+Begin extraction now.
 """
+
     # split the text into chunks of at most 3000 chars
     chunks = _chunk_text(text, max_len=3000)
     all_triples: list[Triple] = []
@@ -127,7 +188,7 @@ Output ONLY the JSON object. No explanation, no markdown fences.
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user",   "content":
-                         f"Extract triples from this faculty profile text:\n\n{chunk}"}
+                         f"Extract triples from this {entity_type} profile text:\n\n{chunk}"}
                     ],
                     response_format={"type": "json_object"},
                     temperature=0.1,
@@ -156,8 +217,8 @@ Output ONLY the JSON object. No explanation, no markdown fences.
                 try:
                     triple = Triple(**t_data)
 
-                    # Normalise faculty subject names
-                    if triple.subject_class == "Faculty":
+                    # Normalise subject names if it's a person/faculty
+                    if triple.subject_class in ["Faculty", "Person", "Professor", "Staff"] or entity_type == "faculty":
                         triple.subject = _clean_name(triple.subject)
 
                     # Drop clearly bad triples
@@ -205,7 +266,7 @@ Output ONLY the JSON object. No explanation, no markdown fences.
     return OntologyData(triples=unique_triples)
 
 
-# # Quick self-test
+# Quick self-test
 # if __name__ == "__main__":
 #     sample = (
 #         "Dr. Debabrata Das is Director of IIIT-Bangalore. "
@@ -214,5 +275,5 @@ Output ONLY the JSON object. No explanation, no markdown fences.
 #         "Email: ddas@iiitb.ac.in"
 #     )
 #     print("=== Self-test ===")
-#     result = extract_triples(sample, faculty_name="Debabrata Das")
+#     result = extract_triples(sample, entity_name="Debabrata Das")
 #     print(result.model_dump_json(indent=2))

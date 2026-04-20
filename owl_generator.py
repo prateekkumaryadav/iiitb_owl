@@ -30,7 +30,7 @@ def _uri_safe(text: str) -> str:
 
 # Main generator
 # Function to generate OWL ontology from OntologyData
-def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl") -> None:
+def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl", entity_type: str = "faculty") -> None:
     """
     Build a rich OWL graph from OntologyData and serialise it to OWL/XML.
 
@@ -54,9 +54,9 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl") -
     # Ontology declaration
     ont_uri = URIRef("http://www.iiitb.ac.in/ontology/university")
     g.add((ont_uri, RDF.type, OWL.Ontology))
-    g.add((ont_uri, RDFS.label, Literal("IIIT-Bangalore Faculty Ontology")))
+    g.add((ont_uri, RDFS.label, Literal(f"IIIT-Bangalore {entity_type.title()} Ontology")))
     g.add((ont_uri, RDFS.comment,
-           Literal("Auto-generated from IIIT-B faculty web pages. "
+           Literal(f"Auto-generated from IIIT-B {entity_type} web pages. "
                    "Predicates are discovered dynamically by an LLM — "
                    "no hand-coded schema was used.")))
 

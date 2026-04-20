@@ -38,10 +38,10 @@ from extractor import extract_triples
 # owl_generator.py for generating OWL
 from owl_generator import generate_owl
 
-# Helper function to extract faculty name from URL
-def _faculty_name_from_url(url: str) -> str:
+# Helper function to extract entity name from URL
+def _entity_name_from_url(url: str) -> str:
     """
-    Best-effort: extract a human-readable name from a faculty profile URL.
+    Best-effort: extract a human-readable name from a profile URL.
     e.g.  ".../faculty/debabrata-das"  →  "Debabrata Das"
     """
     # Get the last part of the URL
@@ -62,21 +62,29 @@ def main():
         "--url",
         type=str,
         default="https://www.iiitb.ac.in/faculty/debabrata-das",
-        help="Faculty profile URL to process (default: Debabrata Das).",
+        help="Profile URL to process.",
+    )
+    # Add focus argument
+    parser.add_argument(
+        "--focus",
+        type=str,
+        choices=["faculty", "department", "courses", "all"],
+        default="faculty",
+        help="Type of entity being scraped (e.g. faculty, department).",
     )
     # Add output argument
     parser.add_argument(
         "--output",
         type=str,
-        default="faculty_ontology.owl",
-        help="Output OWL file name (default: faculty_ontology.owl).",
+        default="ontology.owl",
+        help="Output OWL file name (default: ontology.owl).",
     )
     # Add depth argument
     parser.add_argument(
         "--depth",
         type=int,
         default=0,
-        help="0 = single page only; 1 = also follow faculty sub-links found on the page.",
+        help="0 = single page only; 1 = also follow sub-links found on the page.",
     )
     # Add max pages argument
     parser.add_argument(
@@ -94,19 +102,19 @@ def main():
     # print("=" * 60)
     print(f"Seed URL   : {args.url}")
     print(f"Output     : {args.output}")
-    print(f"Depth      : {args.depth}  |  Max pages: {args.max_pages}")
+    print(f"Depth      : {args.depth}  |  Max pages: {args.max_pages}  |  Focus: {args.focus}")
     # print("=" * 60 + "\n")
 
     # Build list of URLs to process
     # If depth is 0, process only the seed URL
     target_urls = [args.url]
     
-    # If depth is greater than 0, discover and add faculty links
+    # If depth is greater than 0, discover and add links
     if args.depth > 0:
-        print(f"Discovering faculty links on {args.url}")
+        print(f"Discovering {args.focus} links on {args.url}")
 
         # Get internal links
-        found = get_internal_links(args.url, focus="faculty")
+        found = get_internal_links(args.url, focus=args.focus)
 
         # Add found links to target URLs
         target_urls.extend(found)
@@ -141,10 +149,10 @@ def main():
         print(f"  ✓ {len(raw_text)} characters extracted.")
 
         # Step 2: Extract triples
-        faculty_name = _faculty_name_from_url(current_url)
+        entity_name = _entity_name_from_url(current_url)
 
-        print(f"[Step 2/3] Sending to LLM (faculty hint: '{faculty_name}')")
-        page_data = extract_triples(raw_text, faculty_name=faculty_name)
+        print(f"[Step 2/3] Sending to LLM ({args.focus} hint: '{entity_name}')")
+        page_data = extract_triples(raw_text, entity_name=entity_name, entity_type=args.focus)
 
         # Add triples to global list
         if page_data and page_data.triples:
@@ -177,7 +185,7 @@ def main():
     output_ontology = OntologyData(triples=global_triples)
 
     # Generate OWL
-    generate_owl(output_ontology, args.output)
+    generate_owl(output_ontology, args.output, entity_type=args.focus)
 
     print("\nPipeline complete!\n")
 
