@@ -146,7 +146,7 @@ Return ONLY a valid JSON object conforming EXACTLY to this JSON Schema — nothi
    ✗ Cookie notices, privacy policies, accessibility statements
 
 6. QUALITY STANDARDS
-   - Extract 50-100 high-quality, non-redundant triples per text chunk
+   - Extract 900-1000 high-quality, non-redundant triples per text chunk, if possible
    - Prioritize factual, verifiable information over vague statements
    - Maintain consistency in entity naming across all triples
    - Ensure each triple adds unique information to the knowledge graph
@@ -236,7 +236,10 @@ Begin extraction now.
                         # break
 
                     # Stop after 100 triples to keep OWL manageable
-                    if len(all_triples) >= 100:
+                    # if len(all_triples) >= 100:
+                    #     break
+                    
+                    if len(all_triples) >= 1000:
                         break
 
                 except Exception:
@@ -249,8 +252,11 @@ Begin extraction now.
         #     print("  [Extractor] Reached 35-triple limit — stopping early.")
         #     break
 
-        if len(all_triples) >= 100:
-            print("[Extractor] Reached 100-triple limit — stopping early.")
+        # if len(all_triples) >= 100:
+        #     print("[Extractor] Reached 100-triple limit — stopping early.")
+        #     break
+        if len(all_triples) >= 1000:
+            # print("[Extractor] Reached 100-triple limit — stopping early.")
             break
 
     # Deduplicate by (subject, predicate, object)
