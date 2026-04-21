@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:uni="http://www.iiitb.ac.in/ontology/university#"
+>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Speech_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Speech Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Vlsi_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:label>Vlsi Systems</rdfs:label>
+    <uni:domainOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#domainOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>domainOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0365589475942c489f0d7e98fe78cf9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nc39609f2f5d441b58609dfe31a218ad9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#IoT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>IoT</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N691f486e6a094828902b0d2bb7440258">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Professional_Certificate_Programme_In_Data_Science_With_Generative_Ai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Professional Certificate Programme In Data Science With Generative Ai</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Sachit_Rao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Sachit Rao</rdfs:label>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#offeredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>offeredBy</rdfs:label>
+    <rdfs:domain rdf:nodeID="Nd0365589475942c489f0d7e98fe78cf9"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>IIIT-Bangalore Faculty Ontology</rdfs:label>
+    <rdfs:comment>Auto-generated from IIIT-B faculty web pages. Predicates are discovered dynamically by an LLM — no hand-coded schema was used.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Networking_Communication_And_Signal_Processing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:label>Networking Communication And Signal Processing</rdfs:label>
+    <uni:domainOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Computer_networks"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Network_security"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Wireless_communication"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Signal_processing"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Medical_signal_processing"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Computer_vision"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Control_of_unmanned_systems_using_image_processing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Human-Centered_Sensing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Human-Centered Sensing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Computer_Science_%26_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Computer Science &amp; Engineering</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Mobile_Computing_and_IMS_Innovation_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchLab"/>
+    <rdfs:label>Mobile Computing and IMS Innovation Lab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Department</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Advanced_Wireless_Communications_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Advanced Wireless Communications Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Btech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Btech</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Machine_to_Machine_Communication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Machine to Machine Communication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Software_Engineering_And_Analysis_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Software Engineering And Analysis Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Software_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:label>Software Engineering</rdfs:label>
+    <uni:domainOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Master_Of_Science_By_Research">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Master Of Science By Research</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Comet_Tech_Innovation_Hub_%28Nm-Icps%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Comet Tech Innovation Hub (Nm-Icps)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Connected_Devices_And_Wearables_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Connected Devices And Wearables Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Priyanka_Das">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Priyanka Das</rdfs:label>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Executive_Diploma_In_Data_Science_%26_Ai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Executive Diploma In Data Science &amp; Ai</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Faculty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Faculty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Advanced_Certification_In_Ui%2FUx_Design_With_Generative_Ai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Advanced Certification In Ui/Ux Design With Generative Ai</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Digital_Society">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:label>Digital Society</rdfs:label>
+    <uni:domainOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#V_Ramasubramanian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>V Ramasubramanian</rdfs:label>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#heads">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>heads</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchLab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Cssmp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Cssmp</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Cognitive_Computing_Coe_%28Ccc%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Cognitive Computing Coe (Ccc)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Motorola_Research">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Organization"/>
+    <rdfs:label>Motorola Research</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#receivedFundingFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>receivedFundingFrom</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchLab"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#IIITB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>IIITB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_It_%26_Public_Policy_%28Citapp%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Centre For It &amp; Public Policy (Citapp)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#HP">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Organization"/>
+    <rdfs:label>HP</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Executive_Post_Graduate_Programme_In_Applied_Ai_And_Agentic_Ai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Executive Post Graduate Programme In Applied Ai And Agentic Ai</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Amrita_Mishra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Amrita Mishra</rdfs:label>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Multimodal_Perception_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Multimodal Perception Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Human-Centered_Sensing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Mobile_Computing_And_Ims_Innovation_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchLab"/>
+    <rdfs:label>Mobile Computing And Ims Innovation Lab</rdfs:label>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Video_Streaming"/>
+    <uni:receivedFundingFrom rdf:resource="http://www.iiitb.ac.in/ontology/university#HP"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Network_security">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Network security</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Video_Streaming">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Video Streaming</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Executive_Post_Graduate_Certificate_In_Data_Science_%26_Ai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Executive Post Graduate Certificate In Data Science &amp; Ai</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na83ea0f85a814258acb3e7a49492007a">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Lab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Executive_Program_In_Digital_Public_Infrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Executive Program In Digital Public Infrastructure</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Wireless_Sensor_Network_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchLab"/>
+    <rdfs:label>Wireless Sensor Network Lab</rdfs:label>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Machine_to_Machine_Communication"/>
+    <uni:receivedFundingFrom rdf:resource="http://www.iiitb.ac.in/ontology/university#Govt._of_Karnataka"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Debabrata_Das">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Debabrata Das</rdfs:label>
+    <uni:heads rdf:resource="http://www.iiitb.ac.in/ontology/university#Networking_and_Communication_Lab"/>
+    <uni:heads rdf:resource="http://www.iiitb.ac.in/ontology/university#Mobile_Computing_and_IMS_Innovation_Lab"/>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrated_Phd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Integrated Phd</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Dinesh_Babu_Jayagopi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Dinesh Babu Jayagopi</rdfs:label>
+    <uni:heads rdf:resource="http://www.iiitb.ac.in/ontology/university#Multimodal_Perception_Lab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#isFacultyMemberOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isFacultyMemberOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Accessibility_In_The_Global_South_%28Cags%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Centre For Accessibility In The Global South (Cags)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#ResearchLab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ResearchLab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Electronics_And_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Electronics And Communication Engineering</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Mathematics_And_Basic_Sciences">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:label>Mathematics And Basic Sciences</rdfs:label>
+    <uni:domainOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Organization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Mtech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Mtech</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Iiitb_Innovation_Centre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Iiitb Innovation Centre</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Graphics-Visualization-Computing-Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Graphics-Visualization-Computing-Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Vinod_Reddy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Vinod Reddy</rdfs:label>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Networking_And_Communication_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Networking And Communication Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Medium_Access_Control_protocols"/>
+    <uni:researchesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#IoT"/>
+    <uni:receivedFundingFrom rdf:resource="http://www.iiitb.ac.in/ontology/university#Hewlett_Packard"/>
+    <uni:receivedFundingFrom rdf:resource="http://www.iiitb.ac.in/ontology/university#Motorola_Research"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Medium_Access_Control_protocols">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Medium Access Control protocols</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Digital_Public_Infrastructure_%7C_Cdpi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Centre For Digital Public Infrastructure | Cdpi</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Computer_vision">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Computer vision</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Advanced_Executive_Program_In_Cybersecurity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Advanced Executive Program In Cybersecurity</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05e149f171264ae988a055cc2c84527c">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchLab"/>
+    <rdf:rest rdf:nodeID="Na83ea0f85a814258acb3e7a49492007a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1c8e47200c048baa1b0f13c11805cab">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdf:rest rdf:nodeID="N96ddf6c1d18249b5a20b7fff78018976"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Digital_Humanities_And_Societal_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Digital Humanities And Societal Systems</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Executive_Diploma_In_Machine_Learning_%26_Ai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Executive Diploma In Machine Learning &amp; Ai</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Smart_City_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Smart City Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#researchesIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>researchesIn</rdfs:label>
+    <rdfs:domain rdf:nodeID="Nb5c55e4acabb4943a2330a2b1e661c57"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Pg_Diploma_In_Digital_Product_Design_And_Management">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Pg Diploma In Digital Product Design And Management</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Networking_and_Communication_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchLab"/>
+    <rdfs:label>Networking and Communication Lab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Govt._of_Karnataka">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Organization"/>
+    <rdfs:label>Govt. of Karnataka</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Machine_Intelligence_%26_Robotics_Coe_%28Minro%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Machine Intelligence &amp; Robotics Coe (Minro)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Modular_Open-Source_Identity_Platform_%28Mosip%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Modular Open-Source Identity Platform (Mosip)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Phd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Phd</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Domain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Domain</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Medical_signal_processing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Medical signal processing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc39609f2f5d441b58609dfe31a218ad9">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdf:rest rdf:nodeID="N691f486e6a094828902b0d2bb7440258"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#partOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>partOf</rdfs:label>
+    <rdfs:domain rdf:nodeID="N30c2e3aaddb64aa88aa46a2afdac3cd0"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Web_Science_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Web Science Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#E-Health_Research_Centre_%28Ehrc%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>E-Health Research Centre (Ehrc)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Data_Science_And_Artificial_Intelligence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Data Science And Artificial Intelligence</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Computer_networks">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Computer networks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Surgical_And_Assistive_Robotics_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Surgical And Assistive Robotics Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Computer_Science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:label>Computer Science</rdfs:label>
+    <uni:domainOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Remote_Sensing_Gis_And_Spatial_Computing_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Remote Sensing Gis And Spatial Computing Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Chief_Technology_%26_Ai_Officer_Program">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Program"/>
+    <rdfs:label>Chief Technology &amp; Ai Officer Program</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Programme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Programme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#High_Density_Electronic_Systems_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>High Density Electronic Systems Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Open_Societal_Systems_%28Coss%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Centre For Open Societal Systems (Coss)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Jyotsna_Bapat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Jyotsna Bapat</rdfs:label>
+    <uni:heads rdf:resource="http://www.iiitb.ac.in/ontology/university#Wireless_Sensor_Network_Lab"/>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Applied_Sciences">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Centre For Applied Sciences</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Indian_Knowledge_System_%28Iks%29_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Indian Knowledge System (Iks) Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#IIIT-B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>IIIT-B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30c2e3aaddb64aa88aa46a2afdac3cd0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Ndd40680a76694a66b6bc8542eac6e90a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Program">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Program</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Signal_processing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Signal processing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Centre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96ddf6c1d18249b5a20b7fff78018976">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Wireless_communication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Wireless communication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Data_Sciences">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Domain"/>
+    <rdfs:label>Data Sciences</rdfs:label>
+    <uni:domainOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd40680a76694a66b6bc8542eac6e90a">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdf:rest rdf:nodeID="Nd1c8e47200c048baa1b0f13c11805cab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Msc_%28Digital_Society%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Msc (Digital Society)</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Control_of_unmanned_systems_using_image_processing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Control of unmanned systems using image processing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ascend_Studio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Ascend Studio</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Scalable_Data_Science_And_Ai_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Scalable Data Science And Ai Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Hewlett_Packard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Organization"/>
+    <rdfs:label>Hewlett Packard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Radar_Sensing_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Radar Sensing Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#University">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>University</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrated_Mtech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Integrated Mtech</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Institution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Institution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#ResearchArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ResearchArea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb5c55e4acabb4943a2330a2b1e661c57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N05e149f171264ae988a055cc2c84527c"/>
+  </rdf:Description>
+</rdf:RDF>
