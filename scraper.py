@@ -15,10 +15,10 @@ from bs4 import BeautifulSoup, Tag as BS4Tag
 from urllib.parse import urlparse, urljoin
 
 # Primary scraper — faculty profile page
-# Function to fetch and clean text from a faculty profile page
-def scrape_faculty_page(url: str) -> str:
+# Function to fetch and clean text from a web page
+def scrape_page(url: str) -> str:
     """
-    Fetch a faculty profile URL and return only the biography / profile content
+    Fetch a web page and return only the biography / profile content
     as clean plain text, with all navigation boilerplate removed.
     """
     try:
@@ -142,7 +142,7 @@ def scrape_text_from_url(url: str) -> str:
     """
     Generic page scraper — delegates to the faculty page scraper.
     """
-    return scrape_faculty_page(url)
+    return scrape_page(url)
 
 
 # Internal-links crawler (used by depth mode in main.py)
@@ -172,6 +172,7 @@ def get_internal_links(base_url: str, focus: str = "all") -> list:
         # Broader set of keywords to discover a wider variety of institutional knowledge
         keywords = ["faculty", "course", "academic", "department", "program", "research", "publications", "projects", "events", "news", "about"]
 
+    # this is storing all the links that are relevant to the focus keyword
     links = set()
     for a_tag in soup.find_all("a", href=True):
         href = a_tag["href"].strip()
@@ -189,7 +190,7 @@ def get_internal_links(base_url: str, focus: str = "all") -> list:
 # if __name__ == "__main__":
 #     url = "https://www.iiitb.ac.in/faculty/debabrata-das"
 #     print(f"[Test] Scraping: {url}")
-#     text = scrape_faculty_page(url)
+#     text = scrape_page(url)
 #     print(f"[Test] Extracted {len(text)} characters.")
 #     print("\n--- First 2000 chars ---\n")
 #     print(text[:2000])

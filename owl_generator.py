@@ -9,6 +9,11 @@
 
 # Imports
 # rdflib is used to create and manipulate the ontology
+# Graph is used to create a new graph
+# URIRef is used to create a URI
+# Literal is used to create a literal
+# Namespace is used to create a namespace
+# BNode is used to create a blank node
 from rdflib import Graph, URIRef, Literal, Namespace, BNode
 
 # RDF, OWL, RDFS, XSD are standard RDF namespaces
@@ -32,7 +37,7 @@ def _uri_safe(text: str) -> str:
 # Function to generate OWL ontology from OntologyData
 def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl", entity_type: str = "faculty") -> None:
     """
-    Build a rich OWL graph from OntologyData and serialise it to OWL/XML.
+    Building a rich OWL graph from OntologyData and serialise it to OWL/XML.
 
     The resulting file, when opened in Protege, will show:
       Classes panel     → every distinct subject_class / object_class
@@ -44,7 +49,7 @@ def generate_owl(ontology_data: OntologyData, output_file: str = "output.owl", e
     # Create a new graph, they are used to store the ontology
     g = Graph()
 
-    # Namespaces
+    # Namespaces used in the ontology
     UNI  = Namespace("http://www.iiitb.ac.in/ontology/university#")
     g.bind("uni",  UNI)
     g.bind("owl",  OWL)

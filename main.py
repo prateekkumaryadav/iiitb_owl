@@ -151,7 +151,7 @@ def main():
         # Step 2: Extract triples
         entity_name = _entity_name_from_url(current_url)
 
-        print(f"[Step 2/3] Sending to LLM ({args.focus} hint: '{entity_name}')")
+        print(f"Stage 2 of 3 Sending to LLM ({args.focus} hint: '{entity_name}')")
         page_data = extract_triples(raw_text, entity_name=entity_name, entity_type=args.focus)
 
         # Add triples to global list
@@ -179,7 +179,7 @@ def main():
     #           + (f"  ({t.object_class})" if t.object_class else ""))
 
     # Generate OWL
-    print(f"\n[Step 3/3] Generating OWL: {args.output}")
+    print(f"\nStage 3 of 3 Generating OWL: {args.output}")
 
     # Create ontology
     output_ontology = OntologyData(triples=global_triples)

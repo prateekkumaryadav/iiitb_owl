@@ -1,33 +1,60 @@
+# This script is used to merge multiple OWL files into a single master Knowledge Graph.
+
+# import the required libraries
+# argparse is used to parse the command line arguments
 import argparse
+
+# glob is used to find all the files that match the given pattern
 import glob
+
+# urllib.parse is used to parse the URL
 import urllib.parse
-import difflib
+
+# rdflib is used to work with RDF graphs
 from rdflib import Graph, OWL, RDF
 
+# This function is used to clean the URI
 def clean_name(uri):
+    # if the uri contains "#" then split the uri by "#" and take the last part
     if "#" in uri:
         name = uri.split("#")[-1]
     else:
         name = uri.split("/")[-1]
+    
+    # decode the uri
     name = urllib.parse.unquote(name)
+    
+    # replace "_" with " "
     name = name.replace("_", " ")
+    
+    # replace "-" with " "
     name = name.replace("-", " ")
+
     # Collapse multiple spaces
     name = " ".join(name.split())
     return name.lower().strip()
 
+# this function is used to get the specific types of the uri
 def get_specific_types(g, uri):
     types = list(g.objects(uri, RDF.type))
     specific = [t for t in types if t != OWL.NamedIndividual]
     return set(specific)
 
+# this function is used to resolve entities using LLM
 def entity_resolution(g):
+    # os is used to get the environment variables
     import os
+    
+    # json is used to work with JSON data
     import json
+    
+    # Groq is used to work with Groq API
     from groq import Groq
+
+    # URIRef is used to work with URIs
     from rdflib import URIRef
     
-    print("Starting LLM-based entity resolution for cross-graph mapping...")
+    print("Starting LLM-based entity resolution for cross-graph mapping")
     
     # Check if GROQ_API_KEY is present
     api_key = os.environ.get("GROQ_API_KEY")
@@ -41,6 +68,7 @@ def entity_resolution(g):
     individuals = list(set(g.subjects(RDF.type, OWL.NamedIndividual)))
     # We map URI to cleaned name, but only send unique names to the LLM to save tokens
     indiv_dict = {str(uri): clean_name(str(uri)) for uri in individuals}
+    # get the unique names
     unique_indiv_names = list(set(indiv_dict.values()))
     
     # 2. Gather properties
@@ -52,6 +80,7 @@ def entity_resolution(g):
     if not unique_indiv_names and not unique_prop_names:
         return g
         
+    # this prompt is used to align the entities
     prompt = f"""
 You are a semantic web ontology aligner specializing in university knowledge graphs.
 Your task: identify pairs of names that refer to the EXACT same real-world entity or relationship,
@@ -103,7 +132,9 @@ Inputs:
 "individuals": {json.dumps(unique_indiv_names)}
 "properties": {json.dumps(unique_prop_names)}
 """
-    print("  - Calling Groq LLM (llama-3.3-70b-versatile) for semantic alignment...")
+    # print("  - Calling Groq LLM (llama-3.3-70b-versatile) for semantic alignment...")
+
+    # this is the prompt that is sent to the LLM
     try:
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
@@ -116,11 +147,13 @@ Inputs:
         
         data = json.loads(response.choices[0].message.content)
         
-        # Reverse mapping: name -> list of URIs
+        # this is used to map the names to the URIs
+        # its done to make it easier to add the 
+        # owl:sameAs and owl:equivalentProperty
         name_to_indiv_uris = {}
         for u, n in indiv_dict.items():
             name_to_indiv_uris.setdefault(n, []).append(u)
-            
+        
         name_to_prop_uris = {}
         for u, n in prop_dict.items():
             name_to_prop_uris.setdefault(n, []).append(u)
@@ -128,6 +161,8 @@ Inputs:
         added_same_as = 0
         added_equiv_prop = 0
         
+        # adding the owl:sameAs
+        # looping through same_individuals from LLM
         for pair in data.get("same_individuals", []):
             if isinstance(pair, list) and len(pair) == 2:
                 n1, n2 = pair[0].lower().strip(), pair[1].lower().strip()
@@ -140,7 +175,8 @@ Inputs:
                         if u1 != u2:
                             g.add((URIRef(u1), OWL.sameAs, URIRef(u2)))
                             added_same_as += 1
-                
+        
+        # add
         for pair in data.get("equivalent_properties", []):
             if isinstance(pair, list) and len(pair) == 2:
                 n1, n2 = pair[0].lower().strip(), pair[1].lower().strip()
@@ -153,9 +189,9 @@ Inputs:
                         if u1 != u2:
                             g.add((URIRef(u1), OWL.equivalentProperty, URIRef(u2)))
                             added_equiv_prop += 1
-                
-        print(f"  - Added {added_same_as} owl:sameAs links between individuals.")
-        print(f"  - Added {added_equiv_prop} owl:equivalentProperty links between properties.")
+        
+        print(f"\tAdded {added_same_as} owl:sameAs links between individuals.")
+        print(f"\tAdded {added_equiv_prop} owl:equivalentProperty links between properties.")
         
     except Exception as e:
         import traceback
