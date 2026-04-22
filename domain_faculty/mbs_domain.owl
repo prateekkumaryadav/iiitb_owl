@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:uni="http://www.iiitb.ac.in/ontology/university#"
+>
+  <rdf:Description rdf:nodeID="N919715203b704d4ca035d88c32e38b6d">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdf:rest rdf:nodeID="N8dd557cea9c044de925193c8450cff20"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Comet_Tech_Innovation_Hub_%28Nm-Icps%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Comet Tech Innovation Hub (Nm-Icps)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Iiit-B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>Iiit-B</rdfs:label>
+    <uni:investigates rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algebraic Complexity Theory and Cryptography</uni:investigates>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Digital_Public_Infrastructure_%7C_Cdpi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Centre For Digital Public Infrastructure | Cdpi</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#French_Guiana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>French Guiana</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#South_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Surgical_And_Assistive_Robotics_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Surgical And Assistive Robotics Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Shiva_Kumar_Malapaka">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Shiva Kumar Malapaka</rdfs:label>
+    <uni:researchesIn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computational fluid mechanics</uni:researchesIn>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Pg_Diploma_In_Digital_Product_Design_And_Management">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Pg Diploma In Digital Product Design And Management</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Master_Of_Science_By_Research">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Master Of Science By Research</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Guinea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Guinea</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Africa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Antarctica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+    <rdfs:label>Antarctica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#worksIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>worksIn</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Laboratory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Algebraic_Number_Theory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Area"/>
+    <rdfs:label>Algebraic Number Theory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Digital_Humanities_And_Societal_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Digital Humanities And Societal Systems</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Holy_See_%28Vatican_City_State%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Holy See (Vatican City State)</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Graphics-Visualization-Computing-Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Graphics-Visualization-Computing-Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Balakrishnan_Ashok">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Balakrishnan Ashok</rdfs:label>
+    <uni:worksIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Complex_Systems_%26_Soft_Matter_Physics_%28CSSMP%29_Lab"/>
+    <uni:researchesIn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonlinear dynamics &amp; complex systems</uni:researchesIn>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#specializesIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>specializesIn</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Guinea-Bissau">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Guinea-Bissau</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Africa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Africa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+    <rdfs:label>Africa</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Galois_Representations">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Area"/>
+    <rdfs:label>Galois Representations</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ireland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Ireland</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Open_Societal_Systems_%28Coss%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Centre For Open Societal Systems (Coss)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Iraq">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Iraq</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Guadeloupe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Guadeloupe</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#North_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Programme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Programme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Sanghasri_Mukhopadhyay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Sanghasri Mukhopadhyay</rdfs:label>
+    <uni:hasResearchArea rdf:resource="http://www.iiitb.ac.in/ontology/university#Mathematics"/>
+    <uni:researchesIn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theoretical, numerical, and computational analysis of thin-film flows</uni:researchesIn>
+    <uni:specializesIn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microfluidics and fluid-porous interactions</uni:specializesIn>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#offeredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>offeredBy</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_It_%26_Public_Policy_%28Citapp%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Centre For It &amp; Public Policy (Citapp)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Hong_Kong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Hong Kong</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Guam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Guam</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Oceania"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Remote_Sensing_Gis_And_Spatial_Computing_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Remote Sensing Gis And Spatial Computing Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Oceania">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+    <rdfs:label>Oceania</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Phd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Phd</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Europe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+    <rdfs:label>Europe</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ghana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Ghana</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Africa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Guatemala">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Guatemala</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#North_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Jersey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Jersey</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Smart_City_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Smart City Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Italy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Italy</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Accessibility_In_The_Global_South_%28Cags%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Centre For Accessibility In The Global South (Cags)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#France">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>France</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Multimodal_Perception_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Multimodal Perception Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Gibraltar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Gibraltar</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Jamaica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Jamaica</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#North_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Computer_Science_%26_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Computer Science &amp; Engineering</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Estonia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Estonia</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4d33a02c44147bb8c5794d1d155acd9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N919715203b704d4ca035d88c32e38b6d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#investigates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>investigates</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Guyana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Guyana</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#South_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Jordan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Jordan</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrated_Mtech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Integrated Mtech</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nef0caad6fcc742adb53d142e342df358">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Hungary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Hungary</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Department</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#French_Southern_Territories">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>French Southern Territories</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Antarctica"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8dd557cea9c044de925193c8450cff20">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdf:rest rdf:nodeID="Nb328deec0c734d08b13ce3655a40b882"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Data_Science_And_Artificial_Intelligence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Data Science And Artificial Intelligence</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Manisha_Kulkarni">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Manisha Kulkarni</rdfs:label>
+    <uni:hasResearchArea rdf:resource="http://www.iiitb.ac.in/ontology/university#Number_Theory"/>
+    <uni:hasResearchArea rdf:resource="http://www.iiitb.ac.in/ontology/university#Algebraic_Number_Theory"/>
+    <uni:hasResearchArea rdf:resource="http://www.iiitb.ac.in/ontology/university#Galois_Representations"/>
+    <uni:hasResearchArea rdf:resource="http://www.iiitb.ac.in/ontology/university#Modular_Forms"/>
+    <uni:isFacultyMemberOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#researchesIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>researchesIn</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#South_America">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+    <rdfs:label>South America</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Honduras">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Honduras</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#North_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Germany">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Germany</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Laboratory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Laboratory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Country</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Cssmp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Cssmp</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Btech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Btech</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Gabon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Gabon</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Africa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Falkland_Islands_%28Malvinas%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Falkland Islands (Malvinas)</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#South_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Asia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+    <rdfs:label>Asia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#High_Density_Electronic_Systems_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>High Density Electronic Systems Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Georgia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Georgia</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Software_Engineering_And_Analysis_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Software Engineering And Analysis Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Speech_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Speech Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Scalable_Data_Science_And_Ai_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Scalable Data Science And Ai Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Advanced_Wireless_Communications_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Advanced Wireless Communications Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#partOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>partOf</rdfs:label>
+    <rdfs:domain rdf:nodeID="Ne4d33a02c44147bb8c5794d1d155acd9"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Machine_Intelligence_%26_Robotics_Coe_%28Minro%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Machine Intelligence &amp; Robotics Coe (Minro)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#India">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>India</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Modular_Forms">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Area"/>
+    <rdfs:label>Modular Forms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Mtech">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Mtech</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Isle_Of_Man">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Isle Of Man</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#North_America">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+    <rdfs:label>North America</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Institution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Institution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Research_Centre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Research Centre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Fiji">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Fiji</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Oceania"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Kazakhstan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Kazakhstan</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#isLocatedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isLocatedIn</rdfs:label>
+    <rdfs:domain rdf:nodeID="Nfd4b3ac1d4d0444cad7e48b9ff1231f7"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Continent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Centre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Complex_Systems_%26_Soft_Matter_Physics_%28CSSMP%29_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Laboratory"/>
+    <rdfs:label>Complex Systems &amp; Soft Matter Physics (CSSMP) Lab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Haiti">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Haiti</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#North_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Faculty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Faculty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ethiopia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Ethiopia</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Africa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Networking_And_Communication_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Networking And Communication Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Iceland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Iceland</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Iran">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Iran</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Faroe_Islands">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Faroe Islands</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3662b06e9ea94a49bbdec814804477ab">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdf:rest rdf:nodeID="Nef0caad6fcc742adb53d142e342df358"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Eritrea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Eritrea</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Africa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Indonesia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Indonesia</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Guernsey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Guernsey</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Modular_Open-Source_Identity_Platform_%28Mosip%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Modular Open-Source Identity Platform (Mosip)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Grenada">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Grenada</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#North_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Gambia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Gambia</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Africa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Greece">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Greece</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Europe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#E-Health_Research_Centre_%28Ehrc%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>E-Health Research Centre (Ehrc)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Japan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Japan</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#French_Polynesia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>French Polynesia</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Oceania"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Number_Theory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Area"/>
+    <rdfs:label>Number Theory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>IIIT-Bangalore Faculty Ontology</rdfs:label>
+    <rdfs:comment>Auto-generated from IIIT-B faculty web pages. Predicates are discovered dynamically by an LLM — no hand-coded schema was used.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#hasResearchArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasResearchArea</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Area"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Msc_%28Digital_Society%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Msc (Digital Society)</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrated_Phd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Programme"/>
+    <rdfs:label>Integrated Phd</rdfs:label>
+    <uni:offeredBy rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Greenland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Greenland</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#North_America"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Continent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Continent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#isFacultyMemberOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isFacultyMemberOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Israel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Country"/>
+    <rdfs:label>Israel</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Asia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Research_Area">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Research Area</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Web_Science_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Web Science Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#IIIT-B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>IIIT-B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Connected_Devices_And_Wearables_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Connected Devices And Wearables Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Lab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68c640c7aa77465a9d8192828cf1e792">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Heard_Island_And_Mcdonald_Islands">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Territory"/>
+    <rdfs:label>Heard Island And Mcdonald Islands</rdfs:label>
+    <uni:isLocatedIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Antarctica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Mathematics">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Area"/>
+    <rdfs:label>Mathematics</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ascend_Studio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Ascend Studio</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Indian_Knowledge_System_%28Iks%29_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Indian Knowledge System (Iks) Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Radar_Sensing_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Lab"/>
+    <rdfs:label>Radar Sensing Lab</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd4b3ac1d4d0444cad7e48b9ff1231f7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N3662b06e9ea94a49bbdec814804477ab"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb328deec0c734d08b13ce3655a40b882">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdf:rest rdf:nodeID="N68c640c7aa77465a9d8192828cf1e792"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_For_Applied_Sciences">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre"/>
+    <rdfs:label>Centre For Applied Sciences</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Cognitive_Computing_Coe_%28Ccc%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Research_Centre"/>
+    <rdfs:label>Cognitive Computing Coe (Ccc)</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_Of_Electronics_And_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department Of Electronics And Communication Engineering</rdfs:label>
+    <uni:partOf rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Territory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Territory</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

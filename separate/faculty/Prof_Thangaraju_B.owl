@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:uni="http://www.iiitb.ac.in/ontology/university#"
+>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Using_Flutter_to_Develop_an_Application_that_will_Fetch_Data_on_Covid-19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Using Flutter to Develop an Application that will Fetch Data on Covid-19</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Wipro_Technologies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Organization"/>
+    <rdfs:label>Wipro Technologies</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Organization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#B_Thangaraju">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>B Thangaraju</rdfs:label>
+    <uni:hasEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b.thangaraju@iiitb.ac.in</uni:hasEmail>
+    <uni:earnedDegree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ph.D.</uni:earnedDegree>
+    <uni:graduatedFrom rdf:resource="http://www.iiitb.ac.in/ontology/university#Bharathidasan_University"/>
+    <uni:wasResearchAssociateAt rdf:resource="http://www.iiitb.ac.in/ontology/university#Indian_Institute_of_Science"/>
+    <uni:workedAt rdf:resource="http://www.iiitb.ac.in/ontology/university#Wipro_Technologies"/>
+    <uni:joined rdf:resource="http://www.iiitb.ac.in/ontology/university#IIIT-B"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Julia_and_Python%3A_Which_Language_Is_Quicker%3F"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#The_Usefulness_of_POSIX_Message_Queues"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Share_Your_Terminal_Output_Using_this_Secure_Application"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#OpenStack_Load_Balancer_as_a_Service_%28LBaaS%29%3A_The_Role_of_Resources"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#The_Magic_of_MLOps_Pipelines"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#An_Analysis_of_the_Real-Time_Performance_of_Linux_Kernels"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Using_Flutter_to_Develop_an_Application_that_will_Fetch_Data_on_Covid-19"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#DevSecOps%3A_Static_Application_Security_Testing_Using_Snyk_and_SonarQube"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#DevSecOps%3A_Integrating_a_Dynamic_Application_Security_Testing_Tool_with_Jenkins"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#The_Benefits_of_Docker_Toolbox%2C_Docker_Desktop_and_WSL_2"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Microsoft_Azure_DevOps%3A_The_Rapid_Software_Development_Platform"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Build_your_own_Decentralized_Large_Scale_Key-Value_Cloud_Storage"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Managing_Source_Code_Development_Efficiently_with_Git_%E2%80%93_Part_II"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Managing_Source_Code_Development_Efficiently_with_Git_%E2%80%93_Part_I"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Efficient_Log_Management_with_Fluent_Bit"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#The_Benefits_of_Using_Terraform_as_a_Tool_for_Infrastructure-as-Code_%28IaC%29"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#How_to_Analyse_Big_Data_Using_the_ELK_Stack"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Using_Facial_Recognition_for_a_Robust%2C_Real-time_Attendance_System"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#How_to_Go_About_Linux_Boot_Time_Optimisation"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Continuous_Deployment_Orchestration_Using_Rundeck"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Solutions_to_Priority_Inversion_in_a_Multi-threaded_Programming_Environment"/>
+    <uni:authoredPublication rdf:resource="http://www.iiitb.ac.in/ontology/university#Get_Rid_of_Priority_Inversion_with_PI-Futex"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Akshat_Jain"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Md_Zainul_Haque"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Mrinalini_Raghavendran"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#K._Chandramouli"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Gadde_Suresh"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Vivek_Kumar_Singh"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Amitesh_Anand"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Sannapareddy_Nikhil_Sairam_Reddy"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Manav_Ketan_Desai"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Abhinil_Agarwal"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Shriya_Kabra"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Akhilank_M.J._Kaipu"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Vivek_Gupta"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Gaurav_Arora"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Shubham_Kumar"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Ekta_Nandwani"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Atibhi_Agrawal"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Vaibhav_Aggarwal"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Sourya_Sarthak_Reddy_Sane"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Doppalapudi_Sai_Divya"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Chodisetty_Naga_Srujana"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#R._Harika"/>
+    <uni:collaboratesWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Sourabh_Kumar"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Blockchain_Development_Made_Easy_with_Open_Source_Tools"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#How_Man_in_the_Middle_Attacks_Cause_Damage"/>
+    <uni:coauthoredWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Vaibhav_Aggarwal"/>
+    <uni:coauthoredWith rdf:resource="http://www.iiitb.ac.in/ontology/university#Sravya_Goli"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#workedAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>workedAt</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:nodeID="Nab65a0e5c474492ba2e5674f2c1f874a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Solutions_to_Priority_Inversion_in_a_Multi-threaded_Programming_Environment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Solutions to Priority Inversion in a Multi-threaded Programming Environment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Blockchain_Development_Made_Easy_with_Open_Source_Tools">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Blockchain Development Made Easy with Open Source Tools</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Sourya_Sarthak_Reddy_Sane">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Sourya Sarthak Reddy Sane</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Government_of_India_Projects">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>Government of India Projects</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#The_Magic_of_MLOps_Pipelines">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>The Magic of MLOps Pipelines</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ekta_Nandwani">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Ekta Nandwani</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#worksAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>worksAt</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Unlocking_the_Potential_of_Virtualized_Network_Functions_and_Service_Function_Chaining_on_OpenStack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Unlocking the Potential of Virtualized Network Functions and Service Function Chaining on OpenStack</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Government_of_Karnataka">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>Government of Karnataka</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#An_Analysis_of_the_Real-Time_Performance_of_Linux_Kernels">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>An Analysis of the Real-Time Performance of Linux Kernels</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Head_of_the_Architect_Team">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Position"/>
+    <rdfs:label>Head of the Architect Team</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#DevSecOps%3A_Integrating_a_Dynamic_Application_Security_Testing_Tool_with_Jenkins">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>DevSecOps: Integrating a Dynamic Application Security Testing Tool with Jenkins</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Linux_Kernel_Programming">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Linux Kernel Programming</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Linux_System_Programming">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Linux System Programming</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#cgroups%3A_The_Key_to_Effective_Resource_Management_in_Linux_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>cgroups: The Key to Effective Resource Management in Linux Systems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Unikernels">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Unikernels</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_of_Electronics_and_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department of Electronics and Communication Engineering</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#OpenStack_Load_Balancer_as_a_Service_%28LBaaS%29%3A_The_Role_of_Resources">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>OpenStack Load Balancer as a Service (LBaaS): The Role of Resources</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Iiit-B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>Iiit-B</rdfs:label>
+    <uni:hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/university#Department_of_Computer_Science_%26_Engineering"/>
+    <uni:hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/university#Department_of_Digital_Humanities_and_Societal_Systems"/>
+    <uni:hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/university#Department_of_Data_Science_and_Artificial_Intelligence"/>
+    <uni:hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/university#Department_of_Electronics_and_Communication_Engineering"/>
+    <uni:hasResearchCentre rdf:resource="http://www.iiitb.ac.in/ontology/university#E-Health_Research_Centre"/>
+    <uni:hasResearchCentre rdf:resource="http://www.iiitb.ac.in/ontology/university#Machine_Intelligence_%26_Robotics_CoE"/>
+    <uni:hasResearchCentre rdf:resource="http://www.iiitb.ac.in/ontology/university#Centre_for_IT_%26_Public_Policy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Docker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Docker</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Centre_for_IT_%26_Public_Policy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchCentre"/>
+    <rdfs:label>Centre for IT &amp; Public Policy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#hasEmail">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasEmail</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Cloud_Computing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Integrating Network Function Virtualization with the DevOps Pipeline: Cloud Computing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#K._Chandramouli">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>K. Chandramouli</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ansible">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Ansible</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Continuous_Deployment_Orchestration_Using_Rundeck">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Continuous Deployment Orchestration Using Rundeck</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Managing_Source_Code_Development_Efficiently_with_Git_%E2%80%93_Part_I">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Managing Source Code Development Efficiently with Git – Part I</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#hasResearchCentre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasResearchCentre</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchCentre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#wasResearchAssociateAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>wasResearchAssociateAt</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Thangaraju_B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:label>Thangaraju B</rdfs:label>
+    <uni:worksAt rdf:resource="http://www.iiitb.ac.in/ontology/university#IIITB"/>
+    <uni:oversees rdf:resource="http://www.iiitb.ac.in/ontology/university#Open_Source_Technology_Lab"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Software_Engineering"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#General_Purpose_Operating_Systems"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Embedded_and_Real-Time_Operating_Systems"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Linux_System_Programming"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Linux_Kernel_Programming"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Linux_System_Administration"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Linux_Performance_Tuning"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#SDN"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#NFV"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#DevOps"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#DevSecOps"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Ansible"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Docker"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Kubernetes"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#Unikernels"/>
+    <uni:specializesIn rdf:resource="http://www.iiitb.ac.in/ontology/university#OpenStack"/>
+    <uni:workedAt rdf:resource="http://www.iiitb.ac.in/ontology/university#Wipro_Technologies"/>
+    <uni:heldRole rdf:resource="http://www.iiitb.ac.in/ontology/university#Talent_Incubation_Manager"/>
+    <uni:heldRole rdf:resource="http://www.iiitb.ac.in/ontology/university#Senior_Consultant"/>
+    <uni:heldRole rdf:resource="http://www.iiitb.ac.in/ontology/university#Head_of_the_Architect_Team"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Unlocking_the_Potential_of_Virtualized_Network_Functions_and_Service_Function_Chaining_on_OpenStack"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Integration_of_Network_Functions_Virtualization_Infrastructure_with_the_DevOps_Pipeline"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Integration_of_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_DevOps_Methodology"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Simplifying_OpenStack_Deployment_with_Tacker"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Ansible_AWX%3A_The_GUI_Configuration_Management_Automation_Tool"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#The_Role_of_Network_Function_Virtualization_in_Telecom_Infrastructure"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Integration_of_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Software_Defined_Networks"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#cgroups%3A_The_Key_to_Effective_Resource_Management_in_Linux_Systems"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Cloud_Computing"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Kubernetes"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Dynamic_Application_Security_Testing_Using_Acunetix_and_GuardRails"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Containerization"/>
+    <uni:authored rdf:resource="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Distributed_Systems"/>
+    <uni:servesOn rdf:resource="http://www.iiitb.ac.in/ontology/university#MOSIP"/>
+    <uni:servesOn rdf:resource="http://www.iiitb.ac.in/ontology/university#Government_of_Karnataka"/>
+    <uni:servesOn rdf:resource="http://www.iiitb.ac.in/ontology/university#Government_of_India_Projects"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N73a7f8c6006d4c0c97ee53d3d26430df">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#authored">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>authored</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Shubham_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Shubham Kumar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Vaibhav_Aggarwal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Vaibhav Aggarwal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Sravya_Goli">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Sravya Goli</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Simplifying_OpenStack_Deployment_with_Tacker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Simplifying OpenStack Deployment with Tacker</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Publication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Publication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Software_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Software Engineering</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#DevOps">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>DevOps</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Mrinalini_Raghavendran">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Mrinalini Raghavendran</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#ResearchArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ResearchArea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Gadde_Suresh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Gadde Suresh</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Machine_Intelligence_%26_Robotics_CoE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchCentre"/>
+    <rdfs:label>Machine Intelligence &amp; Robotics CoE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#ResearchGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ResearchGroup</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#The_Role_of_Network_Function_Virtualization_in_Telecom_Infrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>The Role of Network Function Virtualization in Telecom Infrastructure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Share_Your_Terminal_Output_Using_this_Secure_Application">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Share Your Terminal Output Using this Secure Application</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Shriya_Kabra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Shriya Kabra</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Talent_Incubation_Manager">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Position"/>
+    <rdfs:label>Talent Incubation Manager</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Gaurav_Arora">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Gaurav Arora</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#The_Usefulness_of_POSIX_Message_Queues">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>The Usefulness of POSIX Message Queues</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#MOSIP">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>MOSIP</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#The_Benefits_of_Docker_Toolbox%2C_Docker_Desktop_and_WSL_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>The Benefits of Docker Toolbox, Docker Desktop and WSL 2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Build_your_own_Decentralized_Large_Scale_Key-Value_Cloud_Storage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Build your own Decentralized Large Scale Key-Value Cloud Storage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_of_Computer_Science_%26_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department of Computer Science &amp; Engineering</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Microsoft_Azure_DevOps%3A_The_Rapid_Software_Development_Platform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Microsoft Azure DevOps: The Rapid Software Development Platform</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Linux_System_Administration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Linux System Administration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Managing_Source_Code_Development_Efficiently_with_Git_%E2%80%93_Part_II">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Managing Source Code Development Efficiently with Git – Part II</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Linux_Performance_Tuning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Linux Performance Tuning</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Akshat_Jain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Akshat Jain</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Manav_Ketan_Desai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Manav Ketan Desai</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integration_of_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Software_Defined_Networks">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Integration of Network Function Virtualization with the DevOps Pipeline: Software Defined Networks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#joined">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>joined</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#University">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>University</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Using_Facial_Recognition_for_a_Robust%2C_Real-time_Attendance_System">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Using Facial Recognition for a Robust, Real-time Attendance System</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Get_Rid_of_Priority_Inversion_with_PI-Futex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Get Rid of Priority Inversion with PI-Futex</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#How_Man_in_the_Middle_Attacks_Cause_Damage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>How Man in the Middle Attacks Cause Damage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#E-Health_Research_Centre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchCentre"/>
+    <rdfs:label>E-Health Research Centre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#servesOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>servesOn</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integration_of_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_DevOps_Methodology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Integration of Network Function Virtualization with the DevOps Pipeline: DevOps Methodology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Efficient_Log_Management_with_Fluent_Bit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Efficient Log Management with Fluent Bit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Institution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Institution</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#NFV">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>NFV</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Md_Zainul_Haque">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Md Zainul Haque</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Sourabh_Kumar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Sourabh Kumar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#collaboratesWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>collaboratesWith</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Kubernetes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Integrating Network Function Virtualization with the DevOps Pipeline: Kubernetes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Bharathidasan_University">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+    <rdfs:label>Bharathidasan University</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Chodisetty_Naga_Srujana">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Chodisetty Naga Srujana</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#DevSecOps%3A_Static_Application_Security_Testing_Using_Snyk_and_SonarQube">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>DevSecOps: Static Application Security Testing Using Snyk and SonarQube</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#authoredPublication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>authoredPublication</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab65a0e5c474492ba2e5674f2c1f874a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Ne7914aa8050c4252834e5beb9064aec3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Position">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Position</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#oversees">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>oversees</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#IIITB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>IIITB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#specializesIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>specializesIn</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Open_Source_Technology_Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchGroup"/>
+    <rdfs:label>Open Source Technology Lab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#earnedDegree">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>earnedDegree</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#graduatedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>graduatedFrom</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Sannapareddy_Nikhil_Sairam_Reddy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Sannapareddy Nikhil Sairam Reddy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Distributed_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Integrating Network Function Virtualization with the DevOps Pipeline: Distributed Systems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Abhinil_Agarwal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Abhinil Agarwal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#hasDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasDepartment</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#General_Purpose_Operating_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>General Purpose Operating Systems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#R._Harika">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>R. Harika</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#How_to_Analyse_Big_Data_Using_the_ELK_Stack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>How to Analyse Big Data Using the ELK Stack</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#The_Benefits_of_Using_Terraform_as_a_Tool_for_Infrastructure-as-Code_%28IaC%29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>The Benefits of Using Terraform as a Tool for Infrastructure-as-Code (IaC)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7914aa8050c4252834e5beb9064aec3">
+    <rdf:first rdf:resource="http://www.iiitb.ac.in/ontology/university#Organization"/>
+    <rdf:rest rdf:nodeID="N73a7f8c6006d4c0c97ee53d3d26430df"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#How_to_Go_About_Linux_Boot_Time_Optimisation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>How to Go About Linux Boot Time Optimisation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Dynamic_Application_Security_Testing_Using_Acunetix_and_GuardRails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Dynamic Application Security Testing Using Acunetix and GuardRails</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#SDN">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>SDN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Embedded_and_Real-Time_Operating_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Embedded and Real-Time Operating Systems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Julia_and_Python%3A_Which_Language_Is_Quicker%3F">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Julia and Python: Which Language Is Quicker?</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integration_of_Network_Functions_Virtualization_Infrastructure_with_the_DevOps_Pipeline">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Integration of Network Functions Virtualization Infrastructure with the DevOps Pipeline</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#IIIT-B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>IIIT-B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>IIIT-Bangalore Faculty Ontology</rdfs:label>
+    <rdfs:comment>Auto-generated from IIIT-B faculty web pages. Predicates are discovered dynamically by an LLM — no hand-coded schema was used.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#coauthoredWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>coauthoredWith</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#DevSecOps">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>DevSecOps</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Doppalapudi_Sai_Divya">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Doppalapudi Sai Divya</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Indian_Institute_of_Science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Institution"/>
+    <rdfs:label>Indian Institute of Science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Senior_Consultant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Position"/>
+    <rdfs:label>Senior Consultant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Akhilank_M.J._Kaipu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Akhilank M.J. Kaipu</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#heldRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>heldRole</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/university#Faculty"/>
+    <rdfs:range rdf:resource="http://www.iiitb.ac.in/ontology/university#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#ResearchCentre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ResearchCentre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Amitesh_Anand">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Amitesh Anand</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Kubernetes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>Kubernetes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Vivek_Kumar_Singh">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Vivek Kumar Singh</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_of_Digital_Humanities_and_Societal_Systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department of Digital Humanities and Societal Systems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department_of_Data_Science_and_Artificial_Intelligence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Department"/>
+    <rdfs:label>Department of Data Science and Artificial Intelligence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Vivek_Gupta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Vivek Gupta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Researcher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Researcher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Ansible_AWX%3A_The_GUI_Configuration_Management_Automation_Tool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Ansible AWX: The GUI Configuration Management Automation Tool</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Faculty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Faculty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Integrating_Network_Function_Virtualization_with_the_DevOps_Pipeline%3A_Containerization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Publication"/>
+    <rdfs:label>Integrating Network Function Virtualization with the DevOps Pipeline: Containerization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#OpenStack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#ResearchArea"/>
+    <rdfs:label>OpenStack</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Department</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/university#Atibhi_Agrawal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/university#Researcher"/>
+    <rdfs:label>Atibhi Agrawal</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
