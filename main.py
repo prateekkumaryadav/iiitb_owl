@@ -27,7 +27,7 @@ import re
 # importing functions from other modules
 
 # scraper.py for scraping faculty pages
-from scraper import scrape_faculty_page, get_internal_links
+from scraper import scrape_page, get_internal_links
 
 # master_schema.py for ontology data
 from master_schema import OntologyData
@@ -142,7 +142,7 @@ def main():
 
         # Step 1: Scrape
         print("[Step 1/3] Scraping page")
-        raw_text = scrape_faculty_page(current_url)
+        raw_text = scrape_page(current_url)
         if not raw_text:
             print("Could not extract text. Skipping.")
             continue
